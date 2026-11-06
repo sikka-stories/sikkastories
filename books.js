@@ -5,7 +5,7 @@
 window.SITE = {
   name: { en: "Sikka Stories", hi: "सिक्का स्टोरीज़", mr: "सिक्का स्टोरीज" },
   /* Optional credit line shown in the footer. Leave empty ("") to hide it. */
-  credit: { en: "", hi: "", mr: "" },
+  credit: { en: "Created by Shreyas Shinde, Mumbai", hi: "बनाने वाले: श्रेयस शिंदे, मुंबई", mr: "निर्मिती: श्रेयस शिंदे, मुंबई" },
   /* Optional feedback link, for example a Google Form address. Leave "" to hide the link. */
   feedback: ""
 };
@@ -26,7 +26,7 @@ window.UI = {
     s2: "Read your own adventure",
     s3: "Take the quiz and sign your promise",
     aboutT: "Free for everyone",
-    aboutP: "Short illustrated money stories for Grades 6 to 10, in English, Hindi and Marathi. No sign-up, no ads, nothing to pay. Type your name once and you are the hero of every book. Works on any phone, and every book can be printed.",
+    aboutP: "Short illustrated money stories for children, in English, Hindi and Marathi. No sign-up, no ads, nothing to pay. Type your name once and you are the hero of every book. Works on any phone, and every book can be printed.",
     all: "All",
     ready: "{n} ready to read",
     moreSoon: "More books are coming soon",
@@ -63,7 +63,8 @@ window.UI = {
     library: "Our books",
     read: "Read",
     soon: "Coming soon",
-    level: "Grades 6 to 10",
+    minShort: "About {n} min",
+    timeLine: "About {t} minutes: {s} to read, {q} for the quiz",
     print: "Save as PDF / Print",
     share: "Share on WhatsApp",
     back: "All books",
@@ -90,7 +91,7 @@ window.UI = {
     skip: "Skip to content",
     aboutLink: "About and privacy",
     feedbackLink: "Send feedback",
-    about: {"title": "About Sikka Stories", "items": [["What it is", "Sikka Stories is a free library of short illustrated money stories for Grades 6 to 10, in English, Hindi and Marathi. In every story you are the hero. Each book ends with a quiz and a promise, and can be printed on A5 paper."], ["Your privacy", "No sign-up. No ads. No tracking. No cookies. The name you type and the hero look you choose are saved only on your own phone or computer. They are never sent to us or to anyone else, and a shared link never contains your name. Your stamps are saved the same way. This site loads nothing from other companies, and even the fonts come from the site itself. Like any website, the service that hosts it (GitHub Pages) may keep ordinary server records, and we add no tracking of our own. Only if you tap Share on WhatsApp does WhatsApp open with a link. Clearing your browser data removes your name and stamps."], ["About the numbers", "The numbers in the stories, such as prices, interest rates and exchange rates, are examples to keep the maths easy. Real rates and rules change. These books teach basic ideas and are not investment, tax or legal advice. For a real decision, ask a trusted grown-up or your bank."], ["For teachers and parents", "Every book prints as 12 A5 pages, with an answer key on the last page. Choose Print worksheet only to print just the quiz pages. The books go from easiest (1) to hardest (20)."], ["Found a mistake?", "Please tell us. Every correction helps the next reader."]]}
+    about: {"title": "About Sikka Stories", "items": [["Who made this", "Sikka Stories was created by Shreyas Shinde, a student in Mumbai, as a free project so that young readers can understand how money works."], ["What it is", "Sikka Stories is a free library of short illustrated money stories for children, in English, Hindi and Marathi. In every story you are the hero. Each book ends with a quiz and a promise, and can be printed on A5 paper."], ["Your privacy", "No sign-up. No ads. No tracking. No cookies. The name you type and the hero look you choose are saved only on your own phone or computer. They are never sent to us or to anyone else, and a shared link never contains your name. Your stamps are saved the same way. This site loads nothing from other companies, and even the fonts come from the site itself. Like any website, the service that hosts it (GitHub Pages) may keep ordinary server records, and we add no tracking of our own. Only if you tap Share on WhatsApp does WhatsApp open with a link. Clearing your browser data removes your name and stamps."], ["About the numbers", "The numbers in the stories, such as prices, interest rates and exchange rates, are examples to keep the maths easy. Real rates and rules change. These books teach basic ideas and are not investment, tax or legal advice. For a real decision, ask a trusted grown-up or your bank."], ["For teachers and parents", "Every book prints as 12 A5 pages, with an answer key on the last page. Choose Print worksheet only to print just the quiz pages. The books go from easiest (1) to hardest (20)."], ["Found a mistake?", "Please tell us. Every correction helps the next reader."]]}
   },
   hi: {
     heroBar: "तुम्हारा हीरो",
@@ -107,7 +108,7 @@ window.UI = {
     s2: "अपनी खुद की कहानी पढ़ो",
     s3: "क्विज़ करो और अपना वादा लिखो",
     aboutT: "सबके लिए मुफ़्त",
-    aboutP: "कक्षा 6 से 10 के लिए चित्रों वाली छोटी पैसों की कहानियाँ, अंग्रेज़ी, हिंदी और मराठी में। न साइन-अप, न विज्ञापन, कोई पैसा नहीं। किसी भी फ़ोन पर चलती हैं और हर किताब प्रिंट भी हो सकती है।",
+    aboutP: "बच्चों के लिए चित्रों वाली छोटी पैसों की कहानियाँ, अंग्रेज़ी, हिंदी और मराठी में। न साइन-अप, न विज्ञापन, कोई पैसा नहीं। किसी भी फ़ोन पर चलती हैं और हर किताब प्रिंट भी हो सकती है।",
     all: "सभी",
     ready: "{n} पढ़ने के लिए तैयार",
     moreSoon: "और किताबें जल्द आ रही हैं",
@@ -144,7 +145,8 @@ window.UI = {
     library: "हमारी किताबें",
     read: "पढ़ें",
     soon: "जल्द आ रही है",
-    level: "कक्षा 6 से 10",
+    minShort: "लगभग {n} मिनट",
+    timeLine: "लगभग {t} मिनट: {s} पढ़ने में, {q} क्विज़ में",
     print: "PDF सहेजें / प्रिंट करें",
     share: "WhatsApp पर भेजें",
     back: "सभी किताबें",
@@ -171,7 +173,7 @@ window.UI = {
     skip: "सीधे सामग्री पर जाएँ",
     aboutLink: "परिचय और गोपनीयता",
     feedbackLink: "सुझाव भेजें",
-    about: {"title": "सिक्का स्टोरीज़ के बारे में", "items": [["यह क्या है", "सिक्का स्टोरीज़ कक्षा 6 से 10 के लिए पैसों की छोटी, चित्रों वाली कहानियों का मुफ़्त संग्रह है, अंग्रेज़ी, हिन्दी और मराठी में। हर कहानी में तुम हीरो हो। हर किताब के अंत में एक क्विज़ और एक वादा है, और उसे A5 काग़ज़ पर छापा जा सकता है।"], ["तुम्हारी गोपनीयता", "कोई साइन-अप नहीं। कोई विज्ञापन नहीं। कोई ट्रैकिंग नहीं। कोई कुकी नहीं। तुम्हारा लिखा नाम और चुना हुआ हीरो का रूप सिर्फ़ तुम्हारे अपने फ़ोन या कंप्यूटर में रहता है। वह हमें या किसी और को कभी नहीं भेजा जाता, और शेयर किए गए लिंक में तुम्हारा नाम नहीं होता। तुम्हारे स्टैम्प भी इसी तरह सिर्फ़ तुम्हारे डिवाइस में रहते हैं। यह साइट दूसरी कंपनियों से कुछ भी लोड नहीं करती, फ़ॉन्ट भी इसी साइट से आते हैं। किसी भी वेबसाइट की तरह, इसे चलाने वाली सेवा (GitHub Pages) सामान्य सर्वर रिकॉर्ड रख सकती है, और हम अपनी तरफ़ से कोई ट्रैकिंग नहीं जोड़ते। WhatsApp पर शेयर का बटन दबाने पर ही WhatsApp एक लिंक के साथ खुलता है। ब्राउज़र का डेटा मिटाने पर नाम और स्टैम्प भी मिट जाते हैं।"], ["अंकों के बारे में", "कहानियों में दिए गए अंक, जैसे दाम, ब्याज दरें और विनिमय दरें, हिसाब आसान रखने के लिए उदाहरण हैं। असली दरें और नियम बदलते रहते हैं। ये किताबें बुनियादी बातें सिखाती हैं, निवेश, कर या क़ानूनी सलाह नहीं देतीं। असली फ़ैसले के लिए किसी भरोसेमंद बड़े या अपने बैंक से पूछो।"], ["शिक्षकों और माता-पिता के लिए", "हर किताब 12 A5 पन्नों में छपती है, और आख़िरी पन्ने पर उत्तर-कुंजी है। सिर्फ़ क्विज़ के पन्ने छापने के लिए \"सिर्फ़ वर्कशीट प्रिंट करें\" चुनें। किताबें आसान (1) से कठिन (20) के क्रम में हैं।"], ["कोई ग़लती दिखी?", "कृपया हमें बताएँ। हर सुधार अगले पाठक के काम आता है।"]]}
+    about: {"title": "सिक्का स्टोरीज़ के बारे में", "items": [["इसे किसने बनाया", "सिक्का स्टोरीज़ को मुंबई के विद्यार्थी श्रेयस शिंदे ने बनाया है। यह एक मुफ़्त प्रोजेक्ट है, ताकि युवा पाठक समझ सकें कि पैसा कैसे काम करता है।"], ["यह क्या है", "सिक्का स्टोरीज़ बच्चों के लिए पैसों की छोटी, चित्रों वाली कहानियों का मुफ़्त संग्रह है, अंग्रेज़ी, हिन्दी और मराठी में। हर कहानी में तुम हीरो हो। हर किताब के अंत में एक क्विज़ और एक वादा है, और उसे A5 काग़ज़ पर छापा जा सकता है।"], ["तुम्हारी गोपनीयता", "कोई साइन-अप नहीं। कोई विज्ञापन नहीं। कोई ट्रैकिंग नहीं। कोई कुकी नहीं। तुम्हारा लिखा नाम और चुना हुआ हीरो का रूप सिर्फ़ तुम्हारे अपने फ़ोन या कंप्यूटर में रहता है। वह हमें या किसी और को कभी नहीं भेजा जाता, और शेयर किए गए लिंक में तुम्हारा नाम नहीं होता। तुम्हारे स्टैम्प भी इसी तरह सिर्फ़ तुम्हारे डिवाइस में रहते हैं। यह साइट दूसरी कंपनियों से कुछ भी लोड नहीं करती, फ़ॉन्ट भी इसी साइट से आते हैं। किसी भी वेबसाइट की तरह, इसे चलाने वाली सेवा (GitHub Pages) सामान्य सर्वर रिकॉर्ड रख सकती है, और हम अपनी तरफ़ से कोई ट्रैकिंग नहीं जोड़ते। WhatsApp पर शेयर का बटन दबाने पर ही WhatsApp एक लिंक के साथ खुलता है। ब्राउज़र का डेटा मिटाने पर नाम और स्टैम्प भी मिट जाते हैं।"], ["अंकों के बारे में", "कहानियों में दिए गए अंक, जैसे दाम, ब्याज दरें और विनिमय दरें, हिसाब आसान रखने के लिए उदाहरण हैं। असली दरें और नियम बदलते रहते हैं। ये किताबें बुनियादी बातें सिखाती हैं, निवेश, कर या क़ानूनी सलाह नहीं देतीं। असली फ़ैसले के लिए किसी भरोसेमंद बड़े या अपने बैंक से पूछो।"], ["शिक्षकों और माता-पिता के लिए", "हर किताब 12 A5 पन्नों में छपती है, और आख़िरी पन्ने पर उत्तर-कुंजी है। सिर्फ़ क्विज़ के पन्ने छापने के लिए \"सिर्फ़ वर्कशीट प्रिंट करें\" चुनें। किताबें आसान (1) से कठिन (20) के क्रम में हैं।"], ["कोई ग़लती दिखी?", "कृपया हमें बताएँ। हर सुधार अगले पाठक के काम आता है।"]]}
   },
   mr: {
     heroBar: "तुझा हिरो",
@@ -188,7 +190,7 @@ window.UI = {
     s2: "तुझी स्वतःची गोष्ट वाच",
     s3: "प्रश्नमंजुषा सोडव आणि तुझं वचन लिही",
     aboutT: "सर्वांसाठी मोफत",
-    aboutP: "इयत्ता ६ ते १० साठी चित्रांसह छोट्या पैशांच्या गोष्टी, इंग्रजी, हिंदी आणि मराठीत. साइन-अप नाही, जाहिराती नाहीत, पैसे नाहीत. कोणत्याही फोनवर चालतात आणि प्रत्येक पुस्तक प्रिंटही करता येतं.",
+    aboutP: "मुलांसाठी चित्रांसह छोट्या पैशांच्या गोष्टी, इंग्रजी, हिंदी आणि मराठीत. साइन-अप नाही, जाहिराती नाहीत, पैसे नाहीत. कोणत्याही फोनवर चालतात आणि प्रत्येक पुस्तक प्रिंटही करता येतं.",
     all: "सर्व",
     ready: "{n} वाचायला तयार",
     moreSoon: "आणखी पुस्तके लवकरच येत आहेत",
@@ -225,7 +227,8 @@ window.UI = {
     library: "आमची पुस्तके",
     read: "वाचा",
     soon: "लवकरच येत आहे",
-    level: "इयत्ता ६ ते १०",
+    minShort: "सुमारे {n} मिनिटे",
+    timeLine: "सुमारे {t} मिनिटे: {s} वाचायला, {q} क्विझसाठी",
     print: "PDF जतन करा / प्रिंट करा",
     share: "WhatsApp वर पाठवा",
     back: "सर्व पुस्तके",
@@ -252,7 +255,7 @@ window.UI = {
     skip: "थेट मजकुराकडे जा",
     aboutLink: "परिचय आणि गोपनीयता",
     feedbackLink: "अभिप्राय पाठवा",
-    about: {"title": "सिक्का स्टोरीज बद्दल", "items": [["हे काय आहे", "सिक्का स्टोरीज हा इयत्ता 6 ते 10 साठी पैशांच्या छोट्या, चित्रांच्या गोष्टींचा मोफत संग्रह आहे, इंग्रजी, हिन्दी आणि मराठीत. प्रत्येक गोष्टीत तू हिरो आहेस. प्रत्येक पुस्तकाच्या शेवटी एक क्विझ आणि एक वचन आहे, आणि ते A5 कागदावर छापता येतं."], ["तुझी गोपनीयता", "साइन-अप नाही. जाहिराती नाहीत. ट्रॅकिंग नाही. कुकीज नाहीत. तू लिहिलेलं नाव आणि निवडलेला हिरोचा लुक फक्त तुझ्या स्वतःच्या फोनमध्ये किंवा कॉम्प्युटरमध्ये राहतो. तो आम्हाला किंवा इतर कोणालाही कधीच पाठवला जात नाही, आणि शेअर केलेल्या लिंकमध्ये तुझं नाव नसतं. तुझे स्टॅम्पही अशाच प्रकारे फक्त तुझ्या डिव्हाइसमध्ये राहतात. ही साइट इतर कंपन्यांकडून काहीही लोड करत नाही, फॉन्टसुद्धा याच साइटवरून येतात. कोणत्याही वेबसाइटप्रमाणे, ती चालवणारी सेवा (GitHub Pages) साधे सर्व्हर रेकॉर्ड ठेवू शकते, आणि आम्ही स्वतःचं कोणतंही ट्रॅकिंग जोडत नाही. WhatsApp वर शेअर बटण दाबलं तेव्हाच WhatsApp एका लिंकसह उघडतं. ब्राउझरचा डेटा पुसला की नाव आणि स्टॅम्पही पुसले जातात."], ["आकड्यांबद्दल", "गोष्टींमधले आकडे, जसे की किमती, व्याजदर आणि विनिमय दर, हिशोब सोपा ठेवण्यासाठी उदाहरणं आहेत. खरे दर आणि नियम बदलत असतात. ही पुस्तके मूलभूत गोष्टी शिकवतात, गुंतवणूक, कर किंवा कायदेशीर सल्ला देत नाहीत. खऱ्या निर्णयासाठी एखाद्या विश्वासू मोठ्या व्यक्तीला किंवा तुझ्या बँकेला विचार."], ["शिक्षक आणि पालकांसाठी", "प्रत्येक पुस्तक 12 A5 पानांत छापलं जातं, आणि शेवटच्या पानावर उत्तरसूची आहे. फक्त क्विझची पानं छापण्यासाठी \"फक्त वर्कशीट प्रिंट करा\" निवडा. पुस्तके सोप्या (1) पासून कठीण (20) पर्यंतच्या क्रमाने आहेत."], ["चूक सापडली?", "कृपया आम्हाला सांगा. प्रत्येक दुरुस्ती पुढच्या वाचकाच्या उपयोगी पडते."]]}
+    about: {"title": "सिक्का स्टोरीज बद्दल", "items": [["हे कोणी बनवलं", "सिक्का स्टोरीज ही मुंबईतील विद्यार्थी श्रेयस शिंदे याची निर्मिती आहे. तरुण वाचकांना पैसा कसा चालतो ते समजावं, म्हणून हा मोफत प्रकल्प आहे."], ["हे काय आहे", "सिक्का स्टोरीज हा मुलांसाठी पैशांच्या छोट्या, चित्रांच्या गोष्टींचा मोफत संग्रह आहे, इंग्रजी, हिन्दी आणि मराठीत. प्रत्येक गोष्टीत तू हिरो आहेस. प्रत्येक पुस्तकाच्या शेवटी एक क्विझ आणि एक वचन आहे, आणि ते A5 कागदावर छापता येतं."], ["तुझी गोपनीयता", "साइन-अप नाही. जाहिराती नाहीत. ट्रॅकिंग नाही. कुकीज नाहीत. तू लिहिलेलं नाव आणि निवडलेला हिरोचा लुक फक्त तुझ्या स्वतःच्या फोनमध्ये किंवा कॉम्प्युटरमध्ये राहतो. तो आम्हाला किंवा इतर कोणालाही कधीच पाठवला जात नाही, आणि शेअर केलेल्या लिंकमध्ये तुझं नाव नसतं. तुझे स्टॅम्पही अशाच प्रकारे फक्त तुझ्या डिव्हाइसमध्ये राहतात. ही साइट इतर कंपन्यांकडून काहीही लोड करत नाही, फॉन्टसुद्धा याच साइटवरून येतात. कोणत्याही वेबसाइटप्रमाणे, ती चालवणारी सेवा (GitHub Pages) साधे सर्व्हर रेकॉर्ड ठेवू शकते, आणि आम्ही स्वतःचं कोणतंही ट्रॅकिंग जोडत नाही. WhatsApp वर शेअर बटण दाबलं तेव्हाच WhatsApp एका लिंकसह उघडतं. ब्राउझरचा डेटा पुसला की नाव आणि स्टॅम्पही पुसले जातात."], ["आकड्यांबद्दल", "गोष्टींमधले आकडे, जसे की किमती, व्याजदर आणि विनिमय दर, हिशोब सोपा ठेवण्यासाठी उदाहरणं आहेत. खरे दर आणि नियम बदलत असतात. ही पुस्तके मूलभूत गोष्टी शिकवतात, गुंतवणूक, कर किंवा कायदेशीर सल्ला देत नाहीत. खऱ्या निर्णयासाठी एखाद्या विश्वासू मोठ्या व्यक्तीला किंवा तुझ्या बँकेला विचार."], ["शिक्षक आणि पालकांसाठी", "प्रत्येक पुस्तक 12 A5 पानांत छापलं जातं, आणि शेवटच्या पानावर उत्तरसूची आहे. फक्त क्विझची पानं छापण्यासाठी \"फक्त वर्कशीट प्रिंट करा\" निवडा. पुस्तके सोप्या (1) पासून कठीण (20) पर्यंतच्या क्रमाने आहेत."], ["चूक सापडली?", "कृपया आम्हाला सांगा. प्रत्येक दुरुस्ती पुढच्या वाचकाच्या उपयोगी पडते."]]}
   }
 };
 

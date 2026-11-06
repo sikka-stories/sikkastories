@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Shreyas Shinde">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sikka Stories</title>
 <meta name="description" content="Free money lessons as short illustrated story books in English, Hindi and Marathi. You are the hero of every story.">
@@ -9,8 +10,8 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sikka Stories">
 <meta property="og:title" content="Sikka Stories: money stories where you are the hero">
-<meta property="og:description" content="Free illustrated money stories for Grades 6 to 10 in English, Hindi and Marathi.">
-<meta property="og:image" content="https://sikkastories.github.io/og.png">
+<meta property="og:description" content="Free illustrated money stories for children in English, Hindi and Marathi.">
+<meta property="og:image" content="https://sikka-stories.github.io/sikkastories/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -24,6 +25,7 @@
     <div class="herotext">
       <h1 id="h1"></h1>
       <p id="tag"></p>
+      <p class="byline" id="byline"></p>
       <div id="herochip" class="chipwrap"></div>
       <p class="count" id="count"></p>
       <p class="order" id="order"></p>
@@ -62,6 +64,7 @@
   document.title = SITE.name[lang];
   $("h1").textContent = SITE.name[lang];
   $("tag").textContent = t.tagline;
+  $("byline").textContent = (SITE.credit && SITE.credit[lang]) || "";
   $("lib").textContent = t.library;
   $("how-t").textContent = t.howT;
   $("about-t").textContent = t.aboutT;
@@ -120,7 +123,7 @@
         '<div class="body"><span class="tag"><b class="num">' + (BOOKS.indexOf(b) + 1) + "</b> · " + App.esc(b.topic[lang]) + "</span>" +
         '<span class="name">' + App.esc(title) + "</span>" +
         (live ? (stamps.indexOf(b.slug) >= 0 ? '<span class="pill done">&#10003; ' + App.esc(t.stampDone) + "</span>" : '<span class="pill">' + App.esc(t.read) + "</span>") : '<span class="pill grey">' + App.esc(t.soon) + "</span>") +
-        '<span class="meta">' + App.esc(t.level) + " · " + App.esc(t.pages) + "</span></div>";
+        '<span class="meta">' + App.esc(t.minShort.replace("{n}", App.readTime(b, lang).total)) + " · " + App.esc(t.pages) + "</span></div>";
       return live
         ? '<a class="card" href="book.html?b=' + b.slug + "&lang=" + lang + '">' + inner + "</a>"
         : '<div class="card soon">' + inner + "</div>";

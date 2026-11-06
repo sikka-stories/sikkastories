@@ -1,6 +1,6 @@
 /* Offline support. Network first, so updates always show when online;
    the saved copy is used only when there is no internet. */
-var V = "ss-v1";
+var V = "ss-v3";
 var CORE = ["./", "index.html", "book.html", "style.css", "app.js", "art.js", "books.js", "icon.svg", "manifest.webmanifest", "about.html",
   "fonts/baloo-2-latin-400-normal.woff2", "fonts/baloo-2-latin-700-normal.woff2", "fonts/baloo-2-devanagari-400-normal.woff2", "fonts/baloo-2-devanagari-700-normal.woff2",
   "fonts/noto-sans-devanagari-latin-400-normal.woff2", "fonts/noto-sans-devanagari-latin-700-normal.woff2", "fonts/noto-sans-devanagari-devanagari-400-normal.woff2", "fonts/noto-sans-devanagari-devanagari-700-normal.woff2"];

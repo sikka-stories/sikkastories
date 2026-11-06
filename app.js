@@ -25,6 +25,20 @@
     });
   }
 
+
+  /* Reading time, worked out from the words in each book so it stays right when books change.
+     Story: words at a child's reading speed, plus 15 seconds to look at each of the 4 pictures.
+     Quiz: 20 seconds per question. Rounded up to whole minutes. */
+  var WPM = { en: 110, hi: 80, mr: 70 };
+  function readTime(book, lang) {
+    var words = book.story[lang].join(" ").split(/\s+/).length;
+    var r = book.recap[lang];
+    var qs = r.fill.items.length + r.sort.length + r.tf.length + r.think.length;
+    var s = Math.max(1, Math.ceil((words / WPM[lang] * 60 + book.story[lang].length * 15) / 60));
+    var q = Math.max(1, Math.ceil(qs * 20 / 60));
+    return { story: s, quiz: q, total: s + q };
+  }
+
   function chrome(lang) {
     var t = window.UI[lang];
     document.documentElement.lang = lang;
@@ -167,5 +181,5 @@
     window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); });
   }
 
-  window.App = { getStamps: getStamps, addStamp: addStamp, getLang: getLang, chrome: chrome, esc: esc, readHero: readHero, tpl: tpl, heroForm: heroForm, heroChip: heroChip, openHeroModal: openHeroModal };
+  window.App = { readTime: readTime, getStamps: getStamps, addStamp: addStamp, getLang: getLang, chrome: chrome, esc: esc, readHero: readHero, tpl: tpl, heroForm: heroForm, heroChip: heroChip, openHeroModal: openHeroModal };
 })();

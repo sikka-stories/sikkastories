@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Shreyas Shinde">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Book</title>
 <meta name="theme-color" content="#ffd166">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sikka Stories">
 <meta property="og:title" content="A money story where you are the hero">
-<meta property="og:description" content="Free illustrated money stories for Grades 6 to 10 in English, Hindi and Marathi.">
-<meta property="og:image" content="https://sikkastories.github.io/og.png">
+<meta property="og:description" content="Free illustrated money stories for children in English, Hindi and Marathi.">
+<meta property="og:image" content="https://sikka-stories.github.io/sikkastories/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -134,9 +135,10 @@
 
     /* Page 1: cover, personalised */
     var cover = document.createElement("section");
+    var rt = App.readTime(book, lang);
     cover.className = "pg cover";
     cover.style.background = book.color;
-    cover.innerHTML = '<p class="starring">' + esc(t.starring) + ": " + esc(hero.name) + "</p><h1>" + esc(title) + '</h1><p class="sub">' + esc(book.subtitle[lang]) + '</p><div class="coverart"></div><span class="pn">1</span>';
+    cover.innerHTML = '<p class="starring">' + esc(t.starring) + ": " + esc(hero.name) + "</p><h1>" + esc(title) + '</h1><p class="sub">' + esc(book.subtitle[lang]) + '</p><div class="coverart"></div><p class="time">' + esc(t.timeLine.replace("{t}", rt.total).replace("{s}", rt.story).replace("{q}", rt.quiz)) + '</p><p class="by">' + esc(SITE.credit[lang] || "") + '</p><span class="pn">1</span>';
     cover.querySelector(".coverart").style.background = SKY[0];
     cover.querySelector(".coverart").innerHTML = Art.scene(0, hero.g, book.slug);
     root.appendChild(cover);
@@ -253,6 +255,7 @@
       t.thinkT + ": " + r.think.map(function (i) { return tpl(i.opts[i.a]); }).join(", ")
     ];
     p12.appendChild(mk("p", "key", "<b>" + esc(t.answers) + "</b><br>" + key.map(esc).join("<br>")));
+    p12.appendChild(mk("p", "by", esc(SITE.name[lang]) + " · " + esc(SITE.credit[lang] || "") + (/^https?:$/.test(location.protocol) ? "<br>" + esc(location.host + location.pathname.replace(/[^\/]*$/, "").replace(/\/$/, "")) : "")));
     p12.appendChild(mk("span", "pn", "12"));
     root.appendChild(p12);
     var stampMsg = mk("p", "stampmsg no-print");
