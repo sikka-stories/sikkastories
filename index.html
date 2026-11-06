@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sikka Stories</title>
+<meta name="description" content="Free money lessons as short illustrated story books in English, Hindi and Marathi. You are the hero of every story.">
+<meta name="theme-color" content="#ffd166">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sikka Stories">
+<meta property="og:title" content="Sikka Stories: money stories where you are the hero">
+<meta property="og:description" content="Free illustrated money stories for Grades 6 to 10 in English, Hindi and Marathi.">
+<meta property="og:image" content="https://sikkastories.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top" id="top"></header>
+<main class="wrap">
+  <section class="hero2">
+    <div class="herotext">
+      <h1 id="h1"></h1>
+      <p id="tag"></p>
+      <div id="herochip" class="chipwrap"></div>
+      <p class="count" id="count"></p>
+      <p class="order" id="order"></p>
+      <p class="startrow"><a class="btn primary big" id="start" href="#"></a></p>
+    </div>
+    <div class="heroart" id="heroart" aria-hidden="true"></div>
+  </section>
+
+  <section class="how" aria-labelledby="how-t">
+    <h2 class="section" id="how-t"></h2>
+    <ol class="steps" id="steps"></ol>
+  </section>
+
+  <section class="stampsbar" id="stampsbar" hidden aria-live="polite"></section>
+
+  <h2 class="section" id="lib"></h2>
+  <div class="searchrow"><input type="search" id="q" autocomplete="off"></div>
+  <div class="chips" id="chips"></div>
+  <div class="grid" id="grid"></div>
+
+  <section class="about">
+    <h2 id="about-t"></h2>
+    <p id="about-p"></p>
+  </section>
+</main>
+<footer id="foot"></footer>
+<script src="books.js"></script>
+<script src="art.js"></script>
+<script src="app.js"></script>
+<script>
+(function () {
+  var lang = App.getLang();
+  var t = UI[lang];
+  App.chrome(lang);
+  var $ = function (id) { return document.getElementById(id); };
+  document.title = SITE.name[lang];
+  $("h1").textContent = SITE.name[lang];
+  $("tag").textContent = t.tagline;
+  $("lib").textContent = t.library;
+  $("how-t").textContent = t.howT;
+  $("about-t").textContent = t.aboutT;
+  $("about-p").textContent = t.aboutP;
+
+  var ready = BOOKS.filter(function (b) { return b.status === "live"; }).length;
+  $("count").textContent = t.ready.replace("{n}", ready);
+  $("order").textContent = t.orderNote;
+  $("q").placeholder = t.search;
+  $("q").setAttribute("aria-label", t.search);
+
+  $("steps").innerHTML = [t.s1, t.s2, t.s3].map(function (s, i) {
+    return "<li><b>" + (i + 1) + "</b><span>" + App.esc(s) + "</span></li>";
+  }).join("");
+
+  var hero = App.readHero(lang);
+
+  /* Hero picture: the first book's cover, with the reader's own look */
+  function drawHeroArt() {
+    var h = $("heroart");
+    h.style.background = Art.sky("money-swap")[0];
+    h.innerHTML = Art.scene(0, hero ? hero.g : "g", "money-swap");
+  }
+
+  /* Topic filter */
+  var topics = [];
+  BOOKS.forEach(function (b) { var k = b.topic[lang]; if (topics.indexOf(k) < 0) topics.push(k); });
+  var current = "", query = "";
+  function drawChips() {
+    $("chips").innerHTML = [""].concat(topics).map(function (k) {
+      return '<button type="button" data-k="' + App.esc(k) + '" aria-pressed="' + (k === current) + '">' + App.esc(k || t.all) + "</button>";
+    }).join("");
+    document.querySelectorAll("#chips button").forEach(function (b) {
+      b.addEventListener("click", function () { current = b.getAttribute("data-k"); drawChips(); drawGrid(); });
+    });
+  }
+
+  /* Cards show the reader's own name in the title and their own look on the cover */
+  function drawGrid() {
+    var stamps = App.getStamps();
+    var shown = BOOKS.filter(function (b) {
+      if (current && b.topic[lang] !== current) return false;
+      if (!query) return true;
+      var hay = [b.topic[lang], b.cardTitle && b.cardTitle[lang], b.subtitle && b.subtitle[lang], b.title[lang].replace("{name}", "")].join(" ").toLowerCase();
+      return hay.indexOf(query) >= 0;
+    });
+    if (!shown.length) { $("grid").innerHTML = '<p class="none">' + App.esc(t.noResults) + "</p>"; return; }
+    $("grid").innerHTML = shown.map(function (b) {
+      var live = b.status === "live";
+      var plain = (b.cardTitle && b.cardTitle[lang]) || b.title[lang].replace("{name}", "").trim();
+      var title = live && hero ? App.tpl(b.title[lang], hero) : plain;
+      var thumb = live
+        ? '<div class="thumb art" style="background:' + Art.sky(b.slug)[0] + '" aria-hidden="true">' + Art.scene(0, hero ? hero.g : "g", b.slug) + "</div>"
+        : '<div class="thumb" style="background:' + b.color + '" aria-hidden="true">✏️</div>';
+      var inner = thumb +
+        '<div class="body"><span class="tag"><b class="num">' + (BOOKS.indexOf(b) + 1) + "</b> · " + App.esc(b.topic[lang]) + "</span>" +
+        '<span class="name">' + App.esc(title) + "</span>" +
+        (live ? (stamps.indexOf(b.slug) >= 0 ? '<span class="pill done">&#10003; ' + App.esc(t.stampDone) + "</span>" : '<span class="pill">' + App.esc(t.read) + "</span>") : '<span class="pill grey">' + App.esc(t.soon) + "</span>") +
+        '<span class="meta">' + App.esc(t.level) + " · " + App.esc(t.pages) + "</span></div>";
+      return live
+        ? '<a class="card" href="book.html?b=' + b.slug + "&lang=" + lang + '">' + inner + "</a>"
+        : '<div class="card soon">' + inner + "</div>";
+    }).join("");
+  }
+
+  /* Start here / Continue, and the stamp strip */
+  function drawProgress() {
+    var stamps = App.getStamps().filter(function (s) { return BOOKS.some(function (b) { return b.slug === s; }); });
+    var firstLeft = null;
+    BOOKS.forEach(function (b, i) { if (!firstLeft && b.status === "live" && stamps.indexOf(b.slug) < 0) firstLeft = { b: b, n: i + 1 }; });
+    var st = $("start");
+    if (!stamps.length) { st.textContent = t.startBook; st.href = "book.html?b=" + BOOKS[0].slug + "&lang=" + lang; }
+    else if (firstLeft) { st.textContent = t.continueBook.replace("{n}", firstLeft.n); st.href = "book.html?b=" + firstLeft.b.slug + "&lang=" + lang; }
+    else { st.textContent = t.allDone.replace("{n}", BOOKS.length); st.href = "#lib"; }
+    var bar = $("stampsbar");
+    if (!stamps.length) { bar.hidden = true; return; }
+    bar.hidden = false;
+    var dots = BOOKS.map(function (b) { return '<i class="' + (stamps.indexOf(b.slug) >= 0 ? "on" : "") + '"></i>'; }).join("");
+    bar.innerHTML = "<b>" + App.esc(t.stampsT) + ": " + stamps.length + " / " + BOOKS.length + '</b><span class="dots" aria-hidden="true">' + dots + "</span><small>" + App.esc(t.stampNote) + "</small>";
+  }
+  $("q").addEventListener("input", function () { query = this.value.trim().toLowerCase(); drawGrid(); });
+
+  App.heroChip($("herochip"), lang, function (h) { hero = h; drawHeroArt(); drawGrid(); });
+  drawHeroArt(); drawChips(); drawGrid(); drawProgress();
+})();
+</script>
+</body>
+</html>

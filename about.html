@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | Sikka Stories</title>
+<meta name="description" content="About Sikka Stories: free illustrated money stories, and how we protect your privacy.">
+<meta name="theme-color" content="#ffd166">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top" id="top"></header>
+<main class="wrap">
+  <article class="aboutpage" id="about"></article>
+  <p><a class="btn" id="back" href="index.html"></a></p>
+</main>
+<footer id="foot"></footer>
+<script src="books.js"></script>
+<script src="art.js"></script>
+<script src="app.js"></script>
+<script>
+(function () {
+  var lang = App.getLang(), t = UI[lang];
+  App.chrome(lang);
+  var a = t.about;
+  document.title = a.title + " | " + SITE.name[lang];
+  document.getElementById("about").innerHTML = "<h1>" + App.esc(a.title) + "</h1>" + a.items.map(function (it) {
+    return "<h2>" + App.esc(it[0]) + "</h2><p>" + App.esc(it[1]) + "</p>";
+  }).join("");
+  var fb = SITE.feedback || "";
+  if (/^https?:\/\//.test(fb)) {
+    var last = document.querySelector("#about p:last-child");
+    last.innerHTML += ' <a href="' + App.esc(fb) + '" target="_blank" rel="noopener">' + App.esc(t.feedbackLink) + "</a>";
+  }
+  document.getElementById("back").textContent = "← " + t.back;
+  document.getElementById("back").href = "index.html?lang=" + lang;
+})();
+</script>
+</body>
+</html>
