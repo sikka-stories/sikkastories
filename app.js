@@ -39,6 +39,29 @@
     return { story: s, quiz: q, total: s + q };
   }
 
+
+  /* Main menu: Books, Play and win, and (only when online features are on) the account chip. */
+  function navHtml(lang) {
+    var u2 = (window.UI2 && window.UI2[lang]) || null;
+    if (!u2) return "";
+    var page = (location.pathname.split("/").pop() || "index.html").replace(/\.html$/, "");
+    function link(href, label, id, extra) {
+      return '<a href="' + href + ".html?lang=" + lang + '"' + (page === id ? ' aria-current="page"' : "") + (extra || "") + ">" + label + "</a>";
+    }
+    var h = link("index", esc(u2.navBooks), "index") + link("play", "🎮 " + esc(u2.navPlay), "play");
+    if (window.Acct && window.Acct.enabled) h += '<a class="me" id="mechip" href="account.html?lang=' + lang + '"' + (page === "account" ? ' aria-current="page"' : "") + ">" + esc(u2.signIn) + "</a>";
+    return '<nav class="mainnav" aria-label="Main"><div class="wrap">' + h + "</div></nav>";
+  }
+  function wireChip(lang) {
+    var u2 = window.UI2 && window.UI2[lang];
+    if (!u2 || !window.Acct || !window.Acct.enabled) return;
+    window.Acct.onChange(function (u) {
+      var c = document.getElementById("mechip"); if (!c) return;
+      c.innerHTML = u ? esc(window.Acct.avatar(u.avatar)) + " " + esc(u.username) + ' <span class="tok">🪙 ' + esc(u.tokens) + "</span>" : esc(u2.signIn);
+    });
+    if (window.Acct.hasStored()) window.Acct.init();
+  }
+
   function chrome(lang) {
     var t = window.UI[lang];
     document.documentElement.lang = lang;
@@ -47,7 +70,8 @@
     }).join("");
     document.getElementById("top").innerHTML =
       '<div class="wrap"><a class="brand" href="index.html?lang=' + lang + '">' + esc(window.SITE.name[lang]) +
-      '</a><div class="langs"><span>' + esc(t.lang) + "</span>" + btns + "</div></div>";
+      '</a><div class="langs"><span>' + esc(t.lang) + "</span>" + btns + "</div></div>" + navHtml(lang);
+    wireChip(lang);
     document.querySelectorAll(".langs button").forEach(function (b) {
       b.addEventListener("click", function () { setLang(b.getAttribute("data-l")); });
     });
