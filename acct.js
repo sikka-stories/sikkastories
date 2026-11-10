@@ -28,7 +28,7 @@
     return new Promise(function (res, rej) {
       if (window.supabase && window.supabase.createClient) return res();
       var s = document.createElement("script");
-      s.src = "vendor/supabase.js"; s.onload = function () { res(); }; s.onerror = function () { rej({ code: "net" }); };
+      s.src = "supabase-lib.js"; s.onload = function () { res(); }; s.onerror = function () { rej({ code: "net", detail: "supabase-lib.js is missing on the website" }); };
       document.head.appendChild(s);
     });
   }
@@ -55,7 +55,7 @@
   function needSession() {
     return sb.auth.getSession().then(function (r) {
       if (r && r.data && r.data.session) return;
-      return sb.auth.signInAnonymously().then(function (x) { if (x.error) throw { code: "no_session" }; });
+      return sb.auth.signInAnonymously().then(function (x) { if (x.error) throw { code: "no_session", detail: x.error.code || x.error.message || "auth" }; }, function (e) { throw { code: "no_session", detail: String((e && e.message) || e) }; });
     });
   }
   function authCall(fn, args) {

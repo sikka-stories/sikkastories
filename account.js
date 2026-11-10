@@ -39,7 +39,13 @@
     mode === "new" ? newForm() : loginForm();
   }
 
-  function setErr(msg) { document.getElementById("err").textContent = msg || ""; }
+  /* The grown-up detail line (for example a server code) helps the site owner find a setup problem fast. */
+  function setErr(msg, detail) {
+    var el = document.getElementById("err");
+    el.textContent = msg || "";
+    if (msg && detail) { var s = document.createElement("small"); s.className = "tech"; s.textContent = " (" + String(detail).slice(0, 120) + ")"; el.appendChild(s); }
+    if (msg && el.scrollIntoView) el.scrollIntoView({ block: "center", behavior: "smooth" });
+  }
 
   function newForm() {
     var f = document.getElementById("form");
@@ -82,7 +88,7 @@
       Acct.signUp(nickString(), pw, pickedAvatar, by).then(function () { profileView(); }, function (e) {
         b.disabled = false; b.textContent = u.create;
         if (e && e.code === "name_taken") { nick = Acct.randomName(); newForm(); }
-        setErr(errText(e));
+        setErr(errText(e), e && e.detail);
       });
     });
   }
@@ -97,7 +103,7 @@
       var n = document.getElementById("ln").value.trim(), p = document.getElementById("lp").value;
       setErr(""); if (!n || !p) return setErr(u.errBadLogin);
       var b = this; b.disabled = true; b.textContent = u.working;
-      Acct.logIn(n, p).then(function () { profileView(); }, function (e) { b.disabled = false; b.textContent = u.login; setErr(errText(e)); });
+      Acct.logIn(n, p).then(function () { profileView(); }, function (e) { b.disabled = false; b.textContent = u.login; setErr(errText(e), e && e.detail); });
     });
   }
 
