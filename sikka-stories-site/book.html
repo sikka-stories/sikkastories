@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'; manifest-src 'self'">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Shreyas Shinde">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book</title>
+<meta name="theme-color" content="#ffd166">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sikka Stories">
+<meta property="og:title" content="A money story where you are the hero">
+<meta property="og:description" content="Free illustrated money stories for children in English, Hindi and Marathi.">
+<meta property="og:image" content="https://sikka-stories.github.io/sikkastories/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top" id="top"></header>
+<main class="wrap">
+  <div class="bookbar">
+    <a class="btn" id="back" href="index.html"></a>
+    <div class="btns">
+      <span id="herochip"></span>
+      <button type="button" class="btn" id="print" hidden></button>
+      <button type="button" class="btn" id="printws" hidden></button>
+      <a class="btn primary" id="wa" target="_blank" rel="noopener"></a>
+    </div>
+  </div>
+
+  <section class="pg setup" id="setup" hidden>
+    <h1 id="s-title"></h1>
+    <p id="s-sub"></p>
+    <div id="s-form"></div>
+  </section>
+
+  <div id="book"></div>
+</main>
+<footer id="foot"></footer>
+<script src="books.js"></script>
+<script src="strings.js"></script>
+<script src="qr.js"></script>
+<script src="art.js"></script>
+<script src="config.js"></script>
+<script src="acct.js"></script>
+<script src="app.js"></script>
+<script src="book.js"></script>
+</body>
+</html>

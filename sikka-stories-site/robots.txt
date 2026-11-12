@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /certificate.html
+
+Sitemap: https://sikka-stories.github.io/sikkastories/sitemap.xml
