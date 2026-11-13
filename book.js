@@ -308,7 +308,7 @@
         h += '<a class="btn primary big" href="index.html?lang=' + lang + '">' + esc(t.more) + "</a>";
       }
       h += '<div class="sharebox"><h3>' + esc(u.shareTitle) + '</h3><div class="sharerow"><button type="button" class="btn" data-sh="copy">' + esc(u.copyLink) + '</button><a class="btn" target="_blank" rel="noopener" href="https://t.me/share/url?url=' + encodeURIComponent(pubUrl + "?lang=" + lang) + "&text=" + encodeURIComponent((book.cardTitle && book.cardTitle[lang]) || "") + '">' + esc(u.telegram) + '</a><a class="btn" target="_blank" rel="noopener" href="https://wa.me/?text=' + encodeURIComponent(((book.cardTitle && book.cardTitle[lang]) || "") + " " + pubUrl + "?lang=" + lang) + '">WhatsApp</a></div>' +
-        '<img class="qr" src="qr/' + book.slug + '.svg" width="132" height="132" alt="' + esc(u.qrAlt) + '"><p class="qrnote">' + esc(u.qrNote) + '</p><p class="copied" role="status"></p></div>';
+        '<img class="qr" src="' + QRSRC(book.slug) + '" width="132" height="132" alt="' + esc(u.qrAlt) + '"><p class="qrnote">' + esc(u.qrNote) + '</p><p class="copied" role="status"></p></div>';
       end.innerHTML = h;
       var cb = end.querySelector('[data-sh="copy"]');
       cb.addEventListener("click", function () {

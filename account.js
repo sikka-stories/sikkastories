@@ -55,8 +55,8 @@
     }).join("");
     f.innerHTML =
       '<h2>' + esc(u.pickName) + "</h2>" +
-      '<div class="nickrow"><label>' + esc(u.adjective) + '<select id="adj">' + Acct.ADJ.map(function (w) { return '<option' + (w === nick.adj ? " selected" : "") + ">" + w + "</option>"; }).join("") + "</select></label>" +
-      '<label>' + esc(u.animal) + '<select id="noun">' + Acct.NOUN.map(function (w) { return '<option' + (w === nick.noun ? " selected" : "") + ">" + w + "</option>"; }).join("") + "</select></label>" +
+      '<div class="nickrow"><label>' + esc(u.adjective) + '<select id="adj">' + Acct.ADJ.map(function (w, i) { return '<option value="' + w + '"' + (w === nick.adj ? " selected" : "") + ">" + w + (u.adjN ? " · " + esc(u.adjN[i]) : "") + "</option>"; }).join("") + "</select></label>" +
+      '<label>' + esc(u.animal) + '<select id="noun">' + Acct.NOUN.map(function (w, i) { return '<option value="' + w + '"' + (w === nick.noun ? " selected" : "") + ">" + w + (u.nounN ? " · " + esc(u.nounN[i]) : "") + "</option>"; }).join("") + "</select></label>" +
       '<button type="button" class="btn" id="rnd">🎲 ' + esc(u.randomName) + "</button></div>" +
       '<p class="nickbig" id="nickbig"></p><p class="note">' + esc(u.nickNote) + "</p>" +
       "<h2>" + esc(u.pickAvatar) + '</h2><div class="avs">' + avs + "</div>" +

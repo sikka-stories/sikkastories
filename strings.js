@@ -161,7 +161,8 @@ window.UI2 = {
 /* More words: finish screen, listening, sharing, learning path, certificate, previews. */
 Object.assign(window.UI2.en, {
   bigIdea: "Big idea", level: "Level {n} of 5",
-  g1: "Start here: the basics", g2: "Everyday money", g3: "Growing and protecting money",
+  g1: "Start here: the basics", g2: "Everyday money", g3: "Growing and protecting money", g4: "Level up: smarter money choices",
+  month: "30 short stories, one a day. Learn the basics of money in 1 month.",
   jStory: "Story", jQuiz: "Quiz", jPromise: "Promise",
   listen: "Listen", stopListen: "Stop", noVoice: "This device has no voice for this language.",
   finTitle: "You finished!", finWell: "Well done, {name}!",
@@ -175,7 +176,8 @@ Object.assign(window.UI2.en, {
 });
 Object.assign(window.UI2.hi, {
   bigIdea: "मुख्य बात", level: "स्तर {n} / 5",
-  g1: "यहाँ से शुरू करो: बुनियादी बातें", g2: "रोज़मर्रा के पैसे", g3: "पैसे बढ़ाना और बचाना",
+  g1: "यहाँ से शुरू करो: बुनियादी बातें", g2: "रोज़मर्रा के पैसे", g3: "पैसे बढ़ाना और बचाना", g4: "आगे बढ़ो: समझदार पैसों के फ़ैसले",
+  month: "30 छोटी कहानियाँ, रोज़ एक। एक महीने में पैसों की बुनियादी बातें सीखो।",
   jStory: "कहानी", jQuiz: "क्विज़", jPromise: "वादा",
   listen: "सुनो", stopListen: "रोको", noVoice: "इस डिवाइस में इस भाषा की आवाज़ नहीं है।",
   finTitle: "तुमने पूरी कर ली!", finWell: "शाबाश, {name}!",
@@ -189,7 +191,8 @@ Object.assign(window.UI2.hi, {
 });
 Object.assign(window.UI2.mr, {
   bigIdea: "मुख्य कल्पना", level: "पातळी {n} / 5",
-  g1: "इथून सुरू कर: मूलभूत गोष्टी", g2: "रोजचे पैसे", g3: "पैसे वाढवणे आणि जपणे",
+  g1: "इथून सुरू कर: मूलभूत गोष्टी", g2: "रोजचे पैसे", g3: "पैसे वाढवणे आणि जपणे", g4: "पुढे जा: शहाणे पैशांचे निर्णय",
+  month: "30 छोट्या गोष्टी, रोज एक. एका महिन्यात पैशांच्या मूलभूत गोष्टी शिका.",
   jStory: "गोष्ट", jQuiz: "प्रश्नमंजुषा", jPromise: "वचन",
   listen: "ऐक", stopListen: "थांबव", noVoice: "या उपकरणात या भाषेचा आवाज नाही.",
   finTitle: "तू पूर्ण केलंस!", finWell: "शाब्बास, {name}!",
@@ -200,4 +203,16 @@ Object.assign(window.UI2.mr, {
   certThis: "हे प्रमाणित करतं की", certText: "ने सिक्का स्टोरीज वाचून आणि प्रश्नमंजुषेच्या प्रत्येक प्रश्नाचं बरोबर उत्तर देऊन {n} स्टॅम्प मिळवले आहेत.", certDate: "तारीख", certNone: "प्रमाणपत्र प्रिंट करण्यासाठी किमान 5 स्टॅम्प मिळव.", certBack: "पुस्तकांकडे परत",
   peekT: "आतली झलक", peek1: "गोष्टीचं पान", peek2: "प्रश्नमंजुषा", peek3: "तुझं वचन",
   flyerHead: "मुलांसाठी मोफत पैशांच्या गोष्टी", flyerSub: "इंग्रजी, हिंदी किंवा मराठीत वाच. प्रत्येक गोष्टीचा हीरो तू आहेस. साइन-अपची गरज नाही.", flyerScan: "वाचायला सुरुवात करण्यासाठी स्कॅन कर", flyerPrint: "हा फ्लायर प्रिंट कर", flyerLink: "प्रिंट करण्याचा फ्लायर"
+});
+
+Object.assign(window.UI2.en, { navMain: "Main menu", peekA1: "Story page from a Sikka Stories book", peekA2: "Quiz page with questions to answer", peekA3: "Promise page that a child can sign" });
+Object.assign(window.UI2.hi, {
+  navMain: "मुख्य मेनू", peekA1: "सिक्का स्टोरीज़ की किताब का कहानी वाला पन्ना", peekA2: "सवालों वाला क्विज़ का पन्ना", peekA3: "वादे का पन्ना, जिस पर बच्चा हस्ताक्षर कर सकता है",
+  adjN: ["बहादुर", "समझदार", "खुश", "फुर्तीला", "शांत", "निडर", "बुद्धिमान", "भाग्यशाली", "दयालु", "चतुर", "खिला-खिला", "ताकतवर", "कोमल", "चमकीला", "तेज़", "स्वाभिमानी"],
+  nounN: ["बाघ", "पांडा", "गरुड़", "डॉल्फ़िन", "बाज़", "शेर", "ऊदबिलाव", "कोआला", "गैंडा", "मोर", "तोता", "खरगोश", "कछुआ", "बंदर", "ज़ेबरा", "हाथी"]
+});
+Object.assign(window.UI2.mr, {
+  navMain: "मुख्य मेनू", peekA1: "सिक्का स्टोरीजच्या पुस्तकातलं गोष्टीचं पान", peekA2: "प्रश्न असलेलं प्रश्नमंजुषेचं पान", peekA3: "वचनाचं पान, ज्यावर मूल सही करू शकतं",
+  adjN: ["शूर", "हुशार", "आनंदी", "चपळ", "शांत", "धाडसी", "ज्ञानी", "भाग्यवान", "दयाळू", "चतुर", "हसरा", "बलवान", "सौम्य", "तेजस्वी", "वेगवान", "स्वाभिमानी"],
+  nounN: ["वाघ", "पांडा", "गरुड", "डॉल्फिन", "ससाणा", "सिंह", "पाणमांजर", "कोआला", "गेंडा", "मोर", "पोपट", "ससा", "कासव", "माकड", "झेब्रा", "हत्ती"]
 });

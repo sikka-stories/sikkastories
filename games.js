@@ -69,8 +69,9 @@
   }
 
   /* ---------- Coins and notes picture ---------- */
+  var COINW = { en: ["coin", "note"], hi: ["का सिक्का", "का नोट"], mr: ["चं नाणं", "ची नोट"] };
   var COINS = [1, 2, 5, 10], NOTES = [10, 20, 50], NOTECOL = { 10: "#c9a66b", 20: "#f2a65a", 50: "#7fb8e6" };
-  function moneySvg(items) {
+  function moneySvg(items, lang) {
     var x = 8, y = 10, parts = [], rowh = 0, W = 320;
     items.forEach(function (it) {
       var w = it.note ? 70 : 46, h = it.note ? 42 : 46;
@@ -81,7 +82,7 @@
       x += w + 8;
     });
     var H = y + rowh + 10;
-    return '<svg viewBox="0 0 ' + W + " " + H + '" class="moneysvg" role="img" aria-label="' + esc(items.map(function (i) { return "₹" + i.v + (i.note ? " note" : " coin"); }).join(", ")) + '">' + parts.join("") + "</svg>";
+    return '<svg viewBox="0 0 ' + W + " " + H + '" class="moneysvg" role="img" aria-label="' + esc(items.map(function (i) { return "₹" + i.v + " " + (COINW[lang || "en"][i.note ? 1 : 0]); }).join(", ")) + '">' + parts.join("") + "</svg>";
   }
   function distract(correct, r, deltas) {
     var out = [correct], tries = 0;
@@ -127,7 +128,7 @@
           for (var i = 0; i < n; i++) { var note = r() < 0.3, v = note ? pick(NOTES, r) : pick(COINS, r); items.push({ v: v, note: note }); total += v; }
         } while (total > 100);
         var vals = distract(total, r, [-1, 1, -2, 2, -5, 5, -10, 10]);
-        return { html: esc(u.q_coin), svg: moneySvg(items), opts: vals.map(function (v) { return { label: "₹" + v, ok: v === total }; }) };
+        return { html: esc(u.q_coin), svg: moneySvg(items, ctx.lang), opts: vals.map(function (v) { return { label: "₹" + v, ok: v === total }; }) };
       };
     }
     if (id === "best-buy") {

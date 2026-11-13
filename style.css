@@ -506,3 +506,5 @@ h3.grp:first-child { margin-top: 0; }
   .cthis, .cdate { font-size: 13pt; }
   .certificate .cin { padding: 14mm 10mm; }
 }
+
+.hero2 .monthline { display: inline-block; font-size: 18px; font-weight: 700; color: var(--ink); background: #ffe66d; border: 2px solid var(--ink); border-radius: 14px; padding: 4px 14px; margin: 0 0 12px; }

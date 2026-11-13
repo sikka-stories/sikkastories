@@ -7,7 +7,7 @@
   document.getElementById("flyer").innerHTML =
     '<div class="fbrand">' + L.map(function (l) { return esc(SITE.name[l]); }).join(" &middot; ") + "</div>" +
     L.map(function (l) { return '<div class="fblock" lang="' + l + '"><h1>' + esc(UI2[l].flyerHead) + "</h1><p>" + esc(UI2[l].flyerSub) + "</p></div>"; }).join("") +
-    '<img class="fqr" src="qr/home.svg" width="220" height="220" alt="QR code for ' + esc(url) + '">' +
+    '<img class="fqr" src="' + QRSRC("home") + '" width="220" height="220" alt="QR code for ' + esc(url) + '">' +
     '<p class="fscan">' + L.map(function (l) { return esc(UI2[l].flyerScan); }).join(" &middot; ") + "</p>" +
     '<p class="furl">' + esc(url.replace("https://", "")) + "</p>" +
     '<p class="fby">' + esc(SITE.credit.en) + "</p>";

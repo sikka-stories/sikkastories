@@ -1,7 +1,7 @@
 /* Offline support. Network first, so updates always show when online;
    the saved copy is used only when there is no internet. */
-var V = "ss-v6";
-var CORE = ["./", "index.html", "book.html", "about.html", "play.html", "account.html", "style.css", "app.js", "art.js", "books.js", "strings.js", "config.js", "acct.js", "index.js", "book.js", "about.js", "play.js", "games.js", "account.js", "certificate.html", "certificate.js", "flyer.html", "flyer.js", "icon.svg", "manifest.webmanifest",
+var V = "ss-v8";
+var CORE = ["./", "index.html", "book.html", "about.html", "play.html", "account.html", "style.css", "app.js", "art.js", "books.js", "strings.js", "config.js", "acct.js", "index.js", "book.js", "about.js", "play.js", "games.js", "account.js", "certificate.html", "certificate.js", "flyer.html", "flyer.js", "qr.js", "supabase-lib.js", "icon.svg", "manifest.webmanifest",
   "fonts/baloo-2-latin-400-normal.woff2", "fonts/baloo-2-latin-700-normal.woff2", "fonts/baloo-2-devanagari-400-normal.woff2", "fonts/baloo-2-devanagari-700-normal.woff2",
   "fonts/noto-sans-devanagari-latin-400-normal.woff2", "fonts/noto-sans-devanagari-latin-700-normal.woff2", "fonts/noto-sans-devanagari-devanagari-400-normal.woff2", "fonts/noto-sans-devanagari-devanagari-700-normal.woff2"];
 

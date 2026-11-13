@@ -79,7 +79,7 @@ window.UI = {
     lang: "Language",
     search: "Search books",
     noResults: "No book matches. Try another word.",
-    orderNote: "Books go from easiest (1) to hardest (20).",
+    orderNote: "Books go from easiest (1) to hardest (30).",
     startBook: "Start with book 1",
     continueBook: "Continue with book {n}",
     allDone: "You finished all {n} books!",
@@ -92,7 +92,7 @@ window.UI = {
     aboutLink: "About and privacy",
     feedbackLink: "Send feedback",
     aboutAcct: ["Optional accounts, scores and prizes", "You never need an account. Every book and every game works as a guest, and a guest's name, stamps and best scores stay on the device. If you choose to make an account, you get a nickname made from fixed words (never your real name), a picture and a password. With an account we save which books you open and read to the end, how your quiz answers change, your game scores and your tokens, so that your progress is kept and you can join the weekly competitions. We never ask for or save a real name, email, phone number, photo or location. Passwords are stored scrambled and cannot be read, even by us. Other players see only your nickname, picture and scores on the leaderboard. The site owner can see each nickname's reading and quiz activity, to help children learn, and does not share it or sell it, and there are no ads. This data is kept with our database service (Supabase), so using the Play page or an account contacts that service. A child's account should be made with a parent's or teacher's agreement, and you can delete your account and everything saved with it at any time on the My account page."],
-    about: {"title": "About Sikka Stories", "items": [["Who made this", "Sikka Stories was created by Shreyas Shinde, a student in Mumbai, as a free project so that young readers can understand how money works."], ["What it is", "Sikka Stories is a free library of short illustrated money stories for children, in English, Hindi and Marathi. In every story you are the hero. Each book ends with a quiz and a promise, and can be printed on A5 paper."], ["Your privacy", "As a guest there is no sign-up, no ads, no tracking and no cookies. The name you type and the hero look you choose are saved only on your own phone or computer. They are never sent to us or to anyone else, and a shared link never contains your name. Your stamps are saved the same way. This site loads nothing from other companies, and even the fonts come from the site itself. Like any website, the service that hosts it (GitHub Pages) may keep ordinary server records, and we add no tracking of our own. Only if you tap Share on WhatsApp does WhatsApp open with a link. Clearing your browser data removes your name and stamps."], ["About the numbers", "The numbers in the stories, such as prices, interest rates and exchange rates, are examples to keep the maths easy. Real rates and rules change. These books teach basic ideas and are not investment, tax or legal advice. For a real decision, ask a trusted grown-up or your bank."], ["For teachers and parents", "Every book prints as 12 A5 pages, with an answer key on the last page. Choose Print worksheet only to print just the quiz pages. The books go from easiest (1) to hardest (20)."], ["Found a mistake?", "Please tell us. Every correction helps the next reader."]]}
+    about: {"title": "About Sikka Stories", "items": [["Who made this", "Sikka Stories was created by Shreyas Shinde, a student in Mumbai, as a free project so that young readers can understand how money works."], ["What it is", "Sikka Stories is a free library of short illustrated money stories for children, in English, Hindi and Marathi. In every story you are the hero. There are 30 stories, so you can learn the basics of money in one month by reading one a day. Each book ends with a quiz and a promise, and can be printed on A5 paper."], ["Your privacy", "As a guest there is no sign-up, no ads, no tracking and no cookies. The name you type and the hero look you choose are saved only on your own phone or computer. They are never sent to us or to anyone else, and a shared link never contains your name. Your stamps are saved the same way. This site loads nothing from other companies, and even the fonts come from the site itself. Like any website, the service that hosts it (GitHub Pages) may keep ordinary server records, and we add no tracking of our own. Only if you tap Share on WhatsApp does WhatsApp open with a link. Clearing your browser data removes your name and stamps."], ["About the numbers", "The numbers in the stories, such as prices, interest rates and exchange rates, are examples to keep the maths easy. Real rates and rules change. These books teach basic ideas and are not investment, tax or legal advice. For a real decision, ask a trusted grown-up or your bank."], ["For teachers and parents", "Every book prints as 12 A5 pages, with an answer key on the last page. Choose Print worksheet only to print just the quiz pages. The books go from easiest (1) to hardest (30)."], ["Found a mistake?", "Please tell us. Every correction helps the next reader."]]}
   },
   hi: {
     heroBar: "तुम्हारा हीरो",
@@ -162,7 +162,7 @@ window.UI = {
     lang: "भाषा",
     search: "किताबें खोजें",
     noResults: "कोई किताब नहीं मिली। दूसरा शब्द आज़माओ।",
-    orderNote: "किताबें आसान (1) से कठिन (20) के क्रम में हैं।",
+    orderNote: "किताबें आसान (1) से कठिन (30) के क्रम में हैं।",
     startBook: "किताब 1 से शुरू करो",
     continueBook: "किताब {n} से आगे बढ़ो",
     allDone: "तुमने सभी {n} किताबें पूरी कर लीं!",
@@ -175,7 +175,7 @@ window.UI = {
     aboutLink: "परिचय और गोपनीयता",
     feedbackLink: "सुझाव भेजें",
     aboutAcct: ["वैकल्पिक खाते, स्कोर और इनाम", "खाता कभी ज़रूरी नहीं है। हर किताब और हर खेल मेहमान बनकर भी चलता है, और मेहमान का नाम, स्टैम्प और सबसे अच्छे स्कोर उसी के डिवाइस में रहते हैं। अगर तुम खाता बनाना चुनो, तो तुम्हें तय शब्दों से बना उपनाम (कभी असली नाम नहीं), एक तस्वीर और एक पासवर्ड मिलता है। खाते के साथ हम यह सहेजते हैं कि तुमने कौन-सी किताबें खोलीं और अंत तक पढ़ीं, क्विज़ के जवाब कैसे बदले, खेल के स्कोर और टोकन, ताकि तुम्हारी प्रगति बनी रहे और तुम हर हफ़्ते की प्रतियोगिताओं में भाग ले सको। हम असली नाम, ईमेल, फ़ोन नंबर, फ़ोटो या लोकेशन न माँगते हैं, न सहेजते हैं। पासवर्ड कूटबद्ध रूप में रखे जाते हैं और हम भी उन्हें पढ़ नहीं सकते। लीडरबोर्ड पर दूसरे खिलाड़ी सिर्फ़ तुम्हारा उपनाम, तस्वीर और स्कोर देखते हैं। साइट के मालिक बच्चों की सीखने में मदद के लिए हर उपनाम की पढ़ाई और क्विज़ की गतिविधि देख सकते हैं; इसे न किसी को दिया जाता है, न बेचा जाता है, और कोई विज्ञापन नहीं हैं। यह डेटा हमारी डेटाबेस सेवा (Supabase) में रखा जाता है, इसलिए खेल पेज या खाते का इस्तेमाल करने पर उस सेवा से संपर्क होता है। बच्चे का खाता माता-पिता या शिक्षक की सहमति से बनना चाहिए, और तुम कभी भी 'मेरा खाता' पेज पर अपना खाता और उसके साथ सहेजा सब कुछ हटा सकते हो।"],
-    about: {"title": "सिक्का स्टोरीज़ के बारे में", "items": [["इसे किसने बनाया", "सिक्का स्टोरीज़ को मुंबई के विद्यार्थी श्रेयस शिंदे ने बनाया है। यह एक मुफ़्त प्रोजेक्ट है, ताकि युवा पाठक समझ सकें कि पैसा कैसे काम करता है।"], ["यह क्या है", "सिक्का स्टोरीज़ बच्चों के लिए पैसों की छोटी, चित्रों वाली कहानियों का मुफ़्त संग्रह है, अंग्रेज़ी, हिन्दी और मराठी में। हर कहानी में तुम हीरो हो। हर किताब के अंत में एक क्विज़ और एक वादा है, और उसे A5 काग़ज़ पर छापा जा सकता है।"], ["तुम्हारी गोपनीयता", "मेहमान के तौर पर पढ़ने में कोई साइन-अप नहीं, कोई विज्ञापन नहीं, कोई ट्रैकिंग नहीं और कोई कुकी नहीं। तुम्हारा लिखा नाम और चुना हुआ हीरो का रूप सिर्फ़ तुम्हारे अपने फ़ोन या कंप्यूटर में रहता है। वह हमें या किसी और को कभी नहीं भेजा जाता, और शेयर किए गए लिंक में तुम्हारा नाम नहीं होता। तुम्हारे स्टैम्प भी इसी तरह सिर्फ़ तुम्हारे डिवाइस में रहते हैं। यह साइट दूसरी कंपनियों से कुछ भी लोड नहीं करती, फ़ॉन्ट भी इसी साइट से आते हैं। किसी भी वेबसाइट की तरह, इसे चलाने वाली सेवा (GitHub Pages) सामान्य सर्वर रिकॉर्ड रख सकती है, और हम अपनी तरफ़ से कोई ट्रैकिंग नहीं जोड़ते। WhatsApp पर शेयर का बटन दबाने पर ही WhatsApp एक लिंक के साथ खुलता है। ब्राउज़र का डेटा मिटाने पर नाम और स्टैम्प भी मिट जाते हैं।"], ["अंकों के बारे में", "कहानियों में दिए गए अंक, जैसे दाम, ब्याज दरें और विनिमय दरें, हिसाब आसान रखने के लिए उदाहरण हैं। असली दरें और नियम बदलते रहते हैं। ये किताबें बुनियादी बातें सिखाती हैं, निवेश, कर या क़ानूनी सलाह नहीं देतीं। असली फ़ैसले के लिए किसी भरोसेमंद बड़े या अपने बैंक से पूछो।"], ["शिक्षकों और माता-पिता के लिए", "हर किताब 12 A5 पन्नों में छपती है, और आख़िरी पन्ने पर उत्तर-कुंजी है। सिर्फ़ क्विज़ के पन्ने छापने के लिए \"सिर्फ़ वर्कशीट प्रिंट करें\" चुनें। किताबें आसान (1) से कठिन (20) के क्रम में हैं।"], ["कोई ग़लती दिखी?", "कृपया हमें बताएँ। हर सुधार अगले पाठक के काम आता है।"]]}
+    about: {"title": "सिक्का स्टोरीज़ के बारे में", "items": [["इसे किसने बनाया", "सिक्का स्टोरीज़ को मुंबई के विद्यार्थी श्रेयस शिंदे ने बनाया है। यह एक मुफ़्त प्रोजेक्ट है, ताकि युवा पाठक समझ सकें कि पैसा कैसे काम करता है।"], ["यह क्या है", "सिक्का स्टोरीज़ बच्चों के लिए पैसों की छोटी, चित्रों वाली कहानियों का मुफ़्त संग्रह है, अंग्रेज़ी, हिन्दी और मराठी में। हर कहानी में तुम हीरो हो। कुल 30 कहानियाँ हैं, इसलिए रोज़ एक पढ़कर तुम एक महीने में पैसों की बुनियादी बातें सीख सकते हो। हर किताब के अंत में एक क्विज़ और एक वादा है, और उसे A5 काग़ज़ पर छापा जा सकता है।"], ["तुम्हारी गोपनीयता", "मेहमान के तौर पर पढ़ने में कोई साइन-अप नहीं, कोई विज्ञापन नहीं, कोई ट्रैकिंग नहीं और कोई कुकी नहीं। तुम्हारा लिखा नाम और चुना हुआ हीरो का रूप सिर्फ़ तुम्हारे अपने फ़ोन या कंप्यूटर में रहता है। वह हमें या किसी और को कभी नहीं भेजा जाता, और शेयर किए गए लिंक में तुम्हारा नाम नहीं होता। तुम्हारे स्टैम्प भी इसी तरह सिर्फ़ तुम्हारे डिवाइस में रहते हैं। यह साइट दूसरी कंपनियों से कुछ भी लोड नहीं करती, फ़ॉन्ट भी इसी साइट से आते हैं। किसी भी वेबसाइट की तरह, इसे चलाने वाली सेवा (GitHub Pages) सामान्य सर्वर रिकॉर्ड रख सकती है, और हम अपनी तरफ़ से कोई ट्रैकिंग नहीं जोड़ते। WhatsApp पर शेयर का बटन दबाने पर ही WhatsApp एक लिंक के साथ खुलता है। ब्राउज़र का डेटा मिटाने पर नाम और स्टैम्प भी मिट जाते हैं।"], ["अंकों के बारे में", "कहानियों में दिए गए अंक, जैसे दाम, ब्याज दरें और विनिमय दरें, हिसाब आसान रखने के लिए उदाहरण हैं। असली दरें और नियम बदलते रहते हैं। ये किताबें बुनियादी बातें सिखाती हैं, निवेश, कर या क़ानूनी सलाह नहीं देतीं। असली फ़ैसले के लिए किसी भरोसेमंद बड़े या अपने बैंक से पूछो।"], ["शिक्षकों और माता-पिता के लिए", "हर किताब 12 A5 पन्नों में छपती है, और आख़िरी पन्ने पर उत्तर-कुंजी है। सिर्फ़ क्विज़ के पन्ने छापने के लिए \"सिर्फ़ वर्कशीट प्रिंट करें\" चुनें। किताबें आसान (1) से कठिन (30) के क्रम में हैं।"], ["कोई ग़लती दिखी?", "कृपया हमें बताएँ। हर सुधार अगले पाठक के काम आता है।"]]}
   },
   mr: {
     heroBar: "तुझा हिरो",
@@ -245,7 +245,7 @@ window.UI = {
     lang: "भाषा",
     search: "पुस्तके शोधा",
     noResults: "एकही पुस्तक सापडलं नाही. दुसरा शब्द वापरून बघ.",
-    orderNote: "पुस्तके सोप्या (1) पासून कठीण (20) पर्यंतच्या क्रमाने आहेत.",
+    orderNote: "पुस्तके सोप्या (1) पासून कठीण (30) पर्यंतच्या क्रमाने आहेत.",
     startBook: "पुस्तक 1 पासून सुरू कर",
     continueBook: "पुस्तक {n} पासून पुढे चल",
     allDone: "तू सगळी {n} पुस्तकं पूर्ण केलीस!",
@@ -258,7 +258,7 @@ window.UI = {
     aboutLink: "परिचय आणि गोपनीयता",
     feedbackLink: "अभिप्राय पाठवा",
     aboutAcct: ["ऐच्छिक खाती, गुण आणि बक्षिसं", "खात्याची गरज कधीच नसते. प्रत्येक पुस्तक आणि प्रत्येक खेळ पाहुणा म्हणूनही चालतो, आणि पाहुण्याचं नाव, स्टॅम्प आणि सर्वोत्तम गुण त्याच्याच डिव्हाइसवर राहतात. तू खातं बनवायचं ठरवलंस, तर तुला ठरावीक शब्दांपासून बनलेलं टोपणनाव (खरं नाव कधीच नाही), एक चित्र आणि एक पासवर्ड मिळतो. खात्यासोबत आम्ही जतन करतो: तू कोणती पुस्तकं उघडलीस आणि शेवटपर्यंत वाचलीस, क्विझची उत्तरं कशी बदलली, खेळांचे गुण आणि टोकन, म्हणजे तुझी प्रगती राहील आणि तू दर आठवड्याच्या स्पर्धांत भाग घेऊ शकशील. आम्ही खरं नाव, ईमेल, फोन नंबर, फोटो किंवा ठिकाण मागत नाही आणि जतनही करत नाही. पासवर्ड कूटबद्ध स्वरूपात ठेवले जातात आणि आम्हालाही ते वाचता येत नाहीत. लीडरबोर्डवर इतर खेळाडूंना फक्त तुझं टोपणनाव, चित्र आणि गुण दिसतात. मुलांना शिकण्यात मदत व्हावी म्हणून साइटचे मालक प्रत्येक टोपणनावाचं वाचन आणि क्विझमधली हालचाल पाहू शकतात; ती कोणाला दिली जात नाही, विकली जात नाही, आणि जाहिराती नाहीत. हा डेटा आमच्या डेटाबेस सेवेत (Supabase) ठेवला जातो, म्हणून खेळ पान किंवा खातं वापरताना त्या सेवेशी संपर्क होतो. मुलाचं खातं पालक किंवा शिक्षकांच्या संमतीने बनवावं, आणि तू कधीही 'माझं खातं' पानावर तुझं खातं आणि त्यासोबत जतन केलेलं सगळं हटवू शकतोस."],
-    about: {"title": "सिक्का स्टोरीज बद्दल", "items": [["हे कोणी बनवलं", "सिक्का स्टोरीज ही मुंबईतील विद्यार्थी श्रेयस शिंदे याची निर्मिती आहे. तरुण वाचकांना पैसा कसा चालतो ते समजावं, म्हणून हा मोफत प्रकल्प आहे."], ["हे काय आहे", "सिक्का स्टोरीज हा मुलांसाठी पैशांच्या छोट्या, चित्रांच्या गोष्टींचा मोफत संग्रह आहे, इंग्रजी, हिन्दी आणि मराठीत. प्रत्येक गोष्टीत तू हिरो आहेस. प्रत्येक पुस्तकाच्या शेवटी एक क्विझ आणि एक वचन आहे, आणि ते A5 कागदावर छापता येतं."], ["तुझी गोपनीयता", "पाहुणा म्हणून वाचताना साइन-अप नाही, जाहिराती नाहीत, ट्रॅकिंग नाही आणि कुकीज नाहीत. तू लिहिलेलं नाव आणि निवडलेला हिरोचा लुक फक्त तुझ्या स्वतःच्या फोनमध्ये किंवा कॉम्प्युटरमध्ये राहतो. तो आम्हाला किंवा इतर कोणालाही कधीच पाठवला जात नाही, आणि शेअर केलेल्या लिंकमध्ये तुझं नाव नसतं. तुझे स्टॅम्पही अशाच प्रकारे फक्त तुझ्या डिव्हाइसमध्ये राहतात. ही साइट इतर कंपन्यांकडून काहीही लोड करत नाही, फॉन्टसुद्धा याच साइटवरून येतात. कोणत्याही वेबसाइटप्रमाणे, ती चालवणारी सेवा (GitHub Pages) साधे सर्व्हर रेकॉर्ड ठेवू शकते, आणि आम्ही स्वतःचं कोणतंही ट्रॅकिंग जोडत नाही. WhatsApp वर शेअर बटण दाबलं तेव्हाच WhatsApp एका लिंकसह उघडतं. ब्राउझरचा डेटा पुसला की नाव आणि स्टॅम्पही पुसले जातात."], ["आकड्यांबद्दल", "गोष्टींमधले आकडे, जसे की किमती, व्याजदर आणि विनिमय दर, हिशोब सोपा ठेवण्यासाठी उदाहरणं आहेत. खरे दर आणि नियम बदलत असतात. ही पुस्तके मूलभूत गोष्टी शिकवतात, गुंतवणूक, कर किंवा कायदेशीर सल्ला देत नाहीत. खऱ्या निर्णयासाठी एखाद्या विश्वासू मोठ्या व्यक्तीला किंवा तुझ्या बँकेला विचार."], ["शिक्षक आणि पालकांसाठी", "प्रत्येक पुस्तक 12 A5 पानांत छापलं जातं, आणि शेवटच्या पानावर उत्तरसूची आहे. फक्त क्विझची पानं छापण्यासाठी \"फक्त वर्कशीट प्रिंट करा\" निवडा. पुस्तके सोप्या (1) पासून कठीण (20) पर्यंतच्या क्रमाने आहेत."], ["चूक सापडली?", "कृपया आम्हाला सांगा. प्रत्येक दुरुस्ती पुढच्या वाचकाच्या उपयोगी पडते."]]}
+    about: {"title": "सिक्का स्टोरीज बद्दल", "items": [["हे कोणी बनवलं", "सिक्का स्टोरीज ही मुंबईतील विद्यार्थी श्रेयस शिंदे याची निर्मिती आहे. तरुण वाचकांना पैसा कसा चालतो ते समजावं, म्हणून हा मोफत प्रकल्प आहे."], ["हे काय आहे", "सिक्का स्टोरीज हा मुलांसाठी पैशांच्या छोट्या, चित्रांच्या गोष्टींचा मोफत संग्रह आहे, इंग्रजी, हिन्दी आणि मराठीत. प्रत्येक गोष्टीत तू हिरो आहेस. एकूण 30 गोष्टी आहेत, त्यामुळे रोज एक वाचून तू एका महिन्यात पैशांच्या मूलभूत गोष्टी शिकू शकतोस. प्रत्येक पुस्तकाच्या शेवटी एक क्विझ आणि एक वचन आहे, आणि ते A5 कागदावर छापता येतं."], ["तुझी गोपनीयता", "पाहुणा म्हणून वाचताना साइन-अप नाही, जाहिराती नाहीत, ट्रॅकिंग नाही आणि कुकीज नाहीत. तू लिहिलेलं नाव आणि निवडलेला हिरोचा लुक फक्त तुझ्या स्वतःच्या फोनमध्ये किंवा कॉम्प्युटरमध्ये राहतो. तो आम्हाला किंवा इतर कोणालाही कधीच पाठवला जात नाही, आणि शेअर केलेल्या लिंकमध्ये तुझं नाव नसतं. तुझे स्टॅम्पही अशाच प्रकारे फक्त तुझ्या डिव्हाइसमध्ये राहतात. ही साइट इतर कंपन्यांकडून काहीही लोड करत नाही, फॉन्टसुद्धा याच साइटवरून येतात. कोणत्याही वेबसाइटप्रमाणे, ती चालवणारी सेवा (GitHub Pages) साधे सर्व्हर रेकॉर्ड ठेवू शकते, आणि आम्ही स्वतःचं कोणतंही ट्रॅकिंग जोडत नाही. WhatsApp वर शेअर बटण दाबलं तेव्हाच WhatsApp एका लिंकसह उघडतं. ब्राउझरचा डेटा पुसला की नाव आणि स्टॅम्पही पुसले जातात."], ["आकड्यांबद्दल", "गोष्टींमधले आकडे, जसे की किमती, व्याजदर आणि विनिमय दर, हिशोब सोपा ठेवण्यासाठी उदाहरणं आहेत. खरे दर आणि नियम बदलत असतात. ही पुस्तके मूलभूत गोष्टी शिकवतात, गुंतवणूक, कर किंवा कायदेशीर सल्ला देत नाहीत. खऱ्या निर्णयासाठी एखाद्या विश्वासू मोठ्या व्यक्तीला किंवा तुझ्या बँकेला विचार."], ["शिक्षक आणि पालकांसाठी", "प्रत्येक पुस्तक 12 A5 पानांत छापलं जातं, आणि शेवटच्या पानावर उत्तरसूची आहे. फक्त क्विझची पानं छापण्यासाठी \"फक्त वर्कशीट प्रिंट करा\" निवडा. पुस्तके सोप्या (1) पासून कठीण (30) पर्यंतच्या क्रमाने आहेत."], ["चूक सापडली?", "कृपया आम्हाला सांगा. प्रत्येक दुरुस्ती पुढच्या वाचकाच्या उपयोगी पडते."]]}
   }
 };
 
@@ -8539,6 +8539,4150 @@ window.BOOKS = [
           }
         ],
         "promise": "मी, {name}, वचन देत[[ो|े]] की विनिमय दर आणि फी विचारेन, पैसे फक्त बँक किंवा अधिकृत मनी चेंजरकडेच बदलेन, आणि लक्षात ठेवेन की दर रोज बदलतात."
+      }
+    }
+  },
+  {
+    "slug": "mela-choice",
+    "status": "live",
+    "color": "#ffe066",
+    "title": {
+      "en": "{name} and the Mela Choice",
+      "hi": "{name} और मेले की पसंद",
+      "mr": "{name} आणि जत्रेतली निवड"
+    },
+    "cardTitle": {
+      "en": "The Mela Choice",
+      "hi": "मेले की पसंद",
+      "mr": "जत्रेतली निवड"
+    },
+    "subtitle": {
+      "en": "Every choice has a cost",
+      "hi": "हर चुनाव की एक क़ीमत होती है",
+      "mr": "प्रत्येक निवडीची एक किंमत असते"
+    },
+    "topic": {
+      "en": "Opportunity cost",
+      "hi": "अवसर लागत",
+      "mr": "संधीची किंमत"
+    },
+    "stops": {
+      "en": [
+        "The Mela",
+        "Two Wishes",
+        "The Hidden Cost",
+        "Choose Wisely"
+      ],
+      "hi": [
+        "मेला",
+        "दो इच्छाएँ",
+        "छिपी क़ीमत",
+        "समझदारी से चुनो"
+      ],
+      "mr": [
+        "जत्रा",
+        "दोन इच्छा",
+        "लपलेली किंमत",
+        "शहाणपणाने निवड"
+      ]
+    },
+    "scenes": [
+      "At the mela you hold one 100 rupee note. A ferris wheel is on one side and a sweet stall on the other, and a question mark floats above you.",
+      "Two thought bubbles show you on the ferris wheel and you eating jalebi, but the note can pay for only one of them.",
+      "On the board a ride costs 100 rupees and a plate of jalebi costs 100 rupees, and the one you give up is crossed out.",
+      "You ride high on the ferris wheel with a big smile while Gullu waits below with the coin jar for another day."
+    ],
+    "story": {
+      "en": [
+        "The village mela had come to town! There were swings, a giant ferris wheel and a stall frying hot jalebis. Aaji gave you one crisp 100 rupee note. \"This is all you get today, {name},\" she said. You ran straight to the fair. A ferris wheel ride cost 100 rupees. A plate of jalebis also cost 100 rupees. You stood in the middle, holding the note tight. You wanted both!",
+        "Gullu hopped onto your shoulder. \"Let us think, {name}. When you pick one thing, you give up the other. What you give up is called the opportunity cost.\" You imagined each choice. If you ride, you cannot eat jalebi. If you eat jalebi, you cannot ride. A rupee can be spent only once. \"So the real cost of the ride is not just 100 rupees,\" said Gullu. \"It is also the jalebi you did not get.\"",
+        "That evening, you and Gullu drew two columns on the board. In one, the ride: a view of the whole village, but over in ten minutes. In the other, the jalebi: sweet and yummy, also over in ten minutes. You asked yourself which one you would still smile about tomorrow. It was not about right or wrong. It was about what you valued more. Gullu added, \"Opportunity cost is not only about money. Your time works the same way. An hour of cricket is an hour you cannot read.\"",
+        "You chose the ride. From the top of the ferris wheel the whole village looked like a toy. You did not feel sad about the jalebi. You knew what you had given up, and you had chosen with open eyes. \"Next time,\" you told Gullu, \"I will save a little first, so that I can afford both.\" Gullu nodded. \"A wise chooser asks one question before spending: what am I giving up?\""
+      ],
+      "hi": [
+        "गाँव में मेला लगा था! झूले थे, एक बड़ा-सा चरखी वाला झूला था और गरम जलेबियाँ तलने वाली एक दुकान थी। दादी ने तुम्हें सौ रुपये का एक कड़कड़ाता नोट दिया। \"आज बस यही मिलेगा, {name},\" उन्होंने कहा। तुम सीधे मेले की ओर दौड़ पड़[[े|ीं]]। झूले की एक सवारी सौ रुपये की थी। जलेबी की एक प्लेट भी सौ रुपये की थी। तुम बीच में खड़[[े|ी]] थ[[े|ीं]] और नोट को कसकर पकड़े हुए थ[[े|ीं]]। तुम्हें दोनों चाहिए थे!",
+        "गुल्लू उछलकर तुम्हारे कंधे पर आ बैठा। \"आओ सोचें, {name}। जब तुम एक चीज़ चुनते हो, तो दूसरी छोड़नी पड़ती है। जो छोड़ना पड़ता है, उसे अवसर लागत कहते हैं।\" तुमने हर चुनाव की कल्पना की। झूला चुना तो जलेबी नहीं मिलेगी। जलेबी चुनी तो झूला नहीं मिलेगा। एक रुपया सिर्फ़ एक बार ख़र्च हो सकता है। \"तो झूले की असली क़ीमत सिर्फ़ सौ रुपये नहीं है,\" गुल्लू बोला। \"वह जलेबी भी है जो तुम्हें नहीं मिली।\"",
+        "उस शाम तुमने और गुल्लू ने बोर्ड पर दो कॉलम बनाए। एक में झूला: पूरे गाँव का नज़ारा, पर दस मिनट में ख़त्म। दूसरे में जलेबी: मीठी और स्वादिष्ट, वह भी दस मिनट में ख़त्म। तुमने ख़ुद से पूछा कि कल तक किसकी याद से मुस्कान आएगी। बात सही या ग़लत की नहीं थी। बात यह थी कि तुम्हारे लिए ज़्यादा क़ीमती क्या है। गुल्लू ने जोड़ा, \"अवसर लागत सिर्फ़ पैसे की नहीं होती। समय भी ऐसे ही काम करता है। क्रिकेट का एक घंटा वह घंटा है जिसमें तुम पढ़ नहीं सकते।\"",
+        "तुमने झूला चुना। चरखी के सबसे ऊपर से पूरा गाँव खिलौने जैसा दिखा। जलेबी के लिए तुम्हें उदासी नहीं हुई। तुम जानत[[े|ी]] थ[[े|ीं]] कि तुमने क्या छोड़ा है, और तुमने आँखें खोलकर चुना था। \"अगली बार,\" तुमने गुल्लू से कहा, \"मैं पहले थोड़े पैसे बचाऊँगा ताकि दोनों ले सकूँ।\" गुल्लू ने सिर हिलाया। \"समझदार चुनने वाला ख़र्च करने से पहले एक सवाल पूछता है: मैं क्या छोड़ रहा हूँ?\""
+      ],
+      "mr": [
+        "गावात जत्रा भरली होती! झोके होते, एक मोठा पाळणा होता आणि गरम जिलब्या तळणारं एक दुकान होतं. आजीने तुला शंभर रुपयांची एक कोरी करकरीत नोट दिली. \"आज एवढंच मिळेल, {name},\" ती म्हणाली. तू सरळ जत्रेकडे धाव[[लास|लीस]]. पाळण्याच्या एका फेरीला शंभर रुपये लागत होते. जिलबीच्या एका प्लेटलाही शंभर रुपये लागत होते. तू मधोमध उभ[[ा|ी]] राहिल[[ास|ीस]] आणि नोट घट्ट धरली. तुला दोन्ही हवं होतं!",
+        "गल्लू उडी मारून तुझ्या खांद्यावर बसला. \"चल विचार करू, {name}. तू एक गोष्ट निवडलीस की दुसरी सोडावी लागते. जे सोडावं लागतं त्याला संधीची किंमत म्हणतात.\" तू प्रत्येक निवडीची कल्पना केलीस. पाळण्यात बसलास तर जिलबी मिळणार नाही. जिलबी खाल्लीस तर पाळण्यात बसता येणार नाही. एक रुपया फक्त एकदाच खर्च होतो. \"म्हणजे पाळण्याची खरी किंमत फक्त शंभर रुपये नाही,\" गल्लू म्हणाला. \"ती न मिळालेली जिलबीही आहे.\"",
+        "त्या संध्याकाळी तू आणि गल्लूने फळ्यावर दोन रकाने काढले. एकात पाळणा: संपूर्ण गावाचं दृश्य, पण दहा मिनिटांत संपणारं. दुसऱ्यात जिलबी: गोड आणि चविष्ट, तीही दहा मिनिटांत संपणारी. उद्यापर्यंत कशाची आठवण आली की तुला हसू येईल, असं तू स्वतःला विचारलंस. हे बरोबर किंवा चूक असं नव्हतं. तुझ्यासाठी जास्त मोलाचं काय आहे, हा प्रश्न होता. गल्लूने भर घातली, \"संधीची किंमत फक्त पैशाची नसते. वेळही असाच काम करतो. क्रिकेटचा एक तास म्हणजे तो तास ज्यात तू वाचू शकत नाहीस.\"",
+        "तू पाळणा निवडलास. पाळण्याच्या सर्वात वरून सगळं गाव खेळण्यासारखं दिसलं. जिलबीसाठी तुला वाईट वाटलं नाही. तू काय सोडलं आहेस हे तुला माहीत होतं आणि तू डोळे उघडे ठेवून निवड केली होतीस. \"पुढच्या वेळी,\" तू गल्लूला म्हणालास, \"मी आधी थोडे पैसे साठवेन म्हणजे दोन्ही घेता येईल.\" गल्लूने मान डोलावली. \"शहाणा निवडणारा खर्च करण्याआधी एकच प्रश्न विचारतो: मी काय सोडतोय?\""
+      ]
+    },
+    "recap": {
+      "en": {
+        "remember": [
+          "Every choice has a cost: when you pick one thing, you give up another.",
+          "The thing you give up is called the opportunity cost.",
+          "Money and time can each be used only once.",
+          "Before spending, ask: what am I giving up?"
+        ],
+        "fill": {
+          "bank": [
+            "give up",
+            "opportunity cost",
+            "once",
+            "time",
+            "value",
+            "choice"
+          ],
+          "items": [
+            [
+              "When you pick one thing, you @@ another thing.",
+              "give up"
+            ],
+            [
+              "What you give up when you choose is the @@.",
+              "opportunity cost"
+            ],
+            [
+              "A rupee can be spent only @@.",
+              "once"
+            ],
+            [
+              "An hour of play cannot also be used for homework, so @@ has a cost too.",
+              "time"
+            ],
+            [
+              "A wise choice is the one you @@ more.",
+              "value"
+            ]
+          ]
+        },
+        "sortTitle": "Does it use up money or time?",
+        "sortOpts": [
+          {
+            "k": "money",
+            "t": "Uses money"
+          },
+          {
+            "k": "time",
+            "t": "Uses time"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "coin",
+            "label": "Buying a 50 rupee toy",
+            "a": "money"
+          },
+          {
+            "icon": "clock",
+            "label": "Watching TV for two hours",
+            "a": "time"
+          },
+          {
+            "icon": "jalebi",
+            "label": "Paying for a plate of jalebi",
+            "a": "money"
+          },
+          {
+            "icon": "notebook",
+            "label": "Studying for one hour",
+            "a": "time"
+          },
+          {
+            "icon": "note",
+            "label": "Paying for a ferris wheel ride",
+            "a": "money"
+          }
+        ],
+        "tf": [
+          {
+            "q": "If you spend your 100 rupees on a ride, you can still spend the same 100 rupees on jalebi.",
+            "a": false
+          },
+          {
+            "q": "Opportunity cost is what you give up when you make a choice.",
+            "a": true
+          },
+          {
+            "q": "Time can have an opportunity cost too.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "You have 50 rupees. A comic costs 50 and a football costs 50. You buy the comic. What is your opportunity cost?",
+            "opts": [
+              "The comic",
+              "The football you did not buy",
+              "There is none"
+            ],
+            "a": 1
+          },
+          {
+            "q": "Which question helps you choose wisely?",
+            "opts": [
+              "What is everyone else buying?",
+              "What am I giving up?",
+              "What is the cheapest thing?"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "I, {name}, promise to ask \"what am I giving up?\" before I spend my money or my time."
+      },
+      "hi": {
+        "remember": [
+          "हर चुनाव की एक क़ीमत होती है: एक चीज़ चुनने पर दूसरी छोड़नी पड़ती है।",
+          "जो चीज़ छोड़नी पड़ती है, उसे अवसर लागत कहते हैं।",
+          "पैसा और समय, दोनों सिर्फ़ एक बार ख़र्च हो सकते हैं।",
+          "ख़र्च करने से पहले पूछो: मैं क्या छोड़ रहा हूँ?"
+        ],
+        "fill": {
+          "bank": [
+            "छोड़नी",
+            "अवसर लागत",
+            "एक बार",
+            "समय",
+            "क़ीमती",
+            "चुनाव"
+          ],
+          "items": [
+            [
+              "एक चीज़ चुनने पर दूसरी चीज़ @@ पड़ती है।",
+              "छोड़नी"
+            ],
+            [
+              "चुनाव करते समय जो छोड़ना पड़ता है, वह @@ है।",
+              "अवसर लागत"
+            ],
+            [
+              "एक रुपया सिर्फ़ @@ ख़र्च हो सकता है।",
+              "एक बार"
+            ],
+            [
+              "खेल का घंटा होमवर्क में नहीं लग सकता, इसलिए @@ की भी क़ीमत होती है।",
+              "समय"
+            ],
+            [
+              "समझदारी का चुनाव वह है जो तुम्हारे लिए ज़्यादा @@ हो।",
+              "क़ीमती"
+            ]
+          ]
+        },
+        "sortTitle": "इसमें पैसा लगता है या समय?",
+        "sortOpts": [
+          {
+            "k": "money",
+            "t": "पैसा लगता है"
+          },
+          {
+            "k": "time",
+            "t": "समय लगता है"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "coin",
+            "label": "पचास रुपये का खिलौना ख़रीदना",
+            "a": "money"
+          },
+          {
+            "icon": "clock",
+            "label": "दो घंटे टीवी देखना",
+            "a": "time"
+          },
+          {
+            "icon": "jalebi",
+            "label": "जलेबी की प्लेट के पैसे देना",
+            "a": "money"
+          },
+          {
+            "icon": "notebook",
+            "label": "एक घंटा पढ़ाई करना",
+            "a": "time"
+          },
+          {
+            "icon": "note",
+            "label": "झूले की सवारी के पैसे देना",
+            "a": "money"
+          }
+        ],
+        "tf": [
+          {
+            "q": "सौ रुपये झूले में ख़र्च करने के बाद वही सौ रुपये जलेबी में भी ख़र्च हो सकते हैं।",
+            "a": false
+          },
+          {
+            "q": "चुनाव करते समय जो छोड़ना पड़ता है, वही अवसर लागत है।",
+            "a": true
+          },
+          {
+            "q": "समय की भी अवसर लागत होती है।",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "तुम्हारे पास पचास रुपये हैं। एक कॉमिक पचास की है और एक फ़ुटबॉल भी पचास की। तुमने कॉमिक ख़रीदी। तुम्हारी अवसर लागत क्या है?",
+            "opts": [
+              "कॉमिक",
+              "वह फ़ुटबॉल जो तुमने नहीं ख़रीदी",
+              "कोई नहीं"
+            ],
+            "a": 1
+          },
+          {
+            "q": "कौन-सा सवाल समझदारी से चुनने में मदद करता है?",
+            "opts": [
+              "बाक़ी सब क्या ख़रीद रहे हैं?",
+              "मैं क्या छोड़ रहा हूँ?",
+              "सबसे सस्ता क्या है?"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मैं, {name}, वादा करत[[ा|ी]] हूँ कि पैसा या समय ख़र्च करने से पहले पूछूँग[[ा|ी]]: \"मैं क्या छोड़ रह[[ा|ी]] हूँ?\""
+      },
+      "mr": {
+        "remember": [
+          "प्रत्येक निवडीची एक किंमत असते: एक गोष्ट निवडली की दुसरी सोडावी लागते.",
+          "जे सोडावं लागतं त्याला संधीची किंमत म्हणतात.",
+          "पैसा आणि वेळ, दोन्ही फक्त एकदाच खर्च होतात.",
+          "खर्च करण्याआधी विचार: मी काय सोडतोय?"
+        ],
+        "fill": {
+          "bank": [
+            "सोडावी",
+            "संधीची किंमत",
+            "एकदाच",
+            "वेळ",
+            "मोलाचं",
+            "निवड"
+          ],
+          "items": [
+            [
+              "एक गोष्ट निवडली की दुसरी गोष्ट @@ लागते.",
+              "सोडावी"
+            ],
+            [
+              "निवड करताना जे सोडावं लागतं ती @@ आहे.",
+              "संधीची किंमत"
+            ],
+            [
+              "एक रुपया फक्त @@ खर्च होतो.",
+              "एकदाच"
+            ],
+            [
+              "खेळाचा तास अभ्यासात वापरता येत नाही, म्हणून @@ यालाही किंमत असते.",
+              "वेळ"
+            ],
+            [
+              "शहाणी निवड म्हणजे जी तुझ्यासाठी जास्त @@ असते ती.",
+              "मोलाचं"
+            ]
+          ]
+        },
+        "sortTitle": "यात पैसा लागतो की वेळ?",
+        "sortOpts": [
+          {
+            "k": "money",
+            "t": "पैसा लागतो"
+          },
+          {
+            "k": "time",
+            "t": "वेळ लागतो"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "coin",
+            "label": "पन्नास रुपयांचं खेळणं विकत घेणं",
+            "a": "money"
+          },
+          {
+            "icon": "clock",
+            "label": "दोन तास टीव्ही पाहणं",
+            "a": "time"
+          },
+          {
+            "icon": "jalebi",
+            "label": "जिलबीच्या प्लेटचे पैसे देणं",
+            "a": "money"
+          },
+          {
+            "icon": "notebook",
+            "label": "एक तास अभ्यास करणं",
+            "a": "time"
+          },
+          {
+            "icon": "note",
+            "label": "पाळण्याच्या फेरीचे पैसे देणं",
+            "a": "money"
+          }
+        ],
+        "tf": [
+          {
+            "q": "शंभर रुपये पाळण्यात खर्च केल्यावर तेच शंभर रुपये जिलबीतही खर्च करता येतात.",
+            "a": false
+          },
+          {
+            "q": "निवड करताना जे सोडावं लागतं तीच संधीची किंमत.",
+            "a": true
+          },
+          {
+            "q": "वेळेचीही संधीची किंमत असते.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "तुझ्याकडे पन्नास रुपये आहेत. एक कॉमिक पन्नासचं आहे आणि एक फुटबॉलही पन्नासचा. तू कॉमिक घेतलंस. तुझी संधीची किंमत काय?",
+            "opts": [
+              "कॉमिक",
+              "तू न घेतलेला फुटबॉल",
+              "काहीच नाही"
+            ],
+            "a": 1
+          },
+          {
+            "q": "कोणता प्रश्न शहाणपणाने निवडायला मदत करतो?",
+            "opts": [
+              "बाकीचे सगळे काय घेतायत?",
+              "मी काय सोडतोय?",
+              "सगळ्यात स्वस्त काय आहे?"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मी, {name}, वचन देत[[ो|े]] की पैसा किंवा वेळ खर्च करण्याआधी विचारेन: \"मी काय सोडतोय?\""
+      }
+    }
+  },
+  {
+    "slug": "mango-market",
+    "status": "live",
+    "color": "#ffd166",
+    "title": {
+      "en": "{name} and the Mango Market",
+      "hi": "{name} और आम की मंडी",
+      "mr": "{name} आणि आंब्याची मंडी"
+    },
+    "cardTitle": {
+      "en": "The Mango Market",
+      "hi": "आम की मंडी",
+      "mr": "आंब्याची मंडी"
+    },
+    "subtitle": {
+      "en": "Why do prices go up and down?",
+      "hi": "दाम ऊपर-नीचे क्यों होते हैं?",
+      "mr": "भाव वर-खाली का होतात?"
+    },
+    "topic": {
+      "en": "Supply and demand",
+      "hi": "माँग और आपूर्ति",
+      "mr": "मागणी आणि पुरवठा"
+    },
+    "stops": {
+      "en": [
+        "Mango Season",
+        "Too Many Mangoes",
+        "Too Few Mangoes",
+        "The Price Seesaw"
+      ],
+      "hi": [
+        "आम का मौसम",
+        "बहुत सारे आम",
+        "कम आम",
+        "दाम का झूला"
+      ],
+      "mr": [
+        "आंब्याचा हंगाम",
+        "खूप आंबे",
+        "थोडे आंबे",
+        "भावाचा झोका"
+      ]
+    },
+    "scenes": [
+      "Baskets of golden mangoes fill the market stall. A price tag shows 72 rupees and you look amazed.",
+      "A heap of mangoes sits on one side of a seesaw and only a few shoppers on the other, so the price tag drops.",
+      "A storm cloud and wind shake the mango tree, one basket is nearly empty, and the price tag climbs to 180 rupees.",
+      "A seesaw with mangoes on one end and shoppers on the other sits level while you and Gullu smile."
+    ],
+    "story": {
+      "en": [
+        "It was the middle of summer, and the mango trees were heavy with fruit. At the market, Kaka sold a dozen mangoes for 120 rupees. \"Why do prices change, Kaka?\" you asked. \"Come back next week and watch,\" he winked. By then, trucks full of mangoes had arrived from every village. The market was piled high. Kaka now sold the same dozen for just 72 rupees! Gullu rolled up. \"When there are a lot of mangoes for sale, that is high supply. Many sellers want to sell, so prices fall.\"",
+        "Next you saw a big storm blow through the orchards. Mangoes fell from the trees and many were spoiled. At the market, the baskets were nearly empty. Kaka now asked 180 rupees for a dozen, and nobody argued. \"Supply fell,\" said Gullu. \"The number of people who want mangoes is the same, but there are far fewer mangoes. When something becomes scarce, the price rises. Demand means how many people want to buy something.\"",
+        "Then came the big festival. Aaji needed mangoes for the sweets, and so did every other family in the village. \"This time the storm did not come,\" Gullu said, \"but demand shot up, so the price rose again.\" You saw that it was like a seesaw. When supply goes up, the price goes down. When supply falls or demand rises, the price goes up. Neither side wins forever. Kaka watched both sides all day long.",
+        "Kaka explained one more secret. \"If I charge too much, nobody buys and my mangoes rot. If I charge too little, I lose money. So, each day, the market finds a price where buyers and sellers are both willing.\" Gullu added, \"So a price is like a message. A high price says, this is scarce or in demand. A low price says, there is plenty.\" You learned to buy fruit in its own season, when it is cheap, and to be patient when everyone is rushing. That evening, mango pulp tasted twice as sweet."
+      ],
+      "hi": [
+        "गर्मी का बीच का समय था और आम के पेड़ फलों से लदे थे। मंडी में काका बारह आम एक सौ बीस रुपये में बेच रहे थे। \"काका, दाम बदलते क्यों हैं?\" तुमने पूछा। \"अगले हफ़्ते आकर देख लेना,\" उन्होंने आँख मारी। तब तक हर गाँव से आमों के ट्रक आ चुके थे। मंडी में आमों का ढेर लगा था। अब काका वही बारह आम सिर्फ़ बहत्तर रुपये में बेच रहे थे! गुल्लू लुढ़कता हुआ आया। \"जब बिकने के लिए बहुत सारे आम हों, तो आपूर्ति ज़्यादा होती है। बहुत से बेचने वाले होते हैं, इसलिए दाम गिर जाते हैं।\"",
+        "फिर तुमने देखा कि बाग़ों में एक बड़ा तूफ़ान आया। पेड़ों से आम गिर गए और बहुत से ख़राब हो गए। मंडी में टोकरियाँ लगभग ख़ाली थीं। अब काका बारह आम के एक सौ अस्सी रुपये माँग रहे थे और कोई बहस नहीं कर रहा था। \"आपूर्ति घट गई,\" गुल्लू बोला। \"आम चाहने वाले उतने ही हैं, पर आम बहुत कम हैं। जब कोई चीज़ कम हो जाती है, तो उसका दाम चढ़ जाता है। माँग यानी कितने लोग कोई चीज़ ख़रीदना चाहते हैं।\"",
+        "फिर बड़ा त्योहार आया। दादी को मिठाई के लिए आम चाहिए थे, और गाँव के हर घर को भी। \"इस बार तूफ़ान नहीं आया,\" गुल्लू बोला, \"पर माँग बहुत बढ़ गई, इसलिए दाम फिर चढ़ गए।\" तुमने देखा कि यह झूले जैसा है। आपूर्ति बढ़ती है तो दाम गिरता है। आपूर्ति घटती है या माँग बढ़ती है तो दाम चढ़ता है। कोई भी पलड़ा हमेशा नहीं जीतता। काका दिन भर दोनों तरफ़ नज़र रखते थे।",
+        "काका ने एक और राज़ बताया। \"अगर मैं बहुत ज़्यादा दाम लूँ, तो कोई नहीं ख़रीदेगा और मेरे आम सड़ जाएँगे। बहुत कम लूँ, तो मुझे घाटा होगा। इसलिए बाज़ार हर दिन ऐसा दाम ढूँढ लेता है जिस पर ख़रीदने और बेचने वाले, दोनों राज़ी हों।\" गुल्लू ने जोड़ा, \"तो दाम एक संदेश की तरह है। ऊँचा दाम कहता है, यह चीज़ कम है या सबको चाहिए। कम दाम कहता है, यह बहुत है।\" तुमने सीखा कि फल को उसके मौसम में ख़रीदो, जब वह सस्ता होता है, और जब सब भाग रहे हों तब सब्र रखो। उस शाम आम का रस दुगना मीठा लगा।"
+      ],
+      "mr": [
+        "उन्हाळ्याचे मध्यावर दिवस होते आणि आंब्याची झाडं फळांनी लगडली होती. मंडीत काका बारा आंबे एकशे वीस रुपयांना विकत होते. \"काका, भाव का बदलतात?\" तू विचारलंस. \"पुढच्या आठवड्यात येऊन बघ,\" त्यांनी डोळा मिचकावला. तोपर्यंत प्रत्येक गावातून आंब्यांचे ट्रक आले होते. मंडीत आंब्यांचा ढीग लागला होता. आता काका तेच बारा आंबे फक्त बहात्तर रुपयांना विकत होते! गल्लू गडगडत आला. \"विकायला खूप आंबे असले की पुरवठा जास्त असतो. विकणारे खूप असतात, म्हणून भाव उतरतात.\"",
+        "मग तू पाहिलंस की बागांमध्ये मोठं वादळ आलं. झाडांवरून आंबे पडले आणि बरेच खराब झाले. मंडीत टोपल्या जवळजवळ रिकाम्या होत्या. आता काका बारा आंब्यांचे एकशे ऐंशी रुपये मागत होते आणि कोणी वाद घालत नव्हतं. \"पुरवठा घटला,\" गल्लू म्हणाला. \"आंबे हवे असणारे तितकेच आहेत, पण आंबे खूपच कमी आहेत. एखादी गोष्ट दुर्मिळ झाली की तिचा भाव चढतो. मागणी म्हणजे किती लोकांना एखादी गोष्ट विकत घ्यायची आहे ते.\"",
+        "मग मोठा सण आला. आजीला गोडासाठी आंबे हवे होते आणि गावातल्या प्रत्येक घराला सुद्धा. \"या वेळी वादळ आलं नाही,\" गल्लू म्हणाला, \"पण मागणी खूप वाढली, म्हणून भाव पुन्हा चढले.\" तुला दिसलं की हे झोक्यासारखं आहे. पुरवठा वाढला की भाव उतरतो. पुरवठा घटला किंवा मागणी वाढली की भाव चढतो. कोणतं पारडं कायम जिंकत नाही. काका दिवसभर दोन्ही बाजूंवर लक्ष ठेवून असायचे.",
+        "काकांनी आणखी एक गुपित सांगितलं. \"मी भाव खूप ठेवला तर कोणी घेत नाही आणि माझे आंबे सडतात. खूप कमी ठेवला तर मला तोटा होतो. म्हणून बाजार रोज असा भाव शोधतो ज्यावर घेणारे आणि विकणारे दोघेही तयार असतात.\" गल्लूने भर घातली, \"म्हणजे भाव एखाद्या निरोपासारखा आहे. चढा भाव सांगतो, ही गोष्ट कमी आहे किंवा सगळ्यांना हवी आहे. कमी भाव सांगतो, ही भरपूर आहे.\" तू शिकलास की फळ त्याच्या हंगामात विकत घ्यावं, जेव्हा ते स्वस्त असतं, आणि सगळे घाई करतात तेव्हा धीर धरावा. त्या संध्याकाळी आंब्याचा रस दुप्पट गोड लागला."
+      ]
+    },
+    "recap": {
+      "en": {
+        "remember": [
+          "Supply is how much is available for sale. Demand is how many people want to buy it.",
+          "Plenty of supply and fewer buyers make the price fall.",
+          "Little supply or many eager buyers make the price rise.",
+          "A market keeps adjusting the price until buyers and sellers both agree."
+        ],
+        "fill": {
+          "bank": [
+            "supply",
+            "demand",
+            "fall",
+            "rise",
+            "season",
+            "price"
+          ],
+          "items": [
+            [
+              "How much of something is for sale is called @@.",
+              "supply"
+            ],
+            [
+              "How many people want to buy something is called @@.",
+              "demand"
+            ],
+            [
+              "When there are many mangoes and few buyers, the price will @@.",
+              "fall"
+            ],
+            [
+              "After a storm ruins most mangoes, the price will @@.",
+              "rise"
+            ],
+            [
+              "Buying fruit in its @@ usually costs less.",
+              "season"
+            ]
+          ]
+        },
+        "sortTitle": "Will the price go up or down?",
+        "sortOpts": [
+          {
+            "k": "up",
+            "t": "Price goes up"
+          },
+          {
+            "k": "down",
+            "t": "Price goes down"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "mango",
+            "label": "Trucks bring twice as many mangoes to the market",
+            "a": "down"
+          },
+          {
+            "icon": "umbrella",
+            "label": "Heavy rain starts and everyone wants an umbrella",
+            "a": "up"
+          },
+          {
+            "icon": "wheat",
+            "label": "A bumper harvest fills the market with wheat",
+            "a": "down"
+          },
+          {
+            "icon": "onion",
+            "label": "A flood ruins most of the onion crop",
+            "a": "up"
+          },
+          {
+            "icon": "jalebi",
+            "label": "A festival is tomorrow and everyone wants sweets",
+            "a": "up"
+          }
+        ],
+        "tf": [
+          {
+            "q": "When supply goes up and demand stays the same, the price usually falls.",
+            "a": true
+          },
+          {
+            "q": "A shopkeeper can charge any price and still sell everything.",
+            "a": false
+          },
+          {
+            "q": "A festival can raise demand for sweets.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "A storm destroys half the tomato crop. What will most likely happen to the tomato price?",
+            "opts": [
+              "It will fall",
+              "It will rise",
+              "It will stay the same"
+            ],
+            "a": 1
+          },
+          {
+            "q": "You want mangoes at the lowest price. When should you buy?",
+            "opts": [
+              "During the festival rush",
+              "In the middle of mango season",
+              "Right after a storm"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "I, {name}, promise to think about supply and demand before I call a price unfair, and to buy fruit and vegetables in their season when I can."
+      },
+      "hi": {
+        "remember": [
+          "आपूर्ति यानी बिकने के लिए कितना माल है। माँग यानी कितने लोग उसे ख़रीदना चाहते हैं।",
+          "माल ज़्यादा और ख़रीदार कम हों तो दाम गिरता है।",
+          "माल कम हो या ख़रीदार बहुत चाहने वाले हों तो दाम चढ़ता है।",
+          "बाज़ार दाम को तब तक बदलता रहता है जब तक ख़रीदने और बेचने वाले दोनों राज़ी न हो जाएँ।"
+        ],
+        "fill": {
+          "bank": [
+            "आपूर्ति",
+            "माँग",
+            "गिरेगा",
+            "चढ़ेगा",
+            "मौसम",
+            "दाम"
+          ],
+          "items": [
+            [
+              "कोई चीज़ बिकने के लिए कितनी है, इसे @@ कहते हैं।",
+              "आपूर्ति"
+            ],
+            [
+              "कितने लोग कोई चीज़ ख़रीदना चाहते हैं, इसे @@ कहते हैं।",
+              "माँग"
+            ],
+            [
+              "आम बहुत हों और ख़रीदार कम, तो दाम @@।",
+              "गिरेगा"
+            ],
+            [
+              "तूफ़ान से ज़्यादातर आम ख़राब हो जाएँ तो दाम @@।",
+              "चढ़ेगा"
+            ],
+            [
+              "फल को उसके @@ में ख़रीदना आम तौर पर सस्ता पड़ता है।",
+              "मौसम"
+            ]
+          ]
+        },
+        "sortTitle": "दाम चढ़ेगा या गिरेगा?",
+        "sortOpts": [
+          {
+            "k": "up",
+            "t": "दाम चढ़ेगा"
+          },
+          {
+            "k": "down",
+            "t": "दाम गिरेगा"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "mango",
+            "label": "ट्रक मंडी में दुगने आम ले आए",
+            "a": "down"
+          },
+          {
+            "icon": "umbrella",
+            "label": "तेज़ बारिश शुरू हुई और सबको छाता चाहिए",
+            "a": "up"
+          },
+          {
+            "icon": "wheat",
+            "label": "बंपर फ़सल से मंडी गेहूँ से भर गई",
+            "a": "down"
+          },
+          {
+            "icon": "onion",
+            "label": "बाढ़ से ज़्यादातर प्याज़ की फ़सल बर्बाद हो गई",
+            "a": "up"
+          },
+          {
+            "icon": "jalebi",
+            "label": "कल त्योहार है और सबको मिठाई चाहिए",
+            "a": "up"
+          }
+        ],
+        "tf": [
+          {
+            "q": "आपूर्ति बढ़े और माँग उतनी ही रहे तो दाम आम तौर पर गिरता है।",
+            "a": true
+          },
+          {
+            "q": "दुकानदार कोई भी दाम रख सकता है और फिर भी सब कुछ बिक जाएगा।",
+            "a": false
+          },
+          {
+            "q": "त्योहार मिठाई की माँग बढ़ा सकता है।",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "तूफ़ान से आधी टमाटर की फ़सल बर्बाद हो गई। टमाटर के दाम का क्या होने की सबसे ज़्यादा संभावना है?",
+            "opts": [
+              "गिरेगा",
+              "चढ़ेगा",
+              "वही रहेगा"
+            ],
+            "a": 1
+          },
+          {
+            "q": "तुम आम सबसे कम दाम पर लेना चाहते हो। कब ख़रीदना चाहिए?",
+            "opts": [
+              "त्योहार की भीड़ में",
+              "आम के मौसम के बीच में",
+              "तूफ़ान के ठीक बाद"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मैं, {name}, वादा करत[[ा|ी]] हूँ कि किसी दाम को ग़लत कहने से पहले माँग और आपूर्ति के बारे में सोचूँग[[ा|ी]], और जब हो सके तब फल-सब्ज़ियाँ उनके मौसम में ख़रीदूँग[[ा|ी]]।"
+      },
+      "mr": {
+        "remember": [
+          "पुरवठा म्हणजे विक्रीसाठी किती माल आहे. मागणी म्हणजे किती लोकांना तो घ्यायचा आहे.",
+          "माल भरपूर आणि खरेदीदार कमी असले की भाव उतरतो.",
+          "माल कमी असला किंवा खरेदीदार खूप उत्सुक असले की भाव चढतो.",
+          "खरेदीदार आणि विक्रेते दोघे राजी होईपर्यंत बाजार भाव बदलत राहतो."
+        ],
+        "fill": {
+          "bank": [
+            "पुरवठा",
+            "मागणी",
+            "उतरेल",
+            "चढेल",
+            "हंगाम",
+            "भाव"
+          ],
+          "items": [
+            [
+              "एखादी गोष्ट विक्रीसाठी किती आहे याला @@ म्हणतात.",
+              "पुरवठा"
+            ],
+            [
+              "किती लोकांना एखादी गोष्ट विकत घ्यायची आहे याला @@ म्हणतात.",
+              "मागणी"
+            ],
+            [
+              "आंबे खूप आणि खरेदीदार कमी असतील तर भाव @@.",
+              "उतरेल"
+            ],
+            [
+              "वादळाने बहुतेक आंबे खराब झाले तर भाव @@.",
+              "चढेल"
+            ],
+            [
+              "फळ त्याच्या @@ मध्ये घेणं सहसा स्वस्त पडतं.",
+              "हंगाम"
+            ]
+          ]
+        },
+        "sortTitle": "भाव चढेल की उतरेल?",
+        "sortOpts": [
+          {
+            "k": "up",
+            "t": "भाव चढेल"
+          },
+          {
+            "k": "down",
+            "t": "भाव उतरेल"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "mango",
+            "label": "ट्रकनी मंडीत दुप्पट आंबे आणले",
+            "a": "down"
+          },
+          {
+            "icon": "umbrella",
+            "label": "जोरदार पाऊस सुरू झाला आणि सगळ्यांना छत्री हवी",
+            "a": "up"
+          },
+          {
+            "icon": "wheat",
+            "label": "बंपर पिकामुळे मंडी गव्हाने भरली",
+            "a": "down"
+          },
+          {
+            "icon": "onion",
+            "label": "पुरामुळे बहुतेक कांद्याचं पीक वाया गेलं",
+            "a": "up"
+          },
+          {
+            "icon": "jalebi",
+            "label": "उद्या सण आहे आणि सगळ्यांना मिठाई हवी",
+            "a": "up"
+          }
+        ],
+        "tf": [
+          {
+            "q": "पुरवठा वाढला आणि मागणी तितकीच राहिली तर भाव सहसा उतरतो.",
+            "a": true
+          },
+          {
+            "q": "दुकानदार कोणताही भाव लावू शकतो आणि तरीही सगळं विकलं जाईल.",
+            "a": false
+          },
+          {
+            "q": "सणामुळे मिठाईची मागणी वाढू शकते.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "वादळामुळे निम्मं टोमॅटोचं पीक वाया गेलं. टोमॅटोच्या भावाचं काय होण्याची शक्यता सर्वात जास्त आहे?",
+            "opts": [
+              "उतरेल",
+              "चढेल",
+              "तसाच राहील"
+            ],
+            "a": 1
+          },
+          {
+            "q": "तुला आंबे सगळ्यात कमी भावात हवे आहेत. केव्हा घ्यावेत?",
+            "opts": [
+              "सणाच्या गर्दीत",
+              "आंब्याच्या हंगामाच्या मध्यात",
+              "वादळानंतर लगेच"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मी, {name}, वचन देत[[ो|े]] की एखादा भाव अन्यायी म्हणण्याआधी मागणी आणि पुरवठा यांचा विचार करेन, आणि जमेल तेव्हा फळं-भाज्या त्यांच्या हंगामात विकत घेईन."
+      }
+    }
+  },
+  {
+    "slug": "locked-box",
+    "status": "live",
+    "color": "#bde0fe",
+    "title": {
+      "en": "{name} and the Locked Box",
+      "hi": "{name} और बंद ताला-डिब्बा",
+      "mr": "{name} आणि कुलूपबंद डबा"
+    },
+    "cardTitle": {
+      "en": "The Locked Box",
+      "hi": "बंद ताला-डिब्बा",
+      "mr": "कुलूपबंद डबा"
+    },
+    "subtitle": {
+      "en": "What is a fixed deposit?",
+      "hi": "फ़िक्स्ड डिपॉज़िट क्या है?",
+      "mr": "फिक्स्ड डिपॉझिट म्हणजे काय?"
+    },
+    "topic": {
+      "en": "Fixed deposits",
+      "hi": "फ़िक्स्ड डिपॉज़िट",
+      "mr": "फिक्स्ड डिपॉझिट"
+    },
+    "stops": {
+      "en": [
+        "The Envelope",
+        "The Promise",
+        "Opening Early",
+        "Due Day"
+      ],
+      "hi": [
+        "लिफ़ाफ़ा",
+        "वादा",
+        "समय से पहले खोलना",
+        "पूरा होने का दिन"
+      ],
+      "mr": [
+        "लिफाफा",
+        "वचन",
+        "वेळेआधी उघडणं",
+        "मुदतीचा दिवस"
+      ]
+    },
+    "scenes": [
+      "Aaji hands an envelope with 10,000 rupees to Meena Didi at the bank counter while a lock and a calendar float in a thought bubble.",
+      "On the board 10,000 rupees at 7 in 100 earns 700 rupees, while a small jar beside it shows only 300.",
+      "A locked box with a ticking clock and a calendar, and a red warning sign where a hand tries to pull the lid open early.",
+      "On the due date Aaji receives a stack of coins and a certificate while you cheer and Gullu dances."
+    ],
+    "story": {
+      "en": [
+        "Aaji had sold her wheat harvest and was left with 10,000 rupees that she did not need for a whole year. She kept it in a savings account, where it earned only a little interest. \"Is there a way to earn more?\" she asked Meena Didi at the bank. \"Yes,\" said Meena Didi. \"A fixed deposit. You promise to leave your money with the bank for a fixed time, say one year, and the bank promises a fixed rate of interest. It is like a locked box with a timer.\" Gullu perked up his ears.",
+        "You did the sum on the board. \"Suppose the bank pays 7 rupees on every 100 rupees for the year,\" you said. \"On 10,000 rupees, that is 100 times 7, which is 700 rupees.\" In the savings account at about 3 in 100, the same money earns only 300. \"The extra 400 rupees is the reward for locking it away,\" said Gullu. Meena Didi smiled. \"Rates keep changing, so always ask what the rate is today and write down the date it ends. That date is called maturity.\"",
+        "Gullu raised a paw. \"But what if Aaji needs the money before the date?\" Meena Didi nodded. \"You can break a fixed deposit early, but the bank may pay less interest or charge a penalty. So only lock money you will not need soon.\" You thought about the rainy day jar and nodded. \"Emergency money stays easy to reach. Only spare money goes into the locked box.\" Meena Didi added, \"There is also a recurring deposit, where you put in a fixed amount every month, like 500 rupees, so a small habit grows into a bigger sum.\"",
+        "A year later, Aaji went to the bank on the very day the deposit ended. Meena Didi counted out 10,700 rupees: Aaji's 10,000 and the 700 that her patience had earned. You and Gullu cheered. Before leaving, Meena Didi gave you three questions: What is the rate? How long is the lock? What happens if I take the money early? \"Ask them every time,\" said Gullu. \"And choose a real bank, so your money is safe, with deposits insured up to 5,00,000 rupees per person in each bank, at the time of writing.\""
+      ],
+      "hi": [
+        "दादी ने अपनी गेहूँ की फ़सल बेची थी और उनके पास दस हज़ार रुपये बच गए थे जिनकी उन्हें पूरे साल ज़रूरत नहीं थी। वे उन्हें बचत खाते में रखती थीं, जहाँ बहुत थोड़ा ब्याज मिलता था। \"क्या इससे ज़्यादा कमाने का कोई तरीक़ा है?\" उन्होंने बैंक में मीना दीदी से पूछा। \"हाँ,\" मीना दीदी बोलीं। \"फ़िक्स्ड डिपॉज़िट। आप वादा करती हैं कि पैसे एक तय समय, जैसे एक साल, बैंक में रहने देंगी, और बैंक तय दर से ब्याज देने का वादा करता है। यह घड़ी वाले बंद डिब्बे जैसा है।\" गुल्लू ने कान खड़े कर लिए।",
+        "तुमने बोर्ड पर हिसाब लगाया। \"मान लो बैंक साल भर में हर सौ रुपये पर सात रुपये देता है,\" तुमने कहा। \"दस हज़ार पर यह सौ गुना सात यानी सात सौ रुपये हुए।\" बचत खाते में, जहाँ लगभग सौ पर तीन मिलते हैं, उतने ही पैसे पर सिर्फ़ तीन सौ मिलते हैं। \"ये चार सौ रुपये ज़्यादा इसलिए मिलते हैं कि तुमने पैसे बंद करके रखे,\" गुल्लू बोला। मीना दीदी मुस्कुराईं। \"दरें बदलती रहती हैं, इसलिए हमेशा पूछो कि आज की दर क्या है और ख़त्म होने की तारीख़ लिख लो। उस तारीख़ को परिपक्वता यानी मैच्योरिटी कहते हैं।\"",
+        "गुल्लू ने पंजा उठाया। \"पर अगर दादी को तारीख़ से पहले पैसे चाहिए हों तो?\" मीना दीदी ने सिर हिलाया। \"फ़िक्स्ड डिपॉज़िट पहले तोड़ा जा सकता है, पर बैंक कम ब्याज दे सकता है या जुर्माना ले सकता है। इसलिए सिर्फ़ वही पैसे बंद करो जिनकी जल्दी ज़रूरत नहीं पड़ेगी।\" तुमने बरसात वाले जार के बारे में सोचा और सिर हिलाया। \"आपातकाल के पैसे ऐसी जगह रहें जहाँ आसानी से मिल जाएँ। सिर्फ़ फ़ालतू पैसे बंद डिब्बे में जाएँ।\" मीना दीदी ने जोड़ा, \"आवर्ती जमा यानी रिकरिंग डिपॉज़िट भी होता है, जिसमें हर महीने तय रक़म, जैसे पाँच सौ रुपये, जमा करते हैं ताकि छोटी आदत बड़ी रक़म बन जाए।\"",
+        "एक साल बाद दादी ठीक उसी दिन बैंक गईं जिस दिन डिपॉज़िट पूरा हुआ। मीना दीदी ने दस हज़ार सात सौ रुपये गिनकर दिए: दादी के दस हज़ार और सात सौ जो उनके सब्र ने कमाए। तुमने और गुल्लू ने ख़ुशी से तालियाँ बजाईं। लौटने से पहले मीना दीदी ने तुम्हें तीन सवाल दिए: दर क्या है? बंद रखने का समय कितना है? पैसे पहले निकाले तो क्या होगा? \"हर बार पूछना,\" गुल्लू बोला। \"और असली बैंक चुनना ताकि पैसे सुरक्षित रहें। लिखते समय हर बैंक में हर व्यक्ति के पाँच लाख रुपये तक के जमा पर बीमा होता है।\""
+      ],
+      "mr": [
+        "आजीने तिचं गव्हाचं पीक विकलं होतं आणि तिच्याकडे दहा हजार रुपये उरले होते ज्यांची तिला पूर्ण वर्षभर गरज नव्हती. ती ते बचत खात्यात ठेवायची, तिथे खूप थोडं व्याज मिळायचं. \"यापेक्षा जास्त कमावण्याचा काही मार्ग आहे का?\" तिने बँकेत मीना ताईंना विचारलं. \"हो,\" मीना ताई म्हणाल्या. \"फिक्स्ड डिपॉझिट. तुम्ही वचन देता की पैसे ठरलेल्या वेळेसाठी, उदाहरणार्थ एक वर्ष, बँकेत राहू देणार, आणि बँक ठरलेल्या दराने व्याज देण्याचं वचन देते. हा घड्याळ लावलेल्या कुलूपबंद डब्यासारखा आहे.\" गल्लूने कान टवकारले.",
+        "तू फळ्यावर हिशोब केलास. \"समज बँक वर्षभरात प्रत्येक शंभर रुपयांवर सात रुपये देते,\" तू म्हणालास. \"दहा हजारांवर ते शंभर गुणिले सात म्हणजे सातशे रुपये होतात.\" बचत खात्यात, जिथे साधारण शंभरावर तीन मिळतात, तेवढ्याच पैशांवर फक्त तीनशे मिळतात. \"हे जास्तीचे चारशे रुपये मिळतात कारण तू पैसे बंद करून ठेवलेस,\" गल्लू म्हणाला. मीना ताई हसल्या. \"दर बदलत राहतात, म्हणून नेहमी आजचा दर काय ते विचारा आणि संपण्याची तारीख लिहून ठेवा. त्या तारखेला मुदतपूर्ती म्हणजे मॅच्युरिटी म्हणतात.\"",
+        "गल्लूने पंजा वर केला. \"पण तारखेआधी आजीला पैसे लागले तर?\" मीना ताईंनी मान डोलावली. \"फिक्स्ड डिपॉझिट आधी मोडता येतं, पण बँक कमी व्याज देऊ शकते किंवा दंड लावू शकते. म्हणून फक्त तेच पैसे बंद करा ज्यांची लवकर गरज पडणार नाही.\" तू पावसाळ्याच्या बरणीचा विचार केलास आणि मान हलवलीस. \"आणीबाणीचे पैसे सहज मिळतील अशा ठिकाणी ठेवायचे. फक्त वरचे पैसे कुलूपबंद डब्यात.\" मीना ताईंनी भर घातली, \"रिकरिंग डिपॉझिटही असतं, ज्यात दर महिन्याला ठरलेली रक्कम, म्हणजे पाचशे रुपये, भरता, म्हणजे लहान सवय मोठी रक्कम बनते.\"",
+        "वर्षभराने आजी अगदी डिपॉझिट संपण्याच्या दिवशीच बँकेत गेली. मीना ताईंनी दहा हजार सातशे रुपये मोजून दिले: आजीचे दहा हजार आणि तिच्या संयमाने कमावलेले सातशे. तू आणि गल्लूने आनंदाने टाळ्या वाजवल्या. निघण्याआधी मीना ताईंनी तुला तीन प्रश्न दिले: दर काय आहे? कुलूप किती काळ आहे? पैसे आधी काढले तर काय होईल? \"दर वेळी विचारा,\" गल्लू म्हणाला. \"आणि खरी बँक निवडा म्हणजे पैसे सुरक्षित राहतील. लिहिताना प्रत्येक बँकेत प्रत्येक व्यक्तीच्या पाच लाख रुपयांपर्यंतच्या ठेवींना विमा असतो.\""
+      ]
+    },
+    "recap": {
+      "en": {
+        "remember": [
+          "A fixed deposit locks your money with a bank for a fixed time at a fixed rate.",
+          "Money taken out early may earn less interest or cost a penalty.",
+          "Lock only spare money. Keep emergency money easy to reach.",
+          "Always ask: what is the rate, how long is the lock, and what if I break it early?"
+        ],
+        "fill": {
+          "bank": [
+            "fixed deposit",
+            "maturity",
+            "penalty",
+            "interest",
+            "emergency",
+            "term"
+          ],
+          "items": [
+            [
+              "Money kept in a bank for a fixed time at a fixed rate is a @@.",
+              "fixed deposit"
+            ],
+            [
+              "The day the deposit ends is called @@.",
+              "maturity"
+            ],
+            [
+              "Taking the money out early may cost a @@.",
+              "penalty"
+            ],
+            [
+              "10,000 rupees at 7 in 100 for one year earns 700 rupees of @@.",
+              "interest"
+            ],
+            [
+              "Keep your @@ money where you can reach it any time.",
+              "emergency"
+            ]
+          ]
+        },
+        "sortTitle": "Easy to reach, or can it be locked?",
+        "sortOpts": [
+          {
+            "k": "reach",
+            "t": "Keep easy to reach"
+          },
+          {
+            "k": "lock",
+            "t": "Can be locked"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "clinic",
+            "label": "Money for a sudden medical bill",
+            "a": "reach"
+          },
+          {
+            "icon": "house",
+            "label": "Savings for a house repair planned two years from now",
+            "a": "lock"
+          },
+          {
+            "icon": "jar",
+            "label": "Pocket money you will spend this week",
+            "a": "reach"
+          },
+          {
+            "icon": "school",
+            "label": "School fees due next April, saved in advance",
+            "a": "lock"
+          },
+          {
+            "icon": "umbrella",
+            "label": "Your rainy day money",
+            "a": "reach"
+          }
+        ],
+        "tf": [
+          {
+            "q": "Breaking a fixed deposit early may reduce your interest or cost a penalty.",
+            "a": true
+          },
+          {
+            "q": "Emergency money should be locked away for five years.",
+            "a": false
+          },
+          {
+            "q": "A recurring deposit lets you save a fixed amount every month.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "Aaji puts 10,000 rupees in a fixed deposit at 7 in 100 for one year. How much interest does she earn?",
+            "opts": [
+              "70",
+              "700",
+              "7,000"
+            ],
+            "a": 1
+          },
+          {
+            "q": "Aaji may need money for medicines next month. What should she do with that money?",
+            "opts": [
+              "Lock it for five years",
+              "Keep it where she can reach it",
+              "Give it to a stranger who promises double"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "I, {name}, promise to lock away only money I will not need soon, to ask about the rate and the rules, and to keep my emergency money within reach."
+      },
+      "hi": {
+        "remember": [
+          "फ़िक्स्ड डिपॉज़िट में पैसे तय समय के लिए तय दर पर बैंक में बंद रहते हैं।",
+          "समय से पहले निकालने पर कम ब्याज मिल सकता है या जुर्माना लग सकता है।",
+          "सिर्फ़ फ़ालतू पैसे बंद करो। आपातकाल के पैसे आसानी से मिलने वाली जगह रखो।",
+          "हमेशा पूछो: दर क्या है, कितने समय का बंधन है, और पहले तोड़ा तो क्या होगा?"
+        ],
+        "fill": {
+          "bank": [
+            "फ़िक्स्ड डिपॉज़िट",
+            "मैच्योरिटी",
+            "जुर्माना",
+            "ब्याज",
+            "आपातकाल",
+            "अवधि"
+          ],
+          "items": [
+            [
+              "तय समय के लिए तय दर पर बैंक में रखे पैसे @@ कहलाते हैं।",
+              "फ़िक्स्ड डिपॉज़िट"
+            ],
+            [
+              "डिपॉज़िट पूरा होने के दिन को @@ कहते हैं।",
+              "मैच्योरिटी"
+            ],
+            [
+              "पैसे समय से पहले निकालने पर @@ लग सकता है।",
+              "जुर्माना"
+            ],
+            [
+              "दस हज़ार रुपये पर साल भर में सौ पर सात की दर से सात सौ रुपये @@ मिलता है।",
+              "ब्याज"
+            ],
+            [
+              "अपने @@ के पैसे ऐसी जगह रखो जहाँ कभी भी मिल सकें।",
+              "आपातकाल"
+            ]
+          ]
+        },
+        "sortTitle": "आसानी से मिलने वाली जगह या बंद किया जा सकता है?",
+        "sortOpts": [
+          {
+            "k": "reach",
+            "t": "आसानी से मिलें"
+          },
+          {
+            "k": "lock",
+            "t": "बंद किए जा सकते हैं"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "clinic",
+            "label": "अचानक इलाज के ख़र्च के लिए पैसे",
+            "a": "reach"
+          },
+          {
+            "icon": "house",
+            "label": "दो साल बाद घर की मरम्मत के लिए बचत",
+            "a": "lock"
+          },
+          {
+            "icon": "jar",
+            "label": "इसी हफ़्ते ख़र्च होने वाला जेबख़र्च",
+            "a": "reach"
+          },
+          {
+            "icon": "school",
+            "label": "अगले अप्रैल में देने वाली स्कूल फ़ीस के लिए पहले से बचाए पैसे",
+            "a": "lock"
+          },
+          {
+            "icon": "umbrella",
+            "label": "बरसात के दिन के लिए रखे पैसे",
+            "a": "reach"
+          }
+        ],
+        "tf": [
+          {
+            "q": "फ़िक्स्ड डिपॉज़िट पहले तोड़ने पर ब्याज कम मिल सकता है या जुर्माना लग सकता है।",
+            "a": true
+          },
+          {
+            "q": "आपातकाल के पैसे पाँच साल के लिए बंद कर देने चाहिए।",
+            "a": false
+          },
+          {
+            "q": "रिकरिंग डिपॉज़िट में हर महीने तय रक़म बचाई जाती है।",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "दादी दस हज़ार रुपये एक साल के लिए सौ पर सात की दर से फ़िक्स्ड डिपॉज़िट में रखती हैं। उन्हें कितना ब्याज मिलेगा?",
+            "opts": [
+              "सत्तर",
+              "सात सौ",
+              "सात हज़ार"
+            ],
+            "a": 1
+          },
+          {
+            "q": "दादी को अगले महीने दवाइयों के लिए पैसे चाहिए हो सकते हैं। उन पैसों का क्या करना चाहिए?",
+            "opts": [
+              "पाँच साल के लिए बंद कर दें",
+              "ऐसी जगह रखें जहाँ आसानी से मिल जाएँ",
+              "किसी अजनबी को दें जो दुगना करने का वादा करे"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मैं, {name}, वादा करत[[ा|ी]] हूँ कि सिर्फ़ वही पैसे बंद करूँग[[ा|ी]] जिनकी मुझे जल्दी ज़रूरत नहीं होगी, दर और नियम पूछूँग[[ा|ी]], और आपातकाल के पैसे पहुँच में रखूँग[[ा|ी]]।"
+      },
+      "mr": {
+        "remember": [
+          "फिक्स्ड डिपॉझिटमध्ये पैसे ठरलेल्या वेळेसाठी ठरलेल्या दराने बँकेत बंद राहतात.",
+          "वेळेआधी काढले तर कमी व्याज मिळू शकतं किंवा दंड लागू शकतो.",
+          "फक्त वरचे पैसे बंद कर. आणीबाणीचे पैसे सहज मिळतील असे ठेव.",
+          "नेहमी विचार: दर काय, किती काळ बंद, आणि आधी मोडलं तर काय?"
+        ],
+        "fill": {
+          "bank": [
+            "फिक्स्ड डिपॉझिट",
+            "मॅच्युरिटी",
+            "दंड",
+            "व्याज",
+            "आणीबाणी",
+            "मुदत"
+          ],
+          "items": [
+            [
+              "ठरलेल्या वेळेसाठी ठरलेल्या दराने बँकेत ठेवलेल्या पैशांना @@ म्हणतात.",
+              "फिक्स्ड डिपॉझिट"
+            ],
+            [
+              "डिपॉझिट संपण्याच्या दिवसाला @@ म्हणतात.",
+              "मॅच्युरिटी"
+            ],
+            [
+              "पैसे वेळेआधी काढले तर @@ लागू शकतो.",
+              "दंड"
+            ],
+            [
+              "दहा हजार रुपयांवर वर्षभरात शंभरावर सात दराने सातशे रुपये @@ मिळतं.",
+              "व्याज"
+            ],
+            [
+              "तुझ्या @@ च्या पैशांना कधीही मिळतील अशा जागी ठेव.",
+              "आणीबाणी"
+            ]
+          ]
+        },
+        "sortTitle": "सहज मिळावेत की बंद करता येतील?",
+        "sortOpts": [
+          {
+            "k": "reach",
+            "t": "सहज मिळावेत"
+          },
+          {
+            "k": "lock",
+            "t": "बंद करता येतील"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "clinic",
+            "label": "अचानक आलेल्या दवाखान्याच्या बिलासाठी पैसे",
+            "a": "reach"
+          },
+          {
+            "icon": "house",
+            "label": "दोन वर्षांनी घराच्या दुरुस्तीसाठीची बचत",
+            "a": "lock"
+          },
+          {
+            "icon": "jar",
+            "label": "याच आठवड्यात खर्च होणारा खाऊचा पैसा",
+            "a": "reach"
+          },
+          {
+            "icon": "school",
+            "label": "पुढच्या एप्रिलमध्ये द्यायच्या शाळेच्या फीसाठी आधीच साठवलेले पैसे",
+            "a": "lock"
+          },
+          {
+            "icon": "umbrella",
+            "label": "पावसाळ्याच्या दिवसासाठी ठेवलेले पैसे",
+            "a": "reach"
+          }
+        ],
+        "tf": [
+          {
+            "q": "फिक्स्ड डिपॉझिट आधी मोडलं तर व्याज कमी मिळू शकतं किंवा दंड लागू शकतो.",
+            "a": true
+          },
+          {
+            "q": "आणीबाणीचे पैसे पाच वर्षांसाठी बंद करायला हवेत.",
+            "a": false
+          },
+          {
+            "q": "रिकरिंग डिपॉझिटमध्ये दर महिन्याला ठरलेली रक्कम साठवली जाते.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "आजी दहा हजार रुपये एक वर्षासाठी शंभरावर सात दराने फिक्स्ड डिपॉझिटमध्ये ठेवते. तिला किती व्याज मिळेल?",
+            "opts": [
+              "सत्तर",
+              "सातशे",
+              "सात हजार"
+            ],
+            "a": 1
+          },
+          {
+            "q": "आजीला पुढच्या महिन्यात औषधांसाठी पैसे लागू शकतात. त्या पैशांचं काय करावं?",
+            "opts": [
+              "पाच वर्षांसाठी बंद करावेत",
+              "सहज मिळतील अशा जागी ठेवावेत",
+              "दुप्पट करण्याचं वचन देणाऱ्या अनोळखी माणसाला द्यावेत"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मी, {name}, वचन देत[[ो|े]] की ज्या पैशांची मला लवकर गरज नाही तेवढेच बंद करेन, दर आणि नियम विचारेन, आणि आणीबाणीचे पैसे हाताशी ठेवेन."
+      }
+    }
+  },
+  {
+    "slug": "trust-score",
+    "status": "live",
+    "color": "#ffd6a5",
+    "title": {
+      "en": "{name} and the Trust Score",
+      "hi": "{name} और भरोसे का स्कोर",
+      "mr": "{name} आणि भरोशाचा स्कोअर"
+    },
+    "cardTitle": {
+      "en": "The Trust Score",
+      "hi": "भरोसे का स्कोर",
+      "mr": "भरोशाचा स्कोअर"
+    },
+    "subtitle": {
+      "en": "What is a credit score?",
+      "hi": "क्रेडिट स्कोर क्या है?",
+      "mr": "क्रेडिट स्कोअर म्हणजे काय?"
+    },
+    "topic": {
+      "en": "Credit score",
+      "hi": "क्रेडिट स्कोर",
+      "mr": "क्रेडिट स्कोअर"
+    },
+    "stops": {
+      "en": [
+        "The Loan Ask",
+        "The Number",
+        "Climb or Slip",
+        "Good Habits"
+      ],
+      "hi": [
+        "कर्ज की माँग",
+        "वह संख्या",
+        "चढ़ना या फिसलना",
+        "अच्छी आदतें"
+      ],
+      "mr": [
+        "कर्जाची मागणी",
+        "तो आकडा",
+        "चढणं की घसरणं",
+        "चांगल्या सवयी"
+      ]
+    },
+    "scenes": [
+      "Kaka stands at the bank counter asking for a loan for a flour mill machine while Meena Didi looks at a report.",
+      "A big dial like a speedometer showing a score between low and high, with a small tick near the high end.",
+      "Two paths: on one a calendar with ticks makes the dial climb, on the other a pile of unpaid bills makes it slip.",
+      "You, Gullu and Kaka tick off a checklist of good habits while a small shield glows beside the dial."
+    ],
+    "story": {
+      "en": [
+        "Kaka wanted to buy a new machine for his flour mill, and he needed a loan. At the bank, Meena Didi looked at a paper and said, \"Your credit score is 780.\" Kaka blinked. \"What is that?\" Gullu leaned in. \"It is a number between 300 and 900 that shows how well you have repaid loans in the past,\" said Meena Didi. \"Think of it as a trust score. The higher it is, the more the bank trusts that you will pay back.\"",
+        "\"So 780 is good?\" you asked. \"Very good,\" said Meena Didi. \"Above 750 is usually seen as strong. Below 650, banks may say no, or ask for a higher interest rate.\" You worked it out: a better score can save real money, because the bank charges less interest to people it trusts. \"The score is made from your history,\" said Gullu. \"No history, no score, and that is why a first loan can be harder.\"",
+        "Meena Didi drew two paths on the board. \"Path one: pay every instalment and card bill on or before the due date. Keep the amount you owe on your credit card well below the limit. Your score climbs.\" She drew the second path. \"Path two: miss dues, pay late, or apply to five banks at once. Every application leaves a mark, and the score slips.\" Gullu gulped. \"Even one missed payment?\" \"A late payment can stay on your report for years,\" she said.",
+        "Kaka made a checklist with you: pay on time, borrow only what you can repay, do not apply for many loans together, and check your report once a year, which is free, to spot mistakes. \"And never share your OTP or PAN with anyone who calls,\" you added. Meena Didi nodded. \"Your score is built slowly, one on-time payment at a time. Be patient and it will become your best friend at the bank.\" Kaka got his loan at a lower rate, and Gullu danced."
+      ],
+      "hi": [
+        "काका अपनी आटा चक्की के लिए नई मशीन ख़रीदना चाहते थे और उन्हें कर्ज़ चाहिए था। बैंक में मीना दीदी ने एक काग़ज़ देखा और बोलीं, \"आपका क्रेडिट स्कोर सात सौ अस्सी है।\" काका ने पलकें झपकाईं। \"यह क्या होता है?\" गुल्लू आगे झुका। \"यह तीन सौ से नौ सौ के बीच की एक संख्या है जो दिखाती है कि आपने पहले कर्ज़ कितनी अच्छी तरह चुकाए,\" मीना दीदी ने कहा। \"इसे भरोसे का स्कोर समझो। जितना ऊँचा, उतना ज़्यादा भरोसा कि आप पैसे लौटाएँगे।\"",
+        "\"तो सात सौ अस्सी अच्छा है?\" तुमने पूछा। \"बहुत अच्छा,\" मीना दीदी बोलीं। \"सात सौ पचास से ऊपर को आमतौर पर मज़बूत माना जाता है। छह सौ पचास से नीचे बैंक मना कर सकते हैं या ज़्यादा ब्याज माँग सकते हैं।\" तुमने हिसाब लगाया: बेहतर स्कोर से असली पैसे बच सकते हैं, क्योंकि बैंक भरोसेमंद लोगों से कम ब्याज लेता है। \"स्कोर तुम्हारे इतिहास से बनता है,\" गुल्लू बोला। \"इतिहास नहीं, तो स्कोर नहीं, इसीलिए पहला कर्ज़ मुश्किल हो सकता है।\"",
+        "मीना दीदी ने बोर्ड पर दो रास्ते बनाए। \"पहला रास्ता: हर किस्त और कार्ड का बिल नियत तारीख़ तक या उससे पहले भरो। क्रेडिट कार्ड पर बकाया रक़म सीमा से काफ़ी कम रखो। स्कोर ऊपर चढ़ता है।\" उन्होंने दूसरा रास्ता बनाया। \"दूसरा रास्ता: किस्तें चूकना, देर से भरना, या एक साथ पाँच बैंकों में आवेदन करना। हर आवेदन निशान छोड़ता है और स्कोर फिसलता है।\" गुल्लू ने थूक निगला। \"एक किस्त चूकने पर भी?\" \"देर से भुगतान कई साल तक रिपोर्ट में रह सकता है,\" उन्होंने कहा।",
+        "काका ने तुम्हारे साथ एक सूची बनाई: समय पर भुगतान करो, उतना ही उधार लो जितना चुका सको, एक साथ कई कर्ज़ों के लिए आवेदन मत करो, और साल में एक बार अपनी रिपोर्ट देखो, जो मुफ़्त है, ताकि ग़लतियाँ पकड़ सको। \"और फ़ोन करके माँगने वाले किसी को अपना ओटीपी या पैन कभी मत बताना,\" तुमने जोड़ा। मीना दीदी ने सिर हिलाया। \"स्कोर धीरे-धीरे बनता है, एक-एक समय पर भुगतान से। धैर्य रखो तो यह बैंक में तुम्हारा सबसे अच्छा दोस्त बन जाएगा।\" काका को कम दर पर कर्ज़ मिल गया और गुल्लू नाचने लगा।"
+      ],
+      "mr": [
+        "काकांना त्यांच्या पिठाच्या गिरणीसाठी नवीन यंत्र घ्यायचं होतं आणि त्यांना कर्ज हवं होतं. बँकेत मीना ताईंनी एक कागद पाहिला आणि म्हणाल्या, \"तुमचा क्रेडिट स्कोअर सातशे ऐंशी आहे.\" काकांनी पापण्या फडफडवल्या. \"हे काय असतं?\" गल्लू पुढे झुकला. \"तीनशे ते नऊशेमधला एक आकडा, जो दाखवतो की तुम्ही आधीची कर्जं किती चांगल्या प्रकारे फेडली,\" मीना ताई म्हणाल्या. \"याला भरोशाचा स्कोअर समज. जितका जास्त, तितका बँकेचा विश्वास की तुम्ही पैसे परत कराल.\"",
+        "\"मग सातशे ऐंशी चांगला आहे का?\" तू विचारलंस. \"खूप चांगला,\" मीना ताई म्हणाल्या. \"सातशे पन्नासच्या वर साधारणपणे मजबूत मानला जातो. सहाशे पन्नासच्या खाली बँका नकार देऊ शकतात किंवा जास्त व्याज मागू शकतात.\" तू हिशोब केलास: चांगल्या स्कोअरमुळे खरे पैसे वाचू शकतात, कारण बँक विश्वासू लोकांकडून कमी व्याज घेते. \"स्कोअर तुझ्या इतिहासातून बनतो,\" गल्लू म्हणाला. \"इतिहास नाही तर स्कोअर नाही, म्हणूनच पहिलं कर्ज कठीण असू शकतं.\"",
+        "मीना ताईंनी फळ्यावर दोन रस्ते काढले. \"पहिला रस्ता: प्रत्येक हप्ता आणि कार्डाचं बिल देय तारखेला किंवा आधी भरा. क्रेडिट कार्डावरची थकबाकी मर्यादेपेक्षा खूप कमी ठेवा. स्कोअर वर चढतो.\" त्यांनी दुसरा रस्ता काढला. \"दुसरा रस्ता: हप्ते चुकवणं, उशिरा भरणं किंवा एकाच वेळी पाच बँकांत अर्ज करणं. प्रत्येक अर्ज खूण सोडतो आणि स्कोअर घसरतो.\" गल्लूने आवंढा गिळला. \"एकच हप्ता चुकला तरी?\" \"उशिरा भरलेला हप्ता अनेक वर्षं अहवालात राहू शकतो,\" त्या म्हणाल्या.",
+        "काकांनी तुझ्यासोबत यादी केली: वेळेवर भरा, फेडता येईल तेवढंच उधार घ्या, एकाच वेळी अनेक कर्जांसाठी अर्ज करू नका, आणि वर्षातून एकदा आपला अहवाल तपासा, जो मोफत असतो, म्हणजे चुका सापडतील. \"आणि फोन करून मागणाऱ्या कोणालाही तुमचा ओटीपी किंवा पॅन कधीही सांगू नका,\" तू भर घातलीस. मीना ताईंनी मान डोलावली. \"स्कोअर हळूहळू बनतो, एकेका वेळेवर भरलेल्या हप्त्याने. संयम ठेवलात तर तो बँकेत तुमचा सर्वात चांगला मित्र होईल.\" काकांना कमी दराने कर्ज मिळालं आणि गल्लू नाचला."
+      ]
+    },
+    "recap": {
+      "en": {
+        "remember": [
+          "A credit score is a number from 300 to 900 that shows how well you repay loans.",
+          "A higher score helps you get loans and lower interest rates.",
+          "Paying on time and keeping card use low raises the score. Late payments and many applications lower it.",
+          "Check your report once a year for free, and never share your OTP or PAN."
+        ],
+        "fill": {
+          "bank": [
+            "credit score",
+            "on time",
+            "interest",
+            "report",
+            "OTP",
+            "history"
+          ],
+          "items": [
+            [
+              "A number from 300 to 900 that shows how well you repay loans is a @@.",
+              "credit score"
+            ],
+            [
+              "The best way to raise your score is to pay @@ every month.",
+              "on time"
+            ],
+            [
+              "A higher score can get you a lower rate of @@.",
+              "interest"
+            ],
+            [
+              "You should check your credit @@ once a year to spot mistakes.",
+              "report"
+            ],
+            [
+              "Never share your @@ with a caller who asks for it.",
+              "OTP"
+            ]
+          ]
+        },
+        "sortTitle": "Raises the score or lowers it?",
+        "sortOpts": [
+          {
+            "k": "up",
+            "t": "Raises the score"
+          },
+          {
+            "k": "down",
+            "t": "Lowers the score"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "calendar",
+            "label": "Paying every instalment on or before the due date",
+            "a": "up"
+          },
+          {
+            "icon": "bill",
+            "label": "Missing a card bill for two months",
+            "a": "down"
+          },
+          {
+            "icon": "paper",
+            "label": "Applying to five banks for loans in one week",
+            "a": "down"
+          },
+          {
+            "icon": "card",
+            "label": "Using only a small part of your card limit",
+            "a": "up"
+          },
+          {
+            "icon": "magnifier",
+            "label": "Checking your report yearly and fixing mistakes",
+            "a": "up"
+          }
+        ],
+        "tf": [
+          {
+            "q": "A higher credit score can help you get a lower interest rate.",
+            "a": true
+          },
+          {
+            "q": "Applying to many banks at once helps your score.",
+            "a": false
+          },
+          {
+            "q": "Checking your own credit report once a year is a good habit.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "Kaka pays every instalment on the due date for three years. What will most likely happen to his score?",
+            "opts": [
+              "It will climb",
+              "It will drop",
+              "It will stay at zero"
+            ],
+            "a": 0
+          },
+          {
+            "q": "A caller says he will raise your score if you tell him your OTP. What should you do?",
+            "opts": [
+              "Tell him quickly",
+              "Hang up and share nothing",
+              "Send him your PAN too"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "I, {name}, promise to pay what I owe on time, to borrow only what I can repay, and to keep my OTP and PAN to myself."
+      },
+      "hi": {
+        "remember": [
+          "क्रेडिट स्कोर तीन सौ से नौ सौ के बीच की संख्या है जो बताती है कि आप कर्ज़ कितनी अच्छी तरह चुकाते हैं।",
+          "ऊँचा स्कोर कर्ज़ और कम ब्याज दर दिलाने में मदद करता है।",
+          "समय पर भुगतान और कार्ड का कम इस्तेमाल स्कोर बढ़ाता है। देर से भुगतान और बहुत सारे आवेदन उसे घटाते हैं।",
+          "साल में एक बार रिपोर्ट मुफ़्त देखो, और ओटीपी या पैन किसी को मत बताओ।"
+        ],
+        "fill": {
+          "bank": [
+            "क्रेडिट स्कोर",
+            "समय पर",
+            "ब्याज",
+            "रिपोर्ट",
+            "ओटीपी",
+            "इतिहास"
+          ],
+          "items": [
+            [
+              "तीन सौ से नौ सौ के बीच की संख्या जो बताती है कि आप कर्ज़ कैसे चुकाते हैं, @@ कहलाती है।",
+              "क्रेडिट स्कोर"
+            ],
+            [
+              "स्कोर बढ़ाने का सबसे अच्छा तरीक़ा हर महीने @@ भुगतान करना है।",
+              "समय पर"
+            ],
+            [
+              "ऊँचे स्कोर से कम दर का @@ मिल सकता है।",
+              "ब्याज"
+            ],
+            [
+              "ग़लतियाँ पकड़ने के लिए साल में एक बार अपनी क्रेडिट @@ देखो।",
+              "रिपोर्ट"
+            ],
+            [
+              "माँगने वाले फ़ोन करने वाले को अपना @@ कभी मत बताओ।",
+              "ओटीपी"
+            ]
+          ]
+        },
+        "sortTitle": "स्कोर बढ़ाता है या घटाता है?",
+        "sortOpts": [
+          {
+            "k": "up",
+            "t": "स्कोर बढ़ाता है"
+          },
+          {
+            "k": "down",
+            "t": "स्कोर घटाता है"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "calendar",
+            "label": "हर किस्त नियत तारीख़ तक या उससे पहले भरना",
+            "a": "up"
+          },
+          {
+            "icon": "bill",
+            "label": "दो महीने तक कार्ड का बिल न भरना",
+            "a": "down"
+          },
+          {
+            "icon": "paper",
+            "label": "एक हफ़्ते में पाँच बैंकों में कर्ज़ के लिए आवेदन करना",
+            "a": "down"
+          },
+          {
+            "icon": "card",
+            "label": "कार्ड की सीमा का सिर्फ़ छोटा हिस्सा इस्तेमाल करना",
+            "a": "up"
+          },
+          {
+            "icon": "magnifier",
+            "label": "हर साल रिपोर्ट देखकर ग़लतियाँ ठीक कराना",
+            "a": "up"
+          }
+        ],
+        "tf": [
+          {
+            "q": "ऊँचा क्रेडिट स्कोर कम ब्याज दर दिलाने में मदद कर सकता है।",
+            "a": true
+          },
+          {
+            "q": "एक साथ कई बैंकों में आवेदन करने से स्कोर बढ़ता है।",
+            "a": false
+          },
+          {
+            "q": "साल में एक बार अपनी क्रेडिट रिपोर्ट देखना अच्छी आदत है।",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "काका तीन साल तक हर किस्त नियत तारीख़ पर भरते हैं। उनके स्कोर का सबसे संभावित क्या होगा?",
+            "opts": [
+              "बढ़ेगा",
+              "गिरेगा",
+              "शून्य रहेगा"
+            ],
+            "a": 0
+          },
+          {
+            "q": "कोई फ़ोन करने वाला कहता है कि ओटीपी बताओ तो वह तुम्हारा स्कोर बढ़ा देगा। तुम्हें क्या करना चाहिए?",
+            "opts": [
+              "जल्दी से बता दो",
+              "फ़ोन काट दो और कुछ मत बताओ",
+              "अपना पैन भी भेज दो"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मैं, {name}, वादा करत[[ा|ी]] हूँ कि जो देना है वह समय पर चुकाऊँग[[ा|ी]], उतना ही उधार लूँग[[ा|ी]] जितना चुका सकूँ, और अपना ओटीपी और पैन अपने पास रखूँग[[ा|ी]]।"
+      },
+      "mr": {
+        "remember": [
+          "क्रेडिट स्कोअर हा तीनशे ते नऊशेमधला आकडा आहे जो दाखवतो की तू कर्जं किती चांगली फेडतोस.",
+          "जास्त स्कोअरमुळे कर्ज आणि कमी व्याजदर मिळायला मदत होते.",
+          "वेळेवर भरणं आणि कार्डाचा कमी वापर स्कोअर वाढवतो. उशिरा भरणं आणि खूप अर्ज तो कमी करतात.",
+          "वर्षातून एकदा अहवाल मोफत तपास, आणि ओटीपी किंवा पॅन कोणालाही सांगू नकोस."
+        ],
+        "fill": {
+          "bank": [
+            "क्रेडिट स्कोअर",
+            "वेळेवर",
+            "व्याज",
+            "अहवाल",
+            "ओटीपी",
+            "इतिहास"
+          ],
+          "items": [
+            [
+              "तीनशे ते नऊशेमधला आकडा जो दाखवतो की तू कर्ज कसं फेडतोस त्याला @@ म्हणतात.",
+              "क्रेडिट स्कोअर"
+            ],
+            [
+              "स्कोअर वाढवण्याचा सर्वोत्तम मार्ग म्हणजे दर महिन्याला @@ भरणं.",
+              "वेळेवर"
+            ],
+            [
+              "जास्त स्कोअरमुळे कमी दराचं @@ मिळू शकतं.",
+              "व्याज"
+            ],
+            [
+              "चुका शोधण्यासाठी वर्षातून एकदा तुझा क्रेडिट @@ तपास.",
+              "अहवाल"
+            ],
+            [
+              "मागणाऱ्या फोन करणाऱ्याला तुझा @@ कधीही सांगू नकोस.",
+              "ओटीपी"
+            ]
+          ]
+        },
+        "sortTitle": "स्कोअर वाढवतं की कमी करतं?",
+        "sortOpts": [
+          {
+            "k": "up",
+            "t": "स्कोअर वाढवतं"
+          },
+          {
+            "k": "down",
+            "t": "स्कोअर कमी करतं"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "calendar",
+            "label": "प्रत्येक हप्ता देय तारखेला किंवा आधी भरणं",
+            "a": "up"
+          },
+          {
+            "icon": "bill",
+            "label": "दोन महिने कार्डाचं बिल न भरणं",
+            "a": "down"
+          },
+          {
+            "icon": "paper",
+            "label": "एका आठवड्यात पाच बँकांत कर्जासाठी अर्ज करणं",
+            "a": "down"
+          },
+          {
+            "icon": "card",
+            "label": "कार्डाच्या मर्यादेचा फक्त छोटा भाग वापरणं",
+            "a": "up"
+          },
+          {
+            "icon": "magnifier",
+            "label": "दर वर्षी अहवाल तपासून चुका दुरुस्त करणं",
+            "a": "up"
+          }
+        ],
+        "tf": [
+          {
+            "q": "जास्त क्रेडिट स्कोअरमुळे कमी व्याजदर मिळायला मदत होऊ शकते.",
+            "a": true
+          },
+          {
+            "q": "एकाच वेळी अनेक बँकांत अर्ज केल्याने स्कोअर वाढतो.",
+            "a": false
+          },
+          {
+            "q": "वर्षातून एकदा आपला क्रेडिट अहवाल तपासणं ही चांगली सवय आहे.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "काका तीन वर्षं प्रत्येक हप्ता देय तारखेला भरतात. त्यांच्या स्कोअरचं काय होण्याची शक्यता जास्त आहे?",
+            "opts": [
+              "तो वाढेल",
+              "तो घसरेल",
+              "तो शून्य राहील"
+            ],
+            "a": 0
+          },
+          {
+            "q": "एक फोन करणारा म्हणतो की ओटीपी सांगितलास तर तो तुझा स्कोअर वाढवेल. तू काय करावंस?",
+            "opts": [
+              "पटकन सांगून टाकावा",
+              "फोन कट करावा आणि काहीही सांगू नये",
+              "पॅनही पाठवावा"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मी, {name}, वचन देत[[ो|े]] की जे देणं आहे ते वेळेवर फेडेन, फेडता येईल तेवढंच उधार घेईन, आणि माझा ओटीपी आणि पॅन माझ्याकडेच ठेवेन."
+      }
+    }
+  },
+  {
+    "slug": "egg-baskets",
+    "status": "live",
+    "color": "#fde4a8",
+    "title": {
+      "en": "{name} and the Egg Baskets",
+      "hi": "{name} और अंडों की टोकरियाँ",
+      "mr": "{name} आणि अंड्यांच्या टोपल्या"
+    },
+    "cardTitle": {
+      "en": "The Egg Baskets",
+      "hi": "अंडों की टोकरियाँ",
+      "mr": "अंड्यांच्या टोपल्या"
+    },
+    "subtitle": {
+      "en": "Why not put all your money in one place?",
+      "hi": "सारे पैसे एक ही जगह क्यों नहीं?",
+      "mr": "सगळे पैसे एकाच ठिकाणी का नको?"
+    },
+    "topic": {
+      "en": "Risk and diversification",
+      "hi": "जोखिम और विविधता",
+      "mr": "जोखीम आणि विविधता"
+    },
+    "stops": {
+      "en": [
+        "One Basket",
+        "Crash",
+        "Three Baskets",
+        "Risk and Reward"
+      ],
+      "hi": [
+        "एक टोकरी",
+        "धड़ाम",
+        "तीन टोकरियाँ",
+        "जोखिम और इनाम"
+      ],
+      "mr": [
+        "एक टोपली",
+        "धडाम",
+        "तीन टोपल्या",
+        "जोखीम आणि फायदा"
+      ]
+    },
+    "scenes": [
+      "You carry one big basket full of eggs towards the market while Gullu trots beside you.",
+      "Gullu trips on a stone, the basket tips over and all the eggs lie broken on the road.",
+      "The next day you carry three small baskets with four eggs in each, and one basket tips while two stay safe.",
+      "Meena Didi shows three jars labelled by pictures: a safe jar, a steady jar and a growing plant, while you nod."
+    ],
+    "story": {
+      "en": [
+        "It was market day, and Aaji had given you 12 eggs to carry. To save time, you put all of them in one big basket. \"One trip, easy,\" you said. Gullu trotted along beside you, wagging his tail. The road to the market was bumpy, but you held the basket tight and felt very clever.",
+        "Then Gullu saw a butterfly and darted across your path. You tripped on a stone, and the basket flew out of your hands. All 12 eggs landed on the road with a splat. \"Everything is gone,\" you cried. Meena Didi, passing by on her scooter, stopped. \"That is the problem with one basket,\" she said. \"When it falls, you lose everything.\"",
+        "The next day, you tried again with three small baskets holding 4 eggs each. Gullu darted across your path once more and one basket tipped over, but the other two stayed safe. \"I lost 4 eggs, but I still have 8,\" you said with a sigh of relief. \"That is called diversification,\" said Meena Didi. \"It means spreading your money across different places so one bad thing cannot take it all.\"",
+        "Meena Didi used three jars to explain. \"A safe jar for savings you may need soon. A steady jar like a fixed deposit. A growing jar like a mutual fund, which can grow more but can also fall.\" Gullu scratched his ear. \"So why not put everything in the growing jar?\" \"Because higher possible reward comes with higher risk,\" she said. \"And never put all your money in one shop, one friend or one person's big promise.\" You nodded. \"Many baskets, small risks.\""
+      ],
+      "hi": [
+        "बाज़ार का दिन था और दादी ने तुम्हें बारह अंडे ले जाने को दिए थे। समय बचाने के लिए तुमने सब एक ही बड़ी टोकरी में रख लिए। \"एक ही चक्कर, आसान,\" तुमने कहा। गुल्लू दुम हिलाता हुआ तुम्हारे साथ दौड़ रहा था। बाज़ार का रास्ता ऊबड़-खाबड़ था, पर तुमने टोकरी कसकर पकड़ी और ख़ुद को बहुत होशियार समझा।",
+        "तभी गुल्लू ने तितली देखी और तुम्हारे रास्ते में कूद पड़ा। तुम एक पत्थर से टकराकर गिरे और टोकरी हाथ से छूट गई। बारहों अंडे छपाक से सड़क पर गिर गए। \"सब ख़त्म हो गया,\" तुम रो पड़े। मीना दीदी स्कूटर से गुज़र रही थीं, वे रुक गईं। \"एक टोकरी की यही दिक़्क़त है,\" उन्होंने कहा। \"वह गिरी तो सब कुछ चला जाता है।\"",
+        "अगले दिन तुमने फिर कोशिश की, इस बार तीन छोटी टोकरियों में चार-चार अंडे। गुल्लू फिर रास्ते में कूदा और एक टोकरी गिर गई, पर दो सुरक्षित रहीं। \"चार अंडे गए, पर आठ बचे हैं,\" तुमने राहत की साँस लेकर कहा। \"इसे विविधता यानी डायवर्सिफ़िकेशन कहते हैं,\" मीना दीदी बोलीं। \"मतलब पैसे अलग-अलग जगह बाँटना ताकि एक बुरी घटना सब कुछ न छीन ले।\"",
+        "मीना दीदी ने तीन जारों से समझाया। \"एक सुरक्षित जार उन बचत के लिए जिनकी जल्दी ज़रूरत पड़ सकती है। एक स्थिर जार, जैसे फ़िक्स्ड डिपॉज़िट। एक बढ़ने वाला जार, जैसे म्यूचुअल फ़ंड, जो ज़्यादा बढ़ सकता है पर गिर भी सकता है।\" गुल्लू ने कान खुजाया। \"तो सब कुछ बढ़ने वाले जार में क्यों नहीं?\" \"क्योंकि ज़्यादा इनाम की संभावना के साथ ज़्यादा जोखिम आता है,\" उन्होंने कहा। \"और अपने सारे पैसे कभी एक दुकान, एक दोस्त या किसी एक के बड़े वादे में मत डालो।\" तुमने सिर हिलाया। \"कई टोकरियाँ, छोटे जोखिम।\""
+      ],
+      "mr": [
+        "बाजाराचा दिवस होता आणि आजीने तुला बारा अंडी न्यायला दिली होती. वेळ वाचवण्यासाठी तू सगळी एकाच मोठ्या टोपलीत ठेवली. \"एकच फेरी, सोपं,\" तू म्हणालास. गल्लू शेपटी हलवत तुझ्या शेजारी पळत होता. बाजाराचा रस्ता खडबडीत होता, पण तू टोपली घट्ट धरली आणि स्वतःला खूप हुशार समजलंस.",
+        "तेवढ्यात गल्लूने फुलपाखरू पाहिलं आणि तुझ्या वाटेत आडवा धावला. तू दगडाला अडखळलास आणि टोपली हातातून उडाली. बाराही अंडी रस्त्यावर चपाक करून पडली. \"सगळं गेलं,\" तू रडलास. मीना ताई स्कूटरवरून जात होत्या, त्या थांबल्या. \"एका टोपलीची हीच अडचण आहे,\" त्या म्हणाल्या. \"ती पडली की सगळं जातं.\"",
+        "दुसऱ्या दिवशी तू पुन्हा प्रयत्न केलास, यावेळी तीन छोट्या टोपल्यांत चार चार अंडी. गल्लू पुन्हा वाटेत आडवा धावला आणि एक टोपली पडली, पण दोन सुरक्षित राहिल्या. \"चार अंडी गेली, पण आठ वाचली,\" तू सुटकेचा निःश्वास टाकत म्हणालास. \"याला विविधता म्हणजे डायव्हर्सिफिकेशन म्हणतात,\" मीना ताई म्हणाल्या. \"म्हणजे पैसे वेगवेगळ्या ठिकाणी वाटणं, म्हणजे एक वाईट गोष्ट सगळं हिरावून घेणार नाही.\"",
+        "मीना ताईंनी तीन बरण्यांनी समजावलं. \"एक सुरक्षित बरणी लवकर लागू शकणाऱ्या बचतीसाठी. एक स्थिर बरणी, जसं फिक्स्ड डिपॉझिट. एक वाढणारी बरणी, जसा म्युच्युअल फंड, जो जास्त वाढू शकतो पण घसरूही शकतो.\" गल्लूने कान खाजवला. \"मग सगळं वाढणाऱ्या बरणीत का नको?\" \"कारण जास्त फायद्याच्या शक्यतेसोबत जास्त जोखीम येते,\" त्या म्हणाल्या. \"आणि आपले सगळे पैसे कधीही एका दुकानात, एका मित्रात किंवा एका माणसाच्या मोठ्या वचनात घालू नका.\" तू मान डोलावलीस. \"अनेक टोपल्या, छोट्या जोखमी.\""
+      ]
+    },
+    "recap": {
+      "en": {
+        "remember": [
+          "Diversification means spreading your money across different places.",
+          "If one place does badly, the others protect the rest of your money.",
+          "Higher possible reward usually comes with higher risk.",
+          "Never put all your money in one shop, one friend or one person's promise."
+        ],
+        "fill": {
+          "bank": [
+            "diversification",
+            "risk",
+            "reward",
+            "spread",
+            "basket",
+            "promise"
+          ],
+          "items": [
+            [
+              "Spreading your money across different places is called @@.",
+              "diversification"
+            ],
+            [
+              "The chance of losing money is called @@.",
+              "risk"
+            ],
+            [
+              "A higher possible @@ usually comes with higher risk.",
+              "reward"
+            ],
+            [
+              "Do not put all your eggs in one @@.",
+              "basket"
+            ],
+            [
+              "Never trust a big @@ of doubled money.",
+              "promise"
+            ]
+          ]
+        },
+        "sortTitle": "One basket or many baskets?",
+        "sortOpts": [
+          {
+            "k": "one",
+            "t": "All in one place"
+          },
+          {
+            "k": "many",
+            "t": "Spread out"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "sack",
+            "label": "Putting all your savings in one friend's business",
+            "a": "one"
+          },
+          {
+            "icon": "jar",
+            "label": "Keeping some money as safe savings",
+            "a": "many"
+          },
+          {
+            "icon": "bank",
+            "label": "Putting some money in a fixed deposit",
+            "a": "many"
+          },
+          {
+            "icon": "fakecall",
+            "label": "Giving everything to a caller who promises double",
+            "a": "one"
+          },
+          {
+            "icon": "seed",
+            "label": "Putting a small part in a mutual fund for the long term",
+            "a": "many"
+          }
+        ],
+        "tf": [
+          {
+            "q": "Spreading money across different places lowers the chance of losing everything.",
+            "a": true
+          },
+          {
+            "q": "Higher possible reward usually means lower risk.",
+            "a": false
+          },
+          {
+            "q": "It is wise to put all your savings in one person's promise.",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "You have 12 eggs. Which is the safest way to carry them?",
+            "opts": [
+              "All in one basket",
+              "Three baskets of four",
+              "Throw them in the air"
+            ],
+            "a": 1
+          },
+          {
+            "q": "A scheme promises to double your money in a month. What does the egg basket lesson tell you?",
+            "opts": [
+              "Put everything in it",
+              "Be careful, big promises carry big risk",
+              "Tell everyone to join"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "I, {name}, promise to spread my money wisely, to respect risk, and never to put everything in one basket."
+      },
+      "hi": {
+        "remember": [
+          "विविधता यानी पैसे अलग-अलग जगह बाँटना।",
+          "एक जगह नुकसान हो तो बाक़ी जगहें बाक़ी पैसों को बचाती हैं।",
+          "ज़्यादा इनाम की संभावना के साथ आमतौर पर ज़्यादा जोखिम आता है।",
+          "अपने सारे पैसे कभी एक दुकान, एक दोस्त या किसी एक के वादे में मत डालो।"
+        ],
+        "fill": {
+          "bank": [
+            "विविधता",
+            "जोखिम",
+            "इनाम",
+            "बाँटना",
+            "टोकरी",
+            "वादे"
+          ],
+          "items": [
+            [
+              "पैसों को अलग-अलग जगह बाँटने को @@ कहते हैं।",
+              "विविधता"
+            ],
+            [
+              "पैसे खोने की संभावना को @@ कहते हैं।",
+              "जोखिम"
+            ],
+            [
+              "ज़्यादा संभावित @@ के साथ आमतौर पर ज़्यादा जोखिम आता है।",
+              "इनाम"
+            ],
+            [
+              "सारे अंडे एक ही @@ में मत रखो।",
+              "टोकरी"
+            ],
+            [
+              "पैसे दुगने करने के बड़े @@ पर कभी भरोसा मत करो।",
+              "वादे"
+            ]
+          ]
+        },
+        "sortTitle": "एक टोकरी या कई टोकरियाँ?",
+        "sortOpts": [
+          {
+            "k": "one",
+            "t": "सब एक ही जगह"
+          },
+          {
+            "k": "many",
+            "t": "बँटे हुए"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "sack",
+            "label": "सारी बचत एक दोस्त के धंधे में लगाना",
+            "a": "one"
+          },
+          {
+            "icon": "jar",
+            "label": "कुछ पैसे सुरक्षित बचत में रखना",
+            "a": "many"
+          },
+          {
+            "icon": "bank",
+            "label": "कुछ पैसे फ़िक्स्ड डिपॉज़िट में रखना",
+            "a": "many"
+          },
+          {
+            "icon": "fakecall",
+            "label": "दुगना करने का वादा करने वाले फ़ोन करने वाले को सब दे देना",
+            "a": "one"
+          },
+          {
+            "icon": "seed",
+            "label": "लंबे समय के लिए छोटा हिस्सा म्यूचुअल फ़ंड में लगाना",
+            "a": "many"
+          }
+        ],
+        "tf": [
+          {
+            "q": "पैसों को अलग-अलग जगह बाँटने से सब कुछ खोने की संभावना कम होती है।",
+            "a": true
+          },
+          {
+            "q": "ज़्यादा संभावित इनाम का मतलब आमतौर पर कम जोखिम होता है।",
+            "a": false
+          },
+          {
+            "q": "सारी बचत किसी एक के वादे पर लगा देना समझदारी है।",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "तुम्हारे पास बारह अंडे हैं। उन्हें ले जाने का सबसे सुरक्षित तरीक़ा कौन सा है?",
+            "opts": [
+              "सब एक ही टोकरी में",
+              "चार-चार की तीन टोकरियाँ",
+              "हवा में उछाल दो"
+            ],
+            "a": 1
+          },
+          {
+            "q": "एक योजना महीने भर में पैसे दुगने करने का वादा करती है। अंडों की टोकरी का सबक़ क्या कहता है?",
+            "opts": [
+              "उसमें सब लगा दो",
+              "सावधान रहो, बड़े वादों में बड़ा जोखिम होता है",
+              "सबको जुड़ने को कहो"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मैं, {name}, वादा करत[[ा|ी]] हूँ कि अपने पैसे समझदारी से बाँटूँग[[ा|ी]], जोखिम का सम्मान करूँग[[ा|ी]], और कभी सब कुछ एक टोकरी में नहीं रखूँग[[ा|ी]]।"
+      },
+      "mr": {
+        "remember": [
+          "विविधता म्हणजे पैसे वेगवेगळ्या ठिकाणी वाटणं.",
+          "एका ठिकाणी नुकसान झालं तर बाकीची ठिकाणं उरलेल्या पैशांचं रक्षण करतात.",
+          "जास्त फायद्याच्या शक्यतेसोबत साधारणपणे जास्त जोखीम येते.",
+          "आपले सगळे पैसे कधीही एका दुकानात, एका मित्रात किंवा एका माणसाच्या वचनात घालू नका."
+        ],
+        "fill": {
+          "bank": [
+            "विविधता",
+            "जोखीम",
+            "फायदा",
+            "वाटणं",
+            "टोपली",
+            "वचनावर"
+          ],
+          "items": [
+            [
+              "पैसे वेगवेगळ्या ठिकाणी वाटण्याला @@ म्हणतात.",
+              "विविधता"
+            ],
+            [
+              "पैसे गमावण्याच्या शक्यतेला @@ म्हणतात.",
+              "जोखीम"
+            ],
+            [
+              "जास्त संभाव्य @@ सोबत साधारणपणे जास्त जोखीम येते.",
+              "फायदा"
+            ],
+            [
+              "सगळी अंडी एकाच @@ मध्ये ठेवू नका.",
+              "टोपली"
+            ],
+            [
+              "पैसे दुप्पट करण्याच्या मोठ्या @@ कधीही विश्वास ठेवू नका.",
+              "वचनावर"
+            ]
+          ]
+        },
+        "sortTitle": "एक टोपली की अनेक टोपल्या?",
+        "sortOpts": [
+          {
+            "k": "one",
+            "t": "सगळं एकाच ठिकाणी"
+          },
+          {
+            "k": "many",
+            "t": "वाटलेलं"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "sack",
+            "label": "सगळी बचत एका मित्राच्या व्यवसायात घालणं",
+            "a": "one"
+          },
+          {
+            "icon": "jar",
+            "label": "थोडे पैसे सुरक्षित बचतीत ठेवणं",
+            "a": "many"
+          },
+          {
+            "icon": "bank",
+            "label": "थोडे पैसे फिक्स्ड डिपॉझिटमध्ये ठेवणं",
+            "a": "many"
+          },
+          {
+            "icon": "fakecall",
+            "label": "दुप्पट करण्याचं वचन देणाऱ्या फोन करणाऱ्याला सगळं देऊन टाकणं",
+            "a": "one"
+          },
+          {
+            "icon": "seed",
+            "label": "दीर्घकाळासाठी थोडा भाग म्युच्युअल फंडात घालणं",
+            "a": "many"
+          }
+        ],
+        "tf": [
+          {
+            "q": "पैसे वेगवेगळ्या ठिकाणी वाटल्याने सगळं गमावण्याची शक्यता कमी होते.",
+            "a": true
+          },
+          {
+            "q": "जास्त संभाव्य फायदा म्हणजे साधारणपणे कमी जोखीम.",
+            "a": false
+          },
+          {
+            "q": "सगळी बचत एका माणसाच्या वचनावर लावणं शहाणपणाचं आहे.",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "तुझ्याकडे बारा अंडी आहेत. ती नेण्याचा सर्वात सुरक्षित मार्ग कोणता?",
+            "opts": [
+              "सगळी एकाच टोपलीत",
+              "चार चारांच्या तीन टोपल्या",
+              "हवेत उडवून द्यावीत"
+            ],
+            "a": 1
+          },
+          {
+            "q": "एक योजना महिनाभरात पैसे दुप्पट करण्याचं वचन देते. अंड्यांच्या टोपलीचा धडा काय सांगतो?",
+            "opts": [
+              "त्यात सगळं घाल",
+              "सावध राहा, मोठ्या वचनांत मोठी जोखीम असते",
+              "सगळ्यांना सामील व्हायला सांग"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मी, {name}, वचन देत[[ो|े]] की माझे पैसे शहाणपणाने वाटेन, जोखमीचा आदर करेन, आणि कधीही सगळं एका टोपलीत ठेवणार नाही."
+      }
+    }
+  },
+  {
+    "slug": "sip-seeds",
+    "status": "live",
+    "color": "#c7f0d8",
+    "title": {
+      "en": "{name} and the Monthly Seeds",
+      "hi": "{name} और महीने के बीज",
+      "mr": "{name} आणि महिन्याचे बी"
+    },
+    "cardTitle": {
+      "en": "The Monthly Seeds",
+      "hi": "महीने के बीज",
+      "mr": "महिन्याचे बी"
+    },
+    "subtitle": {
+      "en": "What is a mutual fund SIP?",
+      "hi": "म्यूचुअल फ़ंड SIP क्या है?",
+      "mr": "म्युच्युअल फंड SIP म्हणजे काय?"
+    },
+    "topic": {
+      "en": "Mutual funds and SIP",
+      "hi": "म्यूचुअल फ़ंड और SIP",
+      "mr": "म्युच्युअल फंड आणि SIP"
+    },
+    "stops": {
+      "en": [
+        "The Big Pot",
+        "The Monthly Seed",
+        "Ups and Downs",
+        "Time Helps"
+      ],
+      "hi": [
+        "बड़ा बर्तन",
+        "महीने का बीज",
+        "चढ़ाव और उतार",
+        "समय की मदद"
+      ],
+      "mr": [
+        "मोठं भांडं",
+        "महिन्याचं बी",
+        "चढ आणि उतार",
+        "वेळेची मदत"
+      ]
+    },
+    "scenes": [
+      "Many villagers drop coins into one big pot while Meena Didi stirs it and points to a field of different plants.",
+      "You drop a single 500 rupee note into a pot every month, shown by a calendar with five small seeds in a row.",
+      "A wavy line of ups and downs behind the plants, with you holding a watering can calmly while Gullu looks worried.",
+      "Years later a tall tree stands where the seeds were planted and you rest beneath it with Gullu."
+    ],
+    "story": {
+      "en": [
+        "Kaka said, \"My neighbours are putting money into something called a mutual fund. What is that?\" Meena Didi drew a big pot. \"Many people put a little money into one pot. A trained fund manager uses the pot to buy small parts of many companies, so no one person has to pick them. This is a mutual fund. It is regulated by SEBI, so only buy through registered platforms.\" Gullu sniffed the pot. \"Is it safe like a bank?\" \"No,\" said Meena Didi. \"It can go up or down.\"",
+        "\"How do I begin with only a little money?\" you asked. \"With an SIP, a Systematic Investment Plan,\" said Meena Didi. \"You put in a fixed amount every month, like 500 rupees, the way you plant one seed each month.\" You did the sum: 500 rupees a month is 6,000 rupees a year. \"It becomes a habit, and you do not have to guess the best day to invest. Start only after you have your emergency money ready.\"",
+        "Behind the plants Meena Didi drew a wavy line. \"Prices go up and down every day. When prices are low, your 500 rupees buys more units. When they are high, it buys fewer. Over time this evens out.\" Gullu looked worried at the dips. \"Should I stop when it falls?\" \"Panicking and stopping is what hurts most,\" she said. \"Remember the line that is read at the end of every advertisement: mutual fund investments are subject to market risks. Nothing is guaranteed, and past results do not promise future ones.\"",
+        "Meena Didi drew a field and a tall tree. \"The magic ingredient is time. Money that stays invested for many years can grow on its growth. Start small, stay regular, stay patient.\" You and Gullu planted a tiny seed by the well that day, to remember. Years later you rested beneath its branches, thinking of the seeds you would sow each month. Gullu snored. \"Slow and steady,\" you whispered."
+      ],
+      "hi": [
+        "काका बोले, \"मेरे पड़ोसी म्यूचुअल फ़ंड नाम की किसी चीज़ में पैसे लगा रहे हैं। यह क्या है?\" मीना दीदी ने एक बड़ा बर्तन बनाया। \"बहुत से लोग एक बर्तन में थोड़े-थोड़े पैसे डालते हैं। एक प्रशिक्षित फ़ंड मैनेजर उस बर्तन से कई कंपनियों के छोटे-छोटे हिस्से ख़रीदता है, ताकि हर आदमी को ख़ुद चुनना न पड़े। यही म्यूचुअल फ़ंड है। इसे सेबी नियंत्रित करता है, इसलिए सिर्फ़ पंजीकृत मंचों से ख़रीदो।\" गुल्लू ने बर्तन सूँघा। \"क्या यह बैंक जैसा सुरक्षित है?\" \"नहीं,\" मीना दीदी बोलीं। \"यह ऊपर-नीचे हो सकता है।\"",
+        "\"थोड़े पैसों से शुरू कैसे करूँ?\" तुमने पूछा। \"एसआईपी यानी सिस्टमैटिक इन्वेस्टमेंट प्लान से,\" मीना दीदी बोलीं। \"हर महीने तय रक़म, जैसे पाँच सौ रुपये, डालते हो, जैसे हर महीने एक बीज बोते हो।\" तुमने हिसाब लगाया: पाँच सौ रुपये महीना यानी साल में छह हज़ार रुपये। \"यह आदत बन जाती है, और निवेश के लिए सबसे अच्छा दिन अंदाज़े से नहीं ढूँढना पड़ता। शुरू तब करो जब आपातकाल के पैसे तैयार हों।\"",
+        "पौधों के पीछे मीना दीदी ने एक लहरदार रेखा बनाई। \"भाव रोज़ ऊपर-नीचे होते हैं। भाव कम हों तो तुम्हारे पाँच सौ रुपये ज़्यादा यूनिट ख़रीदते हैं। ज़्यादा हों तो कम। समय के साथ यह बराबर हो जाता है।\" गुल्लू गिरावट देखकर घबराया। \"गिरे तो क्या रुक जाऊँ?\" \"घबराकर रुक जाना सबसे ज़्यादा नुक़सान करता है,\" उन्होंने कहा। \"हर विज्ञापन के अंत में पढ़ी जाने वाली बात याद रखो: म्यूचुअल फ़ंड निवेश बाज़ार जोखिमों के अधीन हैं। कुछ भी पक्का नहीं है, और पुराने नतीजे आगे की गारंटी नहीं देते।\"",
+        "मीना दीदी ने एक खेत और एक ऊँचा पेड़ बनाया। \"जादुई चीज़ समय है। जो पैसा कई साल निवेश में रहता है वह अपनी ही बढ़त पर बढ़ सकता है। छोटा शुरू करो, नियमित रहो, धैर्य रखो।\" तुमने और गुल्लू ने उस दिन कुएँ के पास एक छोटा बीज बोया, याद रखने के लिए। सालों बाद तुम उसकी डालियों के नीचे आराम कर रहे थे और हर महीने बोए जाने वाले बीजों के बारे में सोच रहे थे। गुल्लू ख़र्राटे ले रहा था। \"धीरे और लगातार,\" तुमने फुसफुसाया।"
+      ],
+      "mr": [
+        "काका म्हणाले, \"माझे शेजारी म्युच्युअल फंड नावाच्या कशात तरी पैसे घालत आहेत. ते काय असतं?\" मीना ताईंनी एक मोठं भांडं काढलं. \"अनेक लोक एका भांड्यात थोडे थोडे पैसे घालतात. एक प्रशिक्षित फंड मॅनेजर त्या भांड्यातून अनेक कंपन्यांचे छोटे छोटे हिस्से घेतो, म्हणजे प्रत्येकाला स्वतः निवडावं लागत नाही. हाच म्युच्युअल फंड. त्यावर सेबीचं नियंत्रण असतं, म्हणून फक्त नोंदणीकृत व्यासपीठांवरूनच घ्या.\" गल्लूने भांडं हुंगलं. \"हे बँकेसारखं सुरक्षित आहे का?\" \"नाही,\" मीना ताई म्हणाल्या. \"ते वर किंवा खाली जाऊ शकतं.\"",
+        "\"थोड्या पैशांनी सुरुवात कशी करू?\" तू विचारलंस. \"एसआयपीने, म्हणजे सिस्टिमॅटिक इन्व्हेस्टमेंट प्लॅनने,\" मीना ताई म्हणाल्या. \"दर महिन्याला ठरलेली रक्कम, म्हणजे पाचशे रुपये, घालायची, जसं दर महिन्याला एक बी पेरतोस.\" तू हिशोब केलास: महिन्याला पाचशे म्हणजे वर्षाला सहा हजार रुपये. \"ती सवय बनते, आणि गुंतवणुकीसाठी सर्वोत्तम दिवस अंदाजाने शोधावा लागत नाही. सुरुवात तेव्हा कर जेव्हा आणीबाणीचे पैसे तयार असतील.\"",
+        "रोपांमागे मीना ताईंनी एक नागमोडी रेषा काढली. \"भाव रोज वर खाली होतात. भाव कमी असतील तर तुझे पाचशे रुपये जास्त युनिट घेतात. जास्त असतील तर कमी. कालांतराने हे सम होतं.\" गल्लू उतार पाहून घाबरला. \"भाव पडले तर थांबू का?\" \"घाबरून थांबणं सर्वात जास्त नुकसान करतं,\" त्या म्हणाल्या. \"प्रत्येक जाहिरातीच्या शेवटी वाचली जाणारी ओळ लक्षात ठेव: म्युच्युअल फंड गुंतवणूक बाजारातील जोखमींच्या अधीन आहे. काहीही निश्चित नाही, आणि आधीचे निकाल पुढच्याची खात्री देत नाहीत.\"",
+        "मीना ताईंनी एक शेत आणि एक उंच झाड काढलं. \"जादुई घटक म्हणजे वेळ. जो पैसा अनेक वर्षं गुंतलेला राहतो तो स्वतःच्या वाढीवर वाढू शकतो. लहान सुरुवात कर, नियमित राहा, संयम ठेव.\" तू आणि गल्लूने त्या दिवशी विहिरीजवळ एक छोटं बी लावलं, लक्षात राहण्यासाठी. वर्षांनी तू त्याच्या फांद्यांखाली विश्रांती घेत होतास आणि दर महिन्याला पेरायच्या बियांचा विचार करत होतास. गल्लू घोरत होता. \"हळू आणि सातत्याने,\" तू कुजबुजलास."
+      ]
+    },
+    "recap": {
+      "en": {
+        "remember": [
+          "A mutual fund pools money from many people and a fund manager invests it in many companies.",
+          "An SIP puts in a fixed amount every month, which builds a habit.",
+          "Returns are not guaranteed. Prices go up and down, and mutual fund investments are subject to market risks.",
+          "Start after your emergency money is ready, stay regular and give it time."
+        ],
+        "fill": {
+          "bank": [
+            "mutual fund",
+            "SIP",
+            "SEBI",
+            "risks",
+            "time",
+            "unit"
+          ],
+          "items": [
+            [
+              "A pot where many people invest together is a @@.",
+              "mutual fund"
+            ],
+            [
+              "Investing a fixed amount every month is called an @@.",
+              "SIP"
+            ],
+            [
+              "Mutual funds in India are regulated by @@.",
+              "SEBI"
+            ],
+            [
+              "Mutual fund investments are subject to market @@.",
+              "risks"
+            ],
+            [
+              "Money invested for many years grows best when you give it @@.",
+              "time"
+            ]
+          ]
+        },
+        "sortTitle": "Fixed and known, or can go up and down?",
+        "sortOpts": [
+          {
+            "k": "fixed",
+            "t": "Fixed and known"
+          },
+          {
+            "k": "varies",
+            "t": "Can go up and down"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "bank",
+            "label": "The interest rate promised on a fixed deposit",
+            "a": "fixed"
+          },
+          {
+            "icon": "pie",
+            "label": "The value of a mutual fund",
+            "a": "varies"
+          },
+          {
+            "icon": "calendar",
+            "label": "The amount you choose to put in your SIP each month",
+            "a": "fixed"
+          },
+          {
+            "icon": "kite",
+            "label": "The price of a company share",
+            "a": "varies"
+          },
+          {
+            "icon": "jar",
+            "label": "The coins you counted in your jar",
+            "a": "fixed"
+          }
+        ],
+        "tf": [
+          {
+            "q": "A mutual fund guarantees that you will not lose money.",
+            "a": false
+          },
+          {
+            "q": "An SIP lets you invest a fixed amount every month.",
+            "a": true
+          },
+          {
+            "q": "You should stop your SIP the moment prices fall.",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "You put in 500 rupees every month. How much do you invest in a year?",
+            "opts": [
+              "5,000",
+              "6,000",
+              "60,000"
+            ],
+            "a": 1
+          },
+          {
+            "q": "A friend says a fund will definitely double your money in a year. What should you do?",
+            "opts": [
+              "Believe it",
+              "Remember that nothing is guaranteed and be careful",
+              "Put in all your savings"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "I, {name}, promise to invest only after my emergency money is ready, to start small and stay regular, and to remember that nothing is guaranteed."
+      },
+      "hi": {
+        "remember": [
+          "म्यूचुअल फ़ंड कई लोगों का पैसा इकट्ठा करता है और फ़ंड मैनेजर उसे कई कंपनियों में लगाता है।",
+          "एसआईपी में हर महीने तय रक़म लगती है, जिससे आदत बनती है।",
+          "रिटर्न की गारंटी नहीं है। भाव ऊपर-नीचे होते हैं, और म्यूचुअल फ़ंड निवेश बाज़ार जोखिमों के अधीन हैं।",
+          "आपातकाल के पैसे तैयार होने के बाद शुरू करो, नियमित रहो और समय दो।"
+        ],
+        "fill": {
+          "bank": [
+            "म्यूचुअल फ़ंड",
+            "एसआईपी",
+            "सेबी",
+            "जोखिमों",
+            "समय",
+            "यूनिट"
+          ],
+          "items": [
+            [
+              "जहाँ बहुत से लोग मिलकर निवेश करते हैं वह बर्तन @@ है।",
+              "म्यूचुअल फ़ंड"
+            ],
+            [
+              "हर महीने तय रक़म निवेश करने को @@ कहते हैं।",
+              "एसआईपी"
+            ],
+            [
+              "भारत में म्यूचुअल फ़ंड को @@ नियंत्रित करता है।",
+              "सेबी"
+            ],
+            [
+              "म्यूचुअल फ़ंड निवेश बाज़ार @@ के अधीन हैं।",
+              "जोखिमों"
+            ],
+            [
+              "कई साल निवेश में रखा पैसा तब सबसे अच्छा बढ़ता है जब उसे @@ दिया जाए।",
+              "समय"
+            ]
+          ]
+        },
+        "sortTitle": "तय और पता है, या ऊपर-नीचे हो सकता है?",
+        "sortOpts": [
+          {
+            "k": "fixed",
+            "t": "तय और पता है"
+          },
+          {
+            "k": "varies",
+            "t": "ऊपर-नीचे हो सकता है"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "bank",
+            "label": "फ़िक्स्ड डिपॉज़िट पर वादा की गई ब्याज दर",
+            "a": "fixed"
+          },
+          {
+            "icon": "pie",
+            "label": "म्यूचुअल फ़ंड की क़ीमत",
+            "a": "varies"
+          },
+          {
+            "icon": "calendar",
+            "label": "हर महीने एसआईपी में डालने के लिए तुम्हारी चुनी रक़म",
+            "a": "fixed"
+          },
+          {
+            "icon": "kite",
+            "label": "किसी कंपनी के शेयर का भाव",
+            "a": "varies"
+          },
+          {
+            "icon": "jar",
+            "label": "तुम्हारे जार में गिने हुए सिक्के",
+            "a": "fixed"
+          }
+        ],
+        "tf": [
+          {
+            "q": "म्यूचुअल फ़ंड गारंटी देता है कि पैसे नहीं डूबेंगे।",
+            "a": false
+          },
+          {
+            "q": "एसआईपी से हर महीने तय रक़म निवेश की जा सकती है।",
+            "a": true
+          },
+          {
+            "q": "भाव गिरते ही एसआईपी रोक देना चाहिए।",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "तुम हर महीने पाँच सौ रुपये लगाते हो। साल भर में कितना निवेश करते हो?",
+            "opts": [
+              "पाँच हज़ार",
+              "छह हज़ार",
+              "साठ हज़ार"
+            ],
+            "a": 1
+          },
+          {
+            "q": "एक दोस्त कहता है कि फ़ंड साल भर में पैसे पक्का दुगने कर देगा। तुम्हें क्या करना चाहिए?",
+            "opts": [
+              "मान लो",
+              "याद रखो कि कुछ भी पक्का नहीं और सावधान रहो",
+              "सारी बचत लगा दो"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मैं, {name}, वादा करत[[ा|ी]] हूँ कि आपातकाल के पैसे तैयार होने के बाद ही निवेश करूँग[[ा|ी]], छोटा शुरू करके नियमित रहूँग[[ा|ी]], और याद रखूँग[[ा|ी]] कि कुछ भी पक्का नहीं होता।"
+      },
+      "mr": {
+        "remember": [
+          "म्युच्युअल फंड अनेक लोकांचे पैसे जमा करतो आणि फंड मॅनेजर ते अनेक कंपन्यांत गुंतवतो.",
+          "एसआयपीमध्ये दर महिन्याला ठरलेली रक्कम भरली जाते, त्यामुळे सवय लागते.",
+          "परताव्याची खात्री नसते. भाव वर खाली होतात, आणि म्युच्युअल फंड गुंतवणूक बाजारातील जोखमींच्या अधीन आहे.",
+          "आणीबाणीचे पैसे तयार झाल्यावर सुरुवात कर, नियमित राहा आणि वेळ दे."
+        ],
+        "fill": {
+          "bank": [
+            "म्युच्युअल फंड",
+            "एसआयपी",
+            "सेबी",
+            "जोखमींच्या",
+            "वेळ",
+            "युनिट"
+          ],
+          "items": [
+            [
+              "जिथे अनेक लोक मिळून गुंतवणूक करतात ते भांडं म्हणजे @@.",
+              "म्युच्युअल फंड"
+            ],
+            [
+              "दर महिन्याला ठरलेली रक्कम गुंतवण्याला @@ म्हणतात.",
+              "एसआयपी"
+            ],
+            [
+              "भारतात म्युच्युअल फंडांवर @@ चं नियंत्रण असतं.",
+              "सेबी"
+            ],
+            [
+              "म्युच्युअल फंड गुंतवणूक बाजारातील @@ अधीन आहे.",
+              "जोखमींच्या"
+            ],
+            [
+              "अनेक वर्षं गुंतवलेला पैसा तेव्हा सर्वात चांगला वाढतो जेव्हा त्याला @@ दिला जातो.",
+              "वेळ"
+            ]
+          ]
+        },
+        "sortTitle": "ठरलेलं आणि माहीत, की वर खाली होऊ शकतं?",
+        "sortOpts": [
+          {
+            "k": "fixed",
+            "t": "ठरलेलं आणि माहीत"
+          },
+          {
+            "k": "varies",
+            "t": "वर खाली होऊ शकतं"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "bank",
+            "label": "फिक्स्ड डिपॉझिटवर वचन दिलेला व्याजदर",
+            "a": "fixed"
+          },
+          {
+            "icon": "pie",
+            "label": "म्युच्युअल फंडाची किंमत",
+            "a": "varies"
+          },
+          {
+            "icon": "calendar",
+            "label": "दर महिन्याला एसआयपीमध्ये घालण्यासाठी तू ठरवलेली रक्कम",
+            "a": "fixed"
+          },
+          {
+            "icon": "kite",
+            "label": "कंपनीच्या शेअरची किंमत",
+            "a": "varies"
+          },
+          {
+            "icon": "jar",
+            "label": "तुझ्या बरणीत मोजलेली नाणी",
+            "a": "fixed"
+          }
+        ],
+        "tf": [
+          {
+            "q": "म्युच्युअल फंड पैसे बुडणार नाहीत याची हमी देतो.",
+            "a": false
+          },
+          {
+            "q": "एसआयपीने दर महिन्याला ठरलेली रक्कम गुंतवता येते.",
+            "a": true
+          },
+          {
+            "q": "भाव पडताच एसआयपी थांबवावी.",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "तू दर महिन्याला पाचशे रुपये घालतोस. वर्षभरात किती गुंतवतोस?",
+            "opts": [
+              "पाच हजार",
+              "सहा हजार",
+              "साठ हजार"
+            ],
+            "a": 1
+          },
+          {
+            "q": "एक मित्र म्हणतो की फंड वर्षभरात नक्की पैसे दुप्पट करेल. तू काय करावंस?",
+            "opts": [
+              "विश्वास ठेवावा",
+              "लक्षात ठेवावं की काहीही निश्चित नाही आणि सावध राहावं",
+              "सगळी बचत घालावी"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मी, {name}, वचन देत[[ो|े]] की आणीबाणीचे पैसे तयार झाल्यावरच गुंतवणूक करेन, लहान सुरुवात करून नियमित राहीन, आणि लक्षात ठेवेन की काहीही निश्चित नसतं."
+      }
+    }
+  },
+  {
+    "slug": "buy-now-trap",
+    "status": "live",
+    "color": "#fdffb6",
+    "title": {
+      "en": "{name} and the Buy-Now Trap",
+      "hi": "{name} और \"अभी ख़रीदो\" का जाल",
+      "mr": "{name} आणि \"आत्ताच घ्या\"चं जाळं"
+    },
+    "cardTitle": {
+      "en": "The Buy-Now Trap",
+      "hi": "\"अभी ख़रीदो\" का जाल",
+      "mr": "\"आत्ताच घ्या\"चं जाळं"
+    },
+    "subtitle": {
+      "en": "What does an EMI really cost?",
+      "hi": "EMI की असली क़ीमत क्या है?",
+      "mr": "EMI ची खरी किंमत किती?"
+    },
+    "topic": {
+      "en": "EMI and hidden costs",
+      "hi": "EMI और छिपी लागत",
+      "mr": "EMI आणि लपलेला खर्च"
+    },
+    "stops": {
+      "en": [
+        "The Shop Window",
+        "The Blackboard Sums",
+        "The Saving Jar",
+        "Paid in Full"
+      ],
+      "hi": [
+        "दुकान की खिड़की",
+        "ब्लैकबोर्ड का हिसाब",
+        "बचत की बरनी",
+        "पूरा भुगतान"
+      ],
+      "mr": [
+        "दुकानाची खिडकी",
+        "फळ्यावरचं गणित",
+        "बचतीची बरणी",
+        "पूर्ण पेमेंट"
+      ]
+    },
+    "scenes": [
+      "A shop assistant says \"1,100 rupees a month\" in a speech bubble while you look at the new phone on its stand with a worried face.",
+      "On the blackboard, 1,100 times 12 makes 13,200, and the extra is 1,200. You think with your head tilted.",
+      "You drop a coin into your jar while a calendar fills with ticks and a phone floats in your thought bubble.",
+      "You hold up your new phone proudly at the counter, with 12,000 rupees paid in cash and no EMI."
+    ],
+    "story": {
+      "en": [
+        "On Saturday you stopped at the mobile shop and saw a shiny new phone. The price tag said 12,000 rupees. \"Too much!\" you gasped. The shop assistant smiled. \"No problem! Pay just 1,100 rupees a month and take it home today!\" Only 1,100? That sounded so small. Gullu tugged your sleeve. \"Wait, {name}. Let us count first.\"",
+        "Back home, Gullu pointed at the blackboard. \"An EMI means paying for something in small monthly parts,\" he said. \"The assistant said twelve months. So 1,100 times 12 makes 13,200 rupees.\" Below it he wrote: 13,200 minus 12,000 makes 1,200. \"The phone costs 12,000, but this EMI makes you pay 1,200 rupees extra. That is what paying slowly can cost.\"",
+        "\"So what can I do?\" you asked. \"Save first,\" said Gullu. \"Put 1,000 rupees in the jar each month. In 12 months, 1,000 times 12 makes 12,000 rupees. No extra cost, no worry.\" You and Aaji agreed: 1,000 rupees every month from pocket money, birthday gifts and festival gifts. You marked the calendar and dropped in the first coin, dreaming of the phone. Some months were hard and you wanted to give up. But every tick on the calendar made the jar a little heavier.",
+        "Twelve months later you carried the full jar to the shop. You paid 12,000 rupees in cash and walked out with the phone held high. No monthly bills, no extra 1,200 rupees. \"Before you say yes to any EMI,\" said Gullu, \"multiply the monthly amount by the months and compare it with the price. Ask about fees. Even a 'no-cost EMI' can hide a processing fee or take away a cash discount.\""
+      ],
+      "hi": [
+        "शनिवार को तुम मोबाइल की दुकान पर रुक[[े|ीं]] और एक चमचमाता नया फ़ोन देखा। क़ीमत का टैग था बारह हज़ार रुपये। \"बहुत महँगा!\" तुम्हारे मुँह से निकला। दुकान के सहायक ने मुस्कुराकर कहा, \"कोई बात नहीं! बस हर महीने ग्यारह सौ रुपये दीजिए और आज ही घर ले जाइए!\" सिर्फ़ ग्यारह सौ? यह तो बहुत कम लगा। गुल्लू ने तुम्हारी आस्तीन खींची। \"रुको {name}, पहले गिन लेते हैं।\"",
+        "घर लौटकर गुल्लू ने ब्लैकबोर्ड की ओर इशारा किया। \"EMI का मतलब है किसी चीज़ की क़ीमत छोटे-छोटे मासिक हिस्सों में चुकाना,\" उसने कहा। \"सहायक ने बारह महीने बताए थे। तो ग्यारह सौ गुना बारह यानी तेरह हज़ार दो सौ रुपये।\" उसके नीचे उसने लिखा: 13,200 में से 12,000 घटाओ तो 1,200। \"फ़ोन की क़ीमत बारह हज़ार है, पर इस EMI में तुम्हें बारह सौ रुपये ज़्यादा देने पड़ेंगे। धीरे-धीरे चुकाने की यही क़ीमत हो सकती है।\"",
+        "\"तो मैं क्या करूँ?\" तुमने पूछा। \"पहले बचाओ,\" गुल्लू बोला। \"हर महीने बरनी में एक हज़ार रुपये डालो। बारह महीनों में एक हज़ार गुना बारह यानी बारह हज़ार रुपये। न कोई ज़्यादा ख़र्च, न कोई चिंता।\" तुमने और दादी ने तय किया: जेब-ख़र्च, जन्मदिन और त्योहार के तोहफ़ों से हर महीने एक हज़ार। तुमने कैलेंडर पर निशान लगाया और पहला सिक्का डाला, फ़ोन के सपने देखते हुए। कुछ महीने मुश्किल थे और हार मानने का मन हुआ। पर कैलेंडर का हर निशान बरनी को थोड़ा और भारी करता गया।",
+        "बारह महीने बाद तुम भरी बरनी लेकर दुकान पहुँच[[े|ीं]]। तुमने बारह हज़ार रुपये नक़द दिए और फ़ोन ऊँचा उठाए बाहर निकल[[े|ीं]]। न हर महीने की किस्त, न वे अतिरिक्त बारह सौ रुपये। \"किसी भी EMI पर हाँ कहने से पहले,\" गुल्लू बोला, \"महीने की रक़म को महीनों से गुणा करो और क़ीमत से मिलाओ। फ़ीस के बारे में पूछो। 'नो-कॉस्ट EMI' में भी प्रोसेसिंग फ़ीस छिपी हो सकती है या नक़द की छूट जा सकती है।\""
+      ],
+      "mr": [
+        "शनिवारी तू मोबाइलच्या दुकानासमोर थांबल[[ास|ीस]] आणि एक चकचकीत नवा फोन पाहिलास. किमतीचा टॅग होता बारा हजार रुपये. \"खूपच महाग!\" तुझ्या तोंडून निघालं. दुकानातला सहायक हसून म्हणाला, \"काही हरकत नाही! फक्त दर महिन्याला अकराशे रुपये द्या आणि आजच घरी न्या!\" फक्त अकराशे? ते तर फारच कमी वाटलं. गल्लूने तुझी बाही ओढली. \"थांब {name}, आधी मोजून पाहू.\"",
+        "घरी आल्यावर गल्लूने फळ्याकडे बोट दाखवलं. \"EMI म्हणजे एखादी वस्तू छोट्या मासिक हिश्श्यांत फेडणं,\" तो म्हणाला. \"सहायकाने बारा महिने सांगितले. म्हणजे अकराशे गुणिले बारा म्हणजे तेरा हजार दोनशे रुपये.\" त्याखाली त्याने लिहिलं: 13,200 वजा 12,000 बरोबर 1,200. \"फोनची किंमत बारा हजार आहे, पण या EMI मुळे तुला बाराशे रुपये जास्त द्यावे लागतील. हळूहळू फेडण्याची ही किंमत असू शकते.\"",
+        "\"मग मी काय करू?\" तू विचारलंस. \"आधी बचत कर,\" गल्लू म्हणाला. \"दर महिन्याला बरणीत एक हजार रुपये टाक. बारा महिन्यांत एक हजार गुणिले बारा म्हणजे बारा हजार रुपये. जादा खर्च नाही, काळजी नाही.\" तू आणि आजीने ठरवलं: खाऊचे पैसे, वाढदिवस आणि सणाच्या भेटींतून दर महिन्याला एक हजार. तू कॅलेंडरवर खूण केलीस आणि पहिलं नाणं टाकलंस, फोनची स्वप्नं पाहत. काही महिने कठीण होते आणि हार मानावीशी वाटली. पण कॅलेंडरवरची प्रत्येक खूण बरणीला थोडं जड करत गेली.",
+        "बारा महिन्यांनी तू भरलेली बरणी घेऊन दुकानात पोहोचल[[ास|ीस]]. तू बारा हजार रुपये रोख दिलेस आणि फोन उंच धरून बाहेर पडल[[ास|ीस]]. दर महिन्याचा हप्ता नाही, ते जादा बाराशे रुपयेही नाहीत. \"कोणत्याही EMI ला हो म्हणण्याआधी,\" गल्लू म्हणाला, \"महिन्याची रक्कम महिन्यांनी गुणून किमतीशी ताडून पाहा. फीबद्दल विचार. 'नो-कॉस्ट EMI' मध्येही प्रोसेसिंग फी लपलेली असू शकते किंवा रोखीची सवलत जाऊ शकते.\""
+      ]
+    },
+    "recap": {
+      "en": {
+        "remember": [
+          "EMI means paying for something in small monthly parts, but the total can be more than the price.",
+          "Total cost = monthly amount × number of months. Compare it with the price.",
+          "Ask about fees, interest and penalties before you say yes. A \"no-cost EMI\" can still hide costs.",
+          "Saving first and paying in cash often costs less and keeps you free from monthly bills."
+        ],
+        "fill": {
+          "bank": [
+            "EMI",
+            "total",
+            "extra",
+            "months",
+            "interest",
+            "save"
+          ],
+          "items": [
+            [
+              "Paying for something in small monthly parts is called an @@.",
+              "EMI"
+            ],
+            [
+              "1,100 × 12 months = 13,200 rupees is the @@ amount you pay.",
+              "total"
+            ],
+            [
+              "13,200 − 12,000 = 1,200 rupees is the @@ cost.",
+              "extra"
+            ],
+            [
+              "Before saying yes, count the number of @@ and multiply.",
+              "months"
+            ],
+            [
+              "Saving first and buying with your own money avoids paying @@.",
+              "interest"
+            ]
+          ]
+        },
+        "sortTitle": "Cheaper or costs more?",
+        "sortOpts": [
+          {
+            "k": "less",
+            "t": "Cheaper"
+          },
+          {
+            "k": "more",
+            "t": "Costs more"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "jar",
+            "label": "Save for 12 months, then pay in cash",
+            "a": "less"
+          },
+          {
+            "icon": "calendar",
+            "label": "Pay in 12 monthly parts with extra charges",
+            "a": "more"
+          },
+          {
+            "icon": "tag",
+            "label": "Buy in a sale with your own savings",
+            "a": "less"
+          },
+          {
+            "icon": "card",
+            "label": "Swipe a credit card and pay only the minimum",
+            "a": "more"
+          },
+          {
+            "icon": "phone",
+            "label": "Pick the phone that fits your savings",
+            "a": "less"
+          }
+        ],
+        "tf": [
+          {
+            "q": "An EMI always costs exactly the shop price.",
+            "a": false
+          },
+          {
+            "q": "Monthly amount times months shows the real total.",
+            "a": true
+          },
+          {
+            "q": "A small monthly amount means the item is cheap.",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "A bicycle costs 24,000 rupees. The EMI is 2,100 rupees for 12 months. What do you pay in total?",
+            "opts": [
+              "25,200",
+              "24,000",
+              "21,000"
+            ],
+            "a": 0
+          },
+          {
+            "q": "You save 500 rupees a month. How many months does it take to save 6,000 rupees?",
+            "opts": [
+              "6",
+              "12",
+              "10"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "I, {name}, promise to multiply before I say yes to an EMI, to ask about extra costs, and to save first for the things I want."
+      },
+      "hi": {
+        "remember": [
+          "EMI का मतलब है किसी चीज़ को छोटे मासिक हिस्सों में चुकाना, पर कुल रक़म क़ीमत से ज़्यादा हो सकती है।",
+          "कुल ख़र्च = महीने की रक़म × महीनों की संख्या। उसे क़ीमत से मिलाओ।",
+          "हाँ कहने से पहले फ़ीस, ब्याज और जुर्माने के बारे में पूछो। \"नो-कॉस्ट EMI\" में भी ख़र्च छिपा हो सकता है।",
+          "पहले बचाकर नक़द देना अक्सर सस्ता पड़ता है और हर महीने की किस्त से आज़ादी देता है।"
+        ],
+        "fill": {
+          "bank": [
+            "EMI",
+            "कुल",
+            "ज़्यादा",
+            "महीनों",
+            "ब्याज",
+            "बचाओ"
+          ],
+          "items": [
+            [
+              "किसी चीज़ को छोटे मासिक हिस्सों में चुकाने को @@ कहते हैं।",
+              "EMI"
+            ],
+            [
+              "1,100 × 12 महीने = 13,200 रुपये, यही @@ रक़म है जो चुकानी पड़ती है।",
+              "कुल"
+            ],
+            [
+              "13,200 − 12,000 = 1,200 रुपये @@ देने पड़े।",
+              "ज़्यादा"
+            ],
+            [
+              "हाँ कहने से पहले @@ की संख्या गिनो और गुणा करो।",
+              "महीनों"
+            ],
+            [
+              "पहले बचाकर अपने पैसों से ख़रीदने पर @@ नहीं देना पड़ता।",
+              "ब्याज"
+            ]
+          ]
+        },
+        "sortTitle": "सस्ता या ज़्यादा महँगा?",
+        "sortOpts": [
+          {
+            "k": "less",
+            "t": "सस्ता"
+          },
+          {
+            "k": "more",
+            "t": "ज़्यादा महँगा"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "jar",
+            "label": "बारह महीने बचाकर नक़द देना",
+            "a": "less"
+          },
+          {
+            "icon": "calendar",
+            "label": "अतिरिक्त शुल्क के साथ बारह मासिक किस्तों में देना",
+            "a": "more"
+          },
+          {
+            "icon": "tag",
+            "label": "अपनी बचत से सेल में ख़रीदना",
+            "a": "less"
+          },
+          {
+            "icon": "card",
+            "label": "क्रेडिट कार्ड घिसकर सिर्फ़ न्यूनतम रक़म चुकाना",
+            "a": "more"
+          },
+          {
+            "icon": "phone",
+            "label": "अपनी बचत में आने वाला फ़ोन चुनना",
+            "a": "less"
+          }
+        ],
+        "tf": [
+          {
+            "q": "EMI में हमेशा दुकान की क़ीमत ही चुकानी पड़ती है।",
+            "a": false
+          },
+          {
+            "q": "महीने की रक़म को महीनों से गुणा करने पर असली कुल रक़म पता चलती है।",
+            "a": true
+          },
+          {
+            "q": "महीने की छोटी रक़म का मतलब है कि चीज़ सस्ती है।",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "एक साइकिल 24,000 रुपये की है। EMI 12 महीने तक 2,100 रुपये है। कुल कितना चुकाना पड़ेगा?",
+            "opts": [
+              "25,200",
+              "24,000",
+              "21,000"
+            ],
+            "a": 0
+          },
+          {
+            "q": "हर महीने 500 रुपये बचाए जाएँ, तो 6,000 रुपये बचाने में कितने महीने लगेंगे?",
+            "opts": [
+              "6",
+              "12",
+              "10"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मैं, {name}, वादा करत[[ा|ी]] हूँ कि EMI पर हाँ कहने से पहले गुणा करूँग[[ा|ी]], अतिरिक्त ख़र्च के बारे में पूछूँग[[ा|ी]], और जो चाहिए उसके लिए पहले बचाऊँग[[ा|ी]]।"
+      },
+      "mr": {
+        "remember": [
+          "EMI म्हणजे एखादी वस्तू छोट्या मासिक हिश्श्यांत फेडणं, पण एकूण रक्कम किमतीपेक्षा जास्त असू शकते.",
+          "एकूण खर्च = महिन्याची रक्कम × महिन्यांची संख्या. ती किमतीशी ताडून पाहा.",
+          "हो म्हणण्याआधी फी, व्याज आणि दंडाबद्दल विचार. \"नो-कॉस्ट EMI\" मध्येही खर्च लपलेला असू शकतो.",
+          "आधी बचत करून रोख देणं अनेकदा स्वस्त पडतं आणि दर महिन्याच्या हप्त्यांपासून सुटका देतं."
+        ],
+        "fill": {
+          "bank": [
+            "EMI",
+            "एकूण",
+            "जास्त",
+            "महिन्यांची",
+            "व्याज",
+            "बचत"
+          ],
+          "items": [
+            [
+              "छोट्या मासिक हिश्श्यांत फेडण्याला @@ म्हणतात.",
+              "EMI"
+            ],
+            [
+              "1,100 × 12 महिने = 13,200 रुपये, ही @@ रक्कम फेडावी लागते.",
+              "एकूण"
+            ],
+            [
+              "13,200 − 12,000 = 1,200 रुपये @@ द्यावे लागले.",
+              "जास्त"
+            ],
+            [
+              "हो म्हणण्याआधी @@ संख्या मोजून गुणाकार कर.",
+              "महिन्यांची"
+            ],
+            [
+              "आधी बचत करून स्वतःच्या पैशांनी घेतलं तर @@ द्यावं लागत नाही.",
+              "व्याज"
+            ]
+          ]
+        },
+        "sortTitle": "स्वस्त की जास्त महाग?",
+        "sortOpts": [
+          {
+            "k": "less",
+            "t": "स्वस्त"
+          },
+          {
+            "k": "more",
+            "t": "जास्त महाग"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "jar",
+            "label": "बारा महिने बचत करून रोख देणं",
+            "a": "less"
+          },
+          {
+            "icon": "calendar",
+            "label": "जादा शुल्कासह बारा मासिक हप्त्यांत देणं",
+            "a": "more"
+          },
+          {
+            "icon": "tag",
+            "label": "स्वतःच्या बचतीतून सेलमध्ये घेणं",
+            "a": "less"
+          },
+          {
+            "icon": "card",
+            "label": "क्रेडिट कार्ड वापरून फक्त किमान रक्कम भरणं",
+            "a": "more"
+          },
+          {
+            "icon": "phone",
+            "label": "बचतीत बसणारा फोन निवडणं",
+            "a": "less"
+          }
+        ],
+        "tf": [
+          {
+            "q": "EMI मध्ये नेहमी दुकानाची किंमतच फेडावी लागते.",
+            "a": false
+          },
+          {
+            "q": "महिन्याची रक्कम महिन्यांनी गुणली की खरी एकूण रक्कम कळते.",
+            "a": true
+          },
+          {
+            "q": "महिन्याची छोटी रक्कम म्हणजे वस्तू स्वस्त असते.",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "एका सायकलची किंमत 24,000 रुपये आहे. EMI 12 महिने 2,100 रुपये आहे. एकूण किती भरावे लागतील?",
+            "opts": [
+              "25,200",
+              "24,000",
+              "21,000"
+            ],
+            "a": 0
+          },
+          {
+            "q": "दर महिन्याला 500 रुपये वाचवले, तर 6,000 रुपये वाचवायला किती महिने लागतील?",
+            "opts": [
+              "6",
+              "12",
+              "10"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मी, {name}, वचन देत[[ो|े]] की EMI ला हो म्हणण्याआधी गुणाकार करीन, जादा खर्चाबद्दल विचारीन, आणि हवं असलेल्या गोष्टींसाठी आधी बचत करीन."
+      }
+    }
+  },
+  {
+    "slug": "too-good-sale",
+    "status": "live",
+    "color": "#f4a9a8",
+    "title": {
+      "en": "{name} and the Too-Good Sale",
+      "hi": "{name} और हद से ज़्यादा अच्छी सेल",
+      "mr": "{name} आणि खूपच भारी सेल"
+    },
+    "cardTitle": {
+      "en": "The Too-Good Sale",
+      "hi": "हद से ज़्यादा अच्छी सेल",
+      "mr": "खूपच भारी सेल"
+    },
+    "subtitle": {
+      "en": "Spotting fake online offers",
+      "hi": "नक़ली ऑनलाइन ऑफ़र पहचानो",
+      "mr": "फसवे ऑनलाइन ऑफर ओळखा"
+    },
+    "topic": {
+      "en": "Online shopping traps",
+      "hi": "ऑनलाइन ख़रीदारी के जाल",
+      "mr": "ऑनलाइन खरेदीची जाळी"
+    },
+    "stops": {
+      "en": [
+        "The Big Ad",
+        "Ask a Grown-up",
+        "Check Three Things",
+        "Pay on Delivery"
+      ],
+      "hi": [
+        "बड़ा विज्ञापन",
+        "बड़े से पूछो",
+        "तीन बातें जाँचो",
+        "डिलीवरी पर भुगतान"
+      ],
+      "mr": [
+        "मोठी जाहिरात",
+        "मोठ्यांना विचार",
+        "तीन गोष्टी तपास",
+        "डिलिव्हरीवर पेमेंट"
+      ]
+    },
+    "scenes": [
+      "A huge phone shows a football with a 90 percent off tag and 99 rupees while you stare in shock.",
+      "You ask Aaji about the message, a big question mark hangs above, and Aaji holds a magnifying glass.",
+      "On the green board, a lock, a magnifying glass and a shield each have a green tick.",
+      "A delivery person hands you a parcel while you pay, as a shield glows and a fox runs away."
+    ],
+    "story": {
+      "en": [
+        "Late one evening a bright message popped up on Aaji's phone: \"Football for 99 rupees! 90 percent off! Only 10 left!\" Your eyes grew wide. The same football cost 1,000 rupees in the shop. \"Quick, buy it now!\" you said. But Gullu rolled in front of the screen. \"Hold on, {name}. If something is 90 percent cheaper than everywhere else, ask: how can they make money? A hook with a juicy tag might be hiding a fox.\"",
+        "You showed the message to Aaji. \"Never rush,\" she said. \"Fake sales hurry you with 'only 10 left' and 'ends in 5 minutes'. They want you to click before you think.\" She even fetched her reading magnifier to read the tiny words. Gullu laughed. \"Let us look closely, then. A grown-up should always be part of any online buying.\"",
+        "On the blackboard, Gullu and you made a checklist of three things. One: the lock. Does the page address start with https and show the right name, with no spelling tricks? Two: the magnifier. Do other buyers have honest reviews, a return policy and a way to contact the seller? Three: the shield. Is it a known, trusted shop or app, opened from its official place and not from a message link, with a safe way to pay?",
+        "The next week, you really needed a new football. With Aaji, you ordered from a trusted shop's official app and chose \"pay on delivery\". When the delivery person arrived, you checked the name and the parcel, then paid. Far away, a fox ran off with a long face. Gullu said, \"A real bargain does not rush you, does not ask for an OTP or PIN, and does not have to hide. Too good to be true usually is.\""
+      ],
+      "hi": [
+        "एक देर शाम दादी के फ़ोन पर चमकता संदेश आया: \"फ़ुटबॉल सिर्फ़ 99 रुपये में! 90 प्रतिशत छूट! बस 10 बचे हैं!\" तुम्हारी आँखें फैल गईं। वही फ़ुटबॉल दुकान में 1,000 रुपये का था। \"जल्दी, अभी ख़रीद लो!\" तुमने कहा। पर गुल्लू स्क्रीन के सामने लुढ़क आया। \"रुको {name}। जो चीज़ बाक़ी सब जगह से 90 प्रतिशत सस्ती हो, तो पूछो: वे कमाएँगे कैसे? रसीले टैग वाले काँटे के पीछे लोमड़ी छिपी हो सकती है।\"",
+        "तुमने संदेश दादी को दिखाया। \"कभी जल्दबाज़ी मत करो,\" उन्होंने कहा। \"नक़ली सेल 'बस 10 बचे' और '5 मिनट में ख़त्म' कहकर जल्दी मचाती हैं। वे चाहती हैं कि तुम सोचने से पहले क्लिक कर दो।\" वे तो अपना पढ़ने वाला शीशा भी ले आईं ताकि छोटे अक्षर पढ़ सकें। गुल्लू हँस पड़ा। \"तो ग़ौर से देखते हैं। ऑनलाइन ख़रीद में कोई बड़ा हमेशा साथ होना चाहिए।\"",
+        "ब्लैकबोर्ड पर गुल्लू और तुमने तीन बातों की सूची बनाई। एक: ताला। पेज का पता https से शुरू होता है और नाम सही लिखा है, कोई स्पेलिंग की चालाकी नहीं? दो: ग़ौर से देखना। दूसरे ख़रीदारों की ईमानदार समीक्षाएँ, वापसी की नीति और विक्रेता से संपर्क का तरीक़ा है? तीन: ढाल। क्या यह जानी-पहचानी, भरोसेमंद दुकान या ऐप है, जिसे उसकी आधिकारिक जगह से खोला गया है, किसी संदेश के लिंक से नहीं, और भुगतान का सुरक्षित तरीक़ा है?",
+        "अगले हफ़्ते तुम्हें सचमुच नया फ़ुटबॉल चाहिए था। दादी के साथ तुमने एक भरोसेमंद दुकान के आधिकारिक ऐप से ऑर्डर किया और \"डिलीवरी पर भुगतान\" चुना। डिलीवरी वाले के आने पर तुमने नाम और पार्सल जाँचा, फिर पैसे दिए। दूर कहीं एक लोमड़ी मुँह लटकाए भाग गई। गुल्लू बोला, \"असली सौदा जल्दी नहीं मचाता, OTP या पिन नहीं माँगता, और उसे छिपना नहीं पड़ता। हद से ज़्यादा अच्छी चीज़ अक्सर सच नहीं होती।\""
+      ],
+      "mr": [
+        "एका उशिरा संध्याकाळी आजीच्या फोनवर एक झळकता मेसेज आला: \"फुटबॉल फक्त 99 रुपयांत! 90 टक्के सूट! फक्त 10 उरले!\" तुझे डोळे विस्फारले. तोच फुटबॉल दुकानात 1,000 रुपयांना होता. \"लवकर, आत्ताच घे!\" तू म्हणाल[[ास|ीस]]. पण गल्लू स्क्रीनसमोर घरंगळत आला. \"थांब {name}. जी गोष्ट बाकी सगळीकडून 90 टक्के स्वस्त असते, तेव्हा विचार: ते कमावणार कसे? रसरशीत टॅग असलेल्या गळाच्या मागे कोल्हा लपलेला असू शकतो.\"",
+        "तू मेसेज आजीला दाखवलास. \"कधीही घाई करू नकोस,\" आजी म्हणाल्या. \"बनावट सेल 'फक्त 10 उरले' आणि '5 मिनिटांत संपणार' म्हणून घाई करवतात. तू विचार करण्याआधी क्लिक करावंस असं त्यांना वाटतं.\" त्यांनी तर वाचायचं भिंगही आणलं, म्हणजे लहान अक्षरं वाचता येतील. गल्लू हसला. \"मग नीट बघू या. ऑनलाइन खरेदीत एखादी मोठी व्यक्ती नेहमी बरोबर असावी.\"",
+        "फळ्यावर गल्लूने आणि तू मिळून तीन गोष्टींची यादी केली. एक: कुलूप. पानाचा पत्ता https ने सुरू होतो आणि नाव बरोबर लिहिलं आहे, स्पेलिंगची काही चलाखी नाही ना? दोन: भिंग. इतर खरेदीदारांचे प्रामाणिक रिव्ह्यू, परताव्याचं धोरण आणि विक्रेत्याशी संपर्काचा मार्ग आहे का? तीन: ढाल. हे ओळखीचं, भरवशाचं दुकान किंवा अॅप आहे का, जे त्यांच्या अधिकृत जागेवरून उघडलं आहे, मेसेजच्या लिंकवरून नाही, आणि पैसे द्यायचा सुरक्षित मार्ग आहे का?",
+        "पुढच्या आठवड्यात तुला खरंच नवा फुटबॉल हवा होता. आजीबरोबर तू भरवशाच्या दुकानाच्या अधिकृत अॅपवरून ऑर्डर दिलीस आणि \"डिलिव्हरीवर पेमेंट\" निवडलंस. डिलिव्हरीवाला आल्यावर तू नाव आणि पार्सल तपासलंस, मग पैसे दिलेस. दूर कुठे तरी एक कोल्हा तोंड पाडून पळाला. गल्लू म्हणाला, \"खरा सौदा घाई करत नाही, OTP किंवा पिन मागत नाही, आणि त्याला लपावं लागत नाही. खूपच चांगलं वाटणारं बहुतेक खरं नसतं.\""
+      ]
+    },
+    "recap": {
+      "en": {
+        "remember": [
+          "A deal that is far cheaper than everywhere else may be a trap.",
+          "Fake sales hurry you with words like \"only 10 left\". Slow down.",
+          "Check three things: the https address, honest reviews and return policy, and a trusted shop or app.",
+          "Never share an OTP or PIN, and ask a grown-up before buying online. Pay on delivery when you can."
+        ],
+        "fill": {
+          "bank": [
+            "trap",
+            "hurry",
+            "https",
+            "reviews",
+            "OTP",
+            "grown-up"
+          ],
+          "items": [
+            [
+              "A price that is far too low can be a @@.",
+              "trap"
+            ],
+            [
+              "Fake sales try to @@ you so you cannot think.",
+              "hurry"
+            ],
+            [
+              "A safe page address starts with @@.",
+              "https"
+            ],
+            [
+              "Check honest @@ and the return policy.",
+              "reviews"
+            ],
+            [
+              "Never tell anyone your @@ or PIN.",
+              "OTP"
+            ]
+          ]
+        },
+        "sortTitle": "Safe or risky?",
+        "sortOpts": [
+          {
+            "k": "safe",
+            "t": "Safe"
+          },
+          {
+            "k": "risk",
+            "t": "Risky"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "shield",
+            "label": "Buying from a trusted shop's official app",
+            "a": "safe"
+          },
+          {
+            "icon": "tag",
+            "label": "A \"90% off, only 5 minutes left\" message",
+            "a": "risk"
+          },
+          {
+            "icon": "parcel",
+            "label": "Paying on delivery after checking the parcel",
+            "a": "safe"
+          },
+          {
+            "icon": "otp",
+            "label": "Sending your OTP to claim a prize",
+            "a": "risk"
+          },
+          {
+            "icon": "magnifier",
+            "label": "Reading reviews and the return policy first",
+            "a": "safe"
+          }
+        ],
+        "tf": [
+          {
+            "q": "A price 90 percent lower than everywhere else is always a lucky chance.",
+            "a": false
+          },
+          {
+            "q": "Fake sales use hurry words like \"only 10 left\".",
+            "a": true
+          },
+          {
+            "q": "You should ask a grown-up before buying online.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "A football costs 1,000 rupees in the shop. If an ad says 90 percent off, how much would you pay?",
+            "opts": [
+              "100",
+              "900",
+              "10"
+            ],
+            "a": 0
+          },
+          {
+            "q": "A message says: \"Pay a 200 rupee fee first to get a free phone.\" What should you do?",
+            "opts": [
+              "Pay quickly",
+              "Ignore it and tell a grown-up",
+              "Pay half"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "I, {name}, promise to slow down when a deal hurries me, to check the three things, and to ask a grown-up before I buy online."
+      },
+      "hi": {
+        "remember": [
+          "जो सौदा बाक़ी सब जगह से बहुत सस्ता हो, वह जाल हो सकता है।",
+          "नक़ली सेल \"बस 10 बचे\" जैसे शब्दों से जल्दी मचाती हैं। धीमे चलो।",
+          "तीन बातें जाँचो: https वाला पता, ईमानदार समीक्षाएँ और वापसी की नीति, और भरोसेमंद दुकान या ऐप।",
+          "OTP या पिन कभी मत बताओ और ऑनलाइन ख़रीद से पहले किसी बड़े से पूछो। हो सके तो डिलीवरी पर भुगतान करो।"
+        ],
+        "fill": {
+          "bank": [
+            "जाल",
+            "जल्दी",
+            "https",
+            "समीक्षाएँ",
+            "OTP",
+            "बड़े"
+          ],
+          "items": [
+            [
+              "बहुत ही कम क़ीमत एक @@ हो सकती है।",
+              "जाल"
+            ],
+            [
+              "नक़ली सेल लोगों को @@ में डालती है ताकि वे सोच न सकें।",
+              "जल्दी"
+            ],
+            [
+              "सुरक्षित पेज का पता @@ से शुरू होता है।",
+              "https"
+            ],
+            [
+              "ईमानदार @@ और वापसी की नीति जाँचो।",
+              "समीक्षाएँ"
+            ],
+            [
+              "अपना @@ या पिन किसी को कभी मत बताओ।",
+              "OTP"
+            ]
+          ]
+        },
+        "sortTitle": "सुरक्षित या जोखिम भरा?",
+        "sortOpts": [
+          {
+            "k": "safe",
+            "t": "सुरक्षित"
+          },
+          {
+            "k": "risk",
+            "t": "जोखिम भरा"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "shield",
+            "label": "भरोसेमंद दुकान के आधिकारिक ऐप से ख़रीदना",
+            "a": "safe"
+          },
+          {
+            "icon": "tag",
+            "label": "\"90% छूट, बस 5 मिनट बाक़ी\" वाला संदेश",
+            "a": "risk"
+          },
+          {
+            "icon": "parcel",
+            "label": "पार्सल जाँचकर डिलीवरी पर भुगतान करना",
+            "a": "safe"
+          },
+          {
+            "icon": "otp",
+            "label": "इनाम लेने के लिए OTP भेजना",
+            "a": "risk"
+          },
+          {
+            "icon": "magnifier",
+            "label": "पहले समीक्षाएँ और वापसी की नीति पढ़ना",
+            "a": "safe"
+          }
+        ],
+        "tf": [
+          {
+            "q": "बाक़ी सब जगह से 90 प्रतिशत कम क़ीमत हमेशा क़िस्मत की बात होती है।",
+            "a": false
+          },
+          {
+            "q": "नक़ली सेल \"बस 10 बचे\" जैसे जल्दी वाले शब्द इस्तेमाल करती हैं।",
+            "a": true
+          },
+          {
+            "q": "ऑनलाइन ख़रीद से पहले किसी बड़े से पूछना चाहिए।",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "फ़ुटबॉल दुकान में 1,000 रुपये का है। 90 प्रतिशत छूट का मतलब है कि कितने रुपये देने पड़ेंगे?",
+            "opts": [
+              "100",
+              "900",
+              "10"
+            ],
+            "a": 0
+          },
+          {
+            "q": "एक संदेश कहता है: \"मुफ़्त फ़ोन पाने के लिए पहले 200 रुपये फ़ीस दो।\" क्या करना चाहिए?",
+            "opts": [
+              "जल्दी से दे देना",
+              "अनदेखा करना और बड़े को बताना",
+              "आधी फ़ीस देना"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मैं, {name}, वादा करत[[ा|ी]] हूँ कि जब कोई सौदा जल्दी मचाए तो धीरे चलूँग[[ा|ी]], तीन बातें जाँचूँग[[ा|ी]], और ऑनलाइन ख़रीदने से पहले किसी बड़े से पूछूँग[[ा|ी]]।"
+      },
+      "mr": {
+        "remember": [
+          "बाकी सगळीकडून खूपच स्वस्त असलेला सौदा सापळा असू शकतो.",
+          "बनावट सेल \"फक्त 10 उरले\" अशा शब्दांनी घाई करवतात. सावकाश हो.",
+          "तीन गोष्टी तपास: https असलेला पत्ता, प्रामाणिक रिव्ह्यू आणि परताव्याचं धोरण, आणि भरवशाचं दुकान किंवा अॅप.",
+          "OTP किंवा पिन कधीही सांगू नकोस आणि ऑनलाइन खरेदीआधी मोठ्याला विचार. शक्य असेल तर डिलिव्हरीवर पेमेंट कर."
+        ],
+        "fill": {
+          "bank": [
+            "सापळा",
+            "घाई",
+            "https",
+            "रिव्ह्यू",
+            "OTP",
+            "मोठ्या"
+          ],
+          "items": [
+            [
+              "खूपच कमी किंमत हा एक @@ असू शकतो.",
+              "सापळा"
+            ],
+            [
+              "बनावट सेल लोकांना @@ करायला लावतात, म्हणजे त्यांना विचार करता येत नाही.",
+              "घाई"
+            ],
+            [
+              "सुरक्षित पानाचा पत्ता @@ ने सुरू होतो.",
+              "https"
+            ],
+            [
+              "प्रामाणिक @@ आणि परताव्याचं धोरण तपास.",
+              "रिव्ह्यू"
+            ],
+            [
+              "तुझा @@ किंवा पिन कोणालाही कधी सांगू नकोस.",
+              "OTP"
+            ]
+          ]
+        },
+        "sortTitle": "सुरक्षित की धोकादायक?",
+        "sortOpts": [
+          {
+            "k": "safe",
+            "t": "सुरक्षित"
+          },
+          {
+            "k": "risk",
+            "t": "धोकादायक"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "shield",
+            "label": "भरवशाच्या दुकानाच्या अधिकृत अॅपवरून घेणं",
+            "a": "safe"
+          },
+          {
+            "icon": "tag",
+            "label": "\"90% सूट, फक्त 5 मिनिटं बाकी\" असा मेसेज",
+            "a": "risk"
+          },
+          {
+            "icon": "parcel",
+            "label": "पार्सल तपासून डिलिव्हरीवर पेमेंट करणं",
+            "a": "safe"
+          },
+          {
+            "icon": "otp",
+            "label": "बक्षीस मिळवायला OTP पाठवणं",
+            "a": "risk"
+          },
+          {
+            "icon": "magnifier",
+            "label": "आधी रिव्ह्यू आणि परताव्याचं धोरण वाचणं",
+            "a": "safe"
+          }
+        ],
+        "tf": [
+          {
+            "q": "बाकी सगळीकडून 90 टक्के कमी किंमत ही नेहमी नशिबाची गोष्ट असते.",
+            "a": false
+          },
+          {
+            "q": "बनावट सेल \"फक्त 10 उरले\" असे घाईचे शब्द वापरतात.",
+            "a": true
+          },
+          {
+            "q": "ऑनलाइन खरेदीआधी मोठ्या व्यक्तीला विचारावं.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "फुटबॉल दुकानात 1,000 रुपयांना आहे. 90 टक्के सूट म्हणजे किती रुपये द्यावे लागतील?",
+            "opts": [
+              "100",
+              "900",
+              "10"
+            ],
+            "a": 0
+          },
+          {
+            "q": "एक मेसेज म्हणतो: \"मोफत फोन मिळवायला आधी 200 रुपये फी भरा.\" काय करावं?",
+            "opts": [
+              "लगेच भरून टाकावी",
+              "दुर्लक्ष करून मोठ्याला सांगावं",
+              "निम्मी फी भरावी"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मी, {name}, वचन देत[[ो|े]] की सौदा घाई करवू लागला की सावकाश होईन, तीन गोष्टी तपासेन, आणि ऑनलाइन घेण्याआधी मोठ्याला विचारीन."
+      }
+    }
+  },
+  {
+    "slug": "safe-place",
+    "status": "live",
+    "color": "#9bf6ff",
+    "title": {
+      "en": "{name} and the Safe Place",
+      "hi": "{name} और पैसों की सुरक्षित जगह",
+      "mr": "{name} आणि पैशांची सुरक्षित जागा"
+    },
+    "cardTitle": {
+      "en": "The Safe Place",
+      "hi": "पैसों की सुरक्षित जगह",
+      "mr": "पैशांची सुरक्षित जागा"
+    },
+    "subtitle": {
+      "en": "Where should you keep your savings?",
+      "hi": "बचत कहाँ रखें?",
+      "mr": "बचत कुठे ठेवावी?"
+    },
+    "topic": {
+      "en": "Safe saving places",
+      "hi": "बचत की सुरक्षित जगह",
+      "mr": "बचतीची सुरक्षित जागा"
+    },
+    "stops": {
+      "en": [
+        "The Cupboard",
+        "The Three Questions",
+        "The Fox in the Bush",
+        "The Coin Tree"
+      ],
+      "hi": [
+        "अलमारी",
+        "तीन सवाल",
+        "झाड़ी में लोमड़ी",
+        "सिक्कों का पेड़"
+      ],
+      "mr": [
+        "कपाट",
+        "तीन प्रश्न",
+        "झुडपातला कोल्हा",
+        "नाण्यांचं झाड"
+      ]
+    },
+    "scenes": [
+      "A little mouse nibbles a note in Aaji's open cupboard while you look worried and Aaji frowns.",
+      "Meena Didi at the bank counter shows a passbook, with a clock and a shield on the wall.",
+      "A fox in a bush shows a speech bubble promising to turn 1,000 rupees into 2,000 while you hold up a hand to say no.",
+      "You hold your passbook high under a tree full of golden coins, with a bank in the background."
+    ],
+    "story": {
+      "en": [
+        "Aaji kept her savings in an old cupboard, tucked between her sarees. One day you opened the door and saw a little grey mouse nibbling the corner of a note! Squeak! The mouse ran away, but the note had a hole in it. \"Oh dear,\" said Aaji. Gullu looked worried. \"Is a cupboard really a safe place for money, {name}? Cash at home can be lost, stolen, burnt or chewed.\"",
+        "Aaji took you to the bank. Meena Didi showed you a green passbook and a poster with three questions. \"Before you keep your savings anywhere, ask: Is it safe? Is it easy to reach when I need it? Can it grow?\" In a bank account, your money is looked after, you can take it out when needed, and it earns a little interest. Meena Didi added that deposits are insured up to a limit, which is 5,00,000 rupees per person in each bank at the time of writing.",
+        "On the way home, a fox popped out of a bush. \"Psst! Give me 1,000 rupees today and you will get 2,000 next week!\" Your heart jumped. \"Double money in one week?\" Gullu pulled you back. \"{name}, real money never doubles that fast. A promise that sounds too good to be true is a warning sign. Walk away and tell a grown-up.\"",
+        "Years went by. Every month you added a little to your bank account, and the small interest added a little more. One day you stood under the coin tree with your passbook held high. \"Look how it grew!\" Gullu smiled. \"Slowly, safely, and because you were patient. Keep some money easy to reach for emergencies, and let the rest grow.\""
+      ],
+      "hi": [
+        "दादी अपनी बचत पुरानी अलमारी में साड़ियों के बीच रखती थीं। एक दिन तुमने दरवाज़ा खोला तो देखा कि एक छोटा-सा स्लेटी चूहा नोट का कोना कुतर रहा है! चूँ! चूहा भाग गया, पर नोट में छेद हो गया था। \"अरे बाप रे,\" दादी बोलीं। गुल्लू चिंतित दिखा। \"क्या अलमारी सच में पैसों के लिए सुरक्षित जगह है, {name}? घर में रखा नक़द खो सकता है, चोरी हो सकता है, जल सकता है या कुतरा जा सकता है।\"",
+        "दादी तुम्हें बैंक ले गईं। मीना दीदी ने हरी पासबुक दिखाई और तीन सवालों वाला पोस्टर भी। \"अपनी बचत कहीं भी रखने से पहले पूछो: क्या यह सुरक्षित है? ज़रूरत पड़ने पर क्या आसानी से मिल जाएगी? क्या यह बढ़ सकती है?\" बैंक खाते में पैसों की देखभाल होती है, ज़रूरत पर निकाल भी सकते हैं, और थोड़ा ब्याज भी मिलता है। मीना दीदी ने बताया कि जमा रक़म एक सीमा तक बीमित होती है, जो लिखते समय हर बैंक में हर व्यक्ति के लिए 5,00,000 रुपये है।",
+        "घर लौटते समय एक झाड़ी से एक चालाक लोमड़ी निकल आई। \"सुनो! आज मुझे हज़ार रुपये दो, अगले हफ़्ते तुम्हें दो हज़ार मिलेंगे!\" तुम्हारा दिल उछल पड़ा। \"एक हफ़्ते में दुगुना पैसा?\" गुल्लू ने तुम्हें पीछे खींचा। \"{name}, असली पैसा इतनी जल्दी दुगुना नहीं होता। जो वादा हद से ज़्यादा अच्छा लगे, वह ख़तरे की घंटी है। दूर हटो और किसी बड़े को बताओ।\"",
+        "साल बीतते गए। हर महीने तुमने अपने बैंक खाते में थोड़ा-थोड़ा जमा किया और छोटे ब्याज ने थोड़ा और जोड़ा। एक दिन तुम पासबुक ऊँची उठाए सिक्कों वाले पेड़ के नीचे खड़[[े|ी]] थ[[े|ीं]]। \"देखो कितना बढ़ गया!\" गुल्लू मुस्कुराया। \"धीरे-धीरे, सुरक्षित तरीक़े से, और इसलिए कि तुमने सब्र रखा। कुछ पैसे आपात स्थिति के लिए आसानी से निकल सकने लायक़ रखो, बाक़ी को बढ़ने दो।\""
+      ],
+      "mr": [
+        "आजी आपली बचत जुन्या कपाटात, साड्यांच्या घड्यांमध्ये ठेवायच्या. एके दिवशी तू दार उघडलंस तर काय, एक छोटा राखाडी उंदीर नोटेचा कोपरा कुरतडत होता! चीं! उंदीर पळाला, पण नोटेला भोक पडलं होतं. \"अरेरे,\" आजी म्हणाल्या. गल्लू काळजीत दिसला. \"कपाट खरंच पैशांसाठी सुरक्षित जागा आहे का, {name}? घरात ठेवलेली रोकड हरवू शकते, चोरीला जाऊ शकते, जळू शकते किंवा कुरतडली जाऊ शकते.\"",
+        "आजी तुला बँकेत घेऊन गेल्या. मीना ताईंनी हिरवं पासबुक दाखवलं आणि तीन प्रश्नांचं पोस्टरही. \"तुझी बचत कुठेही ठेवण्याआधी विचार: ती सुरक्षित आहे का? गरज पडल्यावर सहज मिळेल का? ती वाढू शकते का?\" बँक खात्यात पैशांची काळजी घेतली जाते, गरज असेल तेव्हा काढताही येतात, आणि थोडं व्याजही मिळतं. मीना ताईंनी सांगितलं की जमा रक्कम एका मर्यादेपर्यंत विमा संरक्षित असते, जी लिहिताना प्रत्येक बँकेत प्रत्येक व्यक्तीसाठी 5,00,000 रुपये आहे.",
+        "घरी परतताना एका झुडपातून एक कोल्हा बाहेर आला. \"ए, ऐक! आज मला हजार रुपये दे, पुढच्या आठवड्यात तुला दोन हजार मिळतील!\" तुझं काळीज उडालं. \"एका आठवड्यात दुप्पट पैसे?\" गल्लूने तुला मागे ओढलं. \"{name}, खरे पैसे एवढ्या लवकर दुप्पट होत नाहीत. जे वचन खूपच छान वाटतं ते धोक्याची घंटा असते. दूर हो आणि कोणा मोठ्याला सांग.\"",
+        "वर्षं सरली. दर महिन्याला तू तुझ्या बँक खात्यात थोडी भर घातलीस आणि छोट्या व्याजाने आणखी थोडी भर घातली. एके दिवशी तू पासबुक उंच धरून नाण्यांच्या झाडाखाली उभ[[ा|ी]] राहिल[[ास|ीस]]. \"बघ किती वाढलं!\" गल्लू हसला. \"हळूहळू, सुरक्षितपणे आणि तू संयम ठेवलास म्हणून. थोडे पैसे आणीबाणीसाठी सहज काढता येतील असे ठेव, बाकीचे वाढू दे.\""
+      ]
+    },
+    "recap": {
+      "en": {
+        "remember": [
+          "Ask three questions: Is it safe? Is it easy to reach? Can it grow?",
+          "Cash kept at home can be lost, stolen, burnt or chewed by mice.",
+          "A promise to double your money fast is a warning sign.",
+          "Keep some savings easy to reach for emergencies, and let the rest grow slowly."
+        ],
+        "fill": {
+          "bank": [
+            "safe",
+            "reach",
+            "grow",
+            "bank",
+            "warning",
+            "slowly"
+          ],
+          "items": [
+            [
+              "The first question: is my money @@?",
+              "safe"
+            ],
+            [
+              "The second question: is it easy to @@ when I need it?",
+              "reach"
+            ],
+            [
+              "The third question: can it @@?",
+              "grow"
+            ],
+            [
+              "Savings in a @@ account are safer than cash in a cupboard.",
+              "bank"
+            ],
+            [
+              "A promise to double your money in a week is a @@ sign.",
+              "warning"
+            ]
+          ]
+        },
+        "sortTitle": "Which question does it answer?",
+        "sortOpts": [
+          {
+            "k": "safe",
+            "t": "Safe"
+          },
+          {
+            "k": "reach",
+            "t": "Easy to reach"
+          },
+          {
+            "k": "grow",
+            "t": "Can grow"
+          },
+          {
+            "k": "warn",
+            "t": "Warning sign"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "shield",
+            "label": "A bank looks after and protects your savings",
+            "a": "safe"
+          },
+          {
+            "icon": "clock",
+            "label": "You can take money out when there is an emergency",
+            "a": "reach"
+          },
+          {
+            "icon": "tree",
+            "label": "Interest adds a little more each year",
+            "a": "grow"
+          },
+          {
+            "icon": "fox",
+            "label": "\"Give 1,000 today and get 2,000 next week!\"",
+            "a": "warn"
+          },
+          {
+            "icon": "cupboard",
+            "label": "Cash lying loose in a cupboard where mice and thieves can reach",
+            "a": "warn"
+          }
+        ],
+        "tf": [
+          {
+            "q": "If someone promises to double your money in a week, you should trust them.",
+            "a": false
+          },
+          {
+            "q": "A bank account is usually safer than a lot of cash at home.",
+            "a": true
+          },
+          {
+            "q": "Savings can grow a little with interest if you are patient.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "You keep 500 rupees in a bank and it earns 20 rupees of interest in a year. How much do you have after a year?",
+            "opts": [
+              "520",
+              "480",
+              "700"
+            ],
+            "a": 0
+          },
+          {
+            "q": "A stranger says: give 5,000 rupees today and get 10,000 next week. What should you do?",
+            "opts": [
+              "Give it quickly",
+              "Say no and tell a grown-up",
+              "Give half"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "I, {name}, promise to ask the three questions about my savings, to choose safe places, and to walk away from \"double money\" promises."
+      },
+      "hi": {
+        "remember": [
+          "तीन सवाल पूछो: क्या यह सुरक्षित है? क्या आसानी से मिल जाएगा? क्या यह बढ़ सकता है?",
+          "घर में रखा नक़द खो सकता है, चोरी हो सकता है, जल सकता है या चूहे कुतर सकते हैं।",
+          "पैसा जल्दी दुगुना करने का वादा ख़तरे की घंटी है।",
+          "कुछ बचत ज़रूरत पर निकालने लायक़ रखो और बाक़ी को धीरे-धीरे बढ़ने दो।"
+        ],
+        "fill": {
+          "bank": [
+            "सुरक्षित",
+            "पहुँच",
+            "बढ़",
+            "बैंक",
+            "ख़तरे",
+            "धीरे-धीरे"
+          ],
+          "items": [
+            [
+              "पहला सवाल: क्या मेरा पैसा @@ है?",
+              "सुरक्षित"
+            ],
+            [
+              "दूसरा सवाल: ज़रूरत पर क्या उस तक @@ आसान है?",
+              "पहुँच"
+            ],
+            [
+              "तीसरा सवाल: क्या वह @@ सकता है?",
+              "बढ़"
+            ],
+            [
+              "अलमारी के नक़द से @@ खाते की बचत ज़्यादा सुरक्षित है।",
+              "बैंक"
+            ],
+            [
+              "एक हफ़्ते में पैसा दुगुना करने का वादा @@ का संकेत है।",
+              "ख़तरे"
+            ]
+          ]
+        },
+        "sortTitle": "यह किस सवाल का जवाब है?",
+        "sortOpts": [
+          {
+            "k": "safe",
+            "t": "सुरक्षित"
+          },
+          {
+            "k": "reach",
+            "t": "आसानी से मिले"
+          },
+          {
+            "k": "grow",
+            "t": "बढ़ सकता है"
+          },
+          {
+            "k": "warn",
+            "t": "ख़तरे का संकेत"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "shield",
+            "label": "बैंक तुम्हारी बचत की देखभाल और हिफ़ाज़त करता है",
+            "a": "safe"
+          },
+          {
+            "icon": "clock",
+            "label": "आपात स्थिति में पैसे निकाले जा सकते हैं",
+            "a": "reach"
+          },
+          {
+            "icon": "tree",
+            "label": "ब्याज हर साल थोड़ा और जोड़ता है",
+            "a": "grow"
+          },
+          {
+            "icon": "fox",
+            "label": "\"आज हज़ार दो, अगले हफ़्ते दो हज़ार पाओ!\"",
+            "a": "warn"
+          },
+          {
+            "icon": "cupboard",
+            "label": "अलमारी में खुला पड़ा नक़द जहाँ चूहे और चोर पहुँच सकते हैं",
+            "a": "warn"
+          }
+        ],
+        "tf": [
+          {
+            "q": "कोई एक हफ़्ते में पैसा दुगुना करने का वादा करे तो उस पर भरोसा करना चाहिए।",
+            "a": false
+          },
+          {
+            "q": "घर में ढेर सारे नक़द से बैंक खाता आम तौर पर ज़्यादा सुरक्षित होता है।",
+            "a": true
+          },
+          {
+            "q": "सब्र रखो तो ब्याज से बचत थोड़ी बढ़ सकती है।",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "तुम 500 रुपये बैंक में रखते हो और साल भर में 20 रुपये ब्याज मिलता है। साल बाद कुल कितने रुपये होंगे?",
+            "opts": [
+              "520",
+              "480",
+              "700"
+            ],
+            "a": 0
+          },
+          {
+            "q": "कोई अजनबी कहता है: आज 5,000 रुपये दो, अगले हफ़्ते 10,000 पाओ। क्या करना चाहिए?",
+            "opts": [
+              "जल्दी से दे देना",
+              "मना करना और बड़े को बताना",
+              "आधे दे देना"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मैं, {name}, वादा करत[[ा|ी]] हूँ कि अपनी बचत के बारे में तीन सवाल पूछूँग[[ा|ी]], सुरक्षित जगह चुनूँग[[ा|ी]], और \"दुगुना पैसा\" के वादों से दूर रहूँग[[ा|ी]]।"
+      },
+      "mr": {
+        "remember": [
+          "तीन प्रश्न विचार: ते सुरक्षित आहे का? सहज मिळेल का? ते वाढू शकतं का?",
+          "घरात ठेवलेली रोकड हरवू शकते, चोरीला जाऊ शकते, जळू शकते किंवा उंदीर कुरतडू शकतात.",
+          "पैसे लवकर दुप्पट करण्याचं वचन धोक्याची घंटा असते.",
+          "थोडी बचत गरजेला काढता येईल अशी ठेव आणि बाकीची हळूहळू वाढू दे."
+        ],
+        "fill": {
+          "bank": [
+            "सुरक्षित",
+            "पोहोच",
+            "वाढू",
+            "बँक",
+            "धोक्याचं",
+            "हळूहळू"
+          ],
+          "items": [
+            [
+              "पहिला प्रश्न: माझे पैसे @@ आहेत का?",
+              "सुरक्षित"
+            ],
+            [
+              "दुसरा प्रश्न: गरज पडल्यावर त्यांच्यापर्यंत @@ सोपी आहे का?",
+              "पोहोच"
+            ],
+            [
+              "तिसरा प्रश्न: ते @@ शकतात का?",
+              "वाढू"
+            ],
+            [
+              "कपाटातल्या रोकडीपेक्षा @@ खात्यातली बचत जास्त सुरक्षित असते.",
+              "बँक"
+            ],
+            [
+              "एका आठवड्यात पैसे दुप्पट करण्याचं वचन हे @@ लक्षण आहे.",
+              "धोक्याचं"
+            ]
+          ]
+        },
+        "sortTitle": "हे कोणत्या प्रश्नाचं उत्तर आहे?",
+        "sortOpts": [
+          {
+            "k": "safe",
+            "t": "सुरक्षित"
+          },
+          {
+            "k": "reach",
+            "t": "सहज मिळतं"
+          },
+          {
+            "k": "grow",
+            "t": "वाढू शकतं"
+          },
+          {
+            "k": "warn",
+            "t": "धोक्याचं लक्षण"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "shield",
+            "label": "बँक तुझ्या बचतीची काळजी आणि संरक्षण करते",
+            "a": "safe"
+          },
+          {
+            "icon": "clock",
+            "label": "आणीबाणीच्या वेळी पैसे काढता येतात",
+            "a": "reach"
+          },
+          {
+            "icon": "tree",
+            "label": "व्याज दरवर्षी थोडं आणखी जोडतं",
+            "a": "grow"
+          },
+          {
+            "icon": "fox",
+            "label": "\"आज हजार द्या, पुढच्या आठवड्यात दोन हजार मिळवा!\"",
+            "a": "warn"
+          },
+          {
+            "icon": "cupboard",
+            "label": "कपाटात उघडी पडलेली रोकड जिथं उंदीर आणि चोर पोहोचू शकतात",
+            "a": "warn"
+          }
+        ],
+        "tf": [
+          {
+            "q": "कोणी एका आठवड्यात पैसे दुप्पट करण्याचं वचन दिलं तर त्याच्यावर विश्वास ठेवावा.",
+            "a": false
+          },
+          {
+            "q": "घरातल्या भरपूर रोकडीपेक्षा बँक खातं सहसा जास्त सुरक्षित असतं.",
+            "a": true
+          },
+          {
+            "q": "संयम ठेवला तर व्याजामुळे बचत थोडी वाढू शकते.",
+            "a": true
+          }
+        ],
+        "think": [
+          {
+            "q": "तू 500 रुपये बँकेत ठेवलेस आणि वर्षभरात 20 रुपये व्याज मिळालं. वर्षानंतर एकूण किती रुपये होतील?",
+            "opts": [
+              "520",
+              "480",
+              "700"
+            ],
+            "a": 0
+          },
+          {
+            "q": "एक अनोळखी माणूस म्हणतो: आज 5,000 रुपये द्या, पुढच्या आठवड्यात 10,000 मिळवा. काय करावं?",
+            "opts": [
+              "लगेच देऊन टाकावे",
+              "नाही म्हणावं आणि मोठ्याला सांगावं",
+              "निम्मे द्यावे"
+            ],
+            "a": 1
+          }
+        ],
+        "promise": "मी, {name}, वचन देत[[ो|े]] की माझ्या बचतीबद्दल तीन प्रश्न विचारीन, सुरक्षित जागा निवडीन, आणि \"दुप्पट पैसे\"च्या वचनांपासून दूर राहीन."
+      }
+    }
+  },
+  {
+    "slug": "money-map",
+    "status": "live",
+    "color": "#b8e0d2",
+    "title": {
+      "en": "{name} and the Money Map",
+      "hi": "{name} और पैसों का नक़्शा",
+      "mr": "{name} आणि पैशांचा नकाशा"
+    },
+    "cardTitle": {
+      "en": "The Money Map",
+      "hi": "पैसों का नक़्शा",
+      "mr": "पैशांचा नकाशा"
+    },
+    "subtitle": {
+      "en": "Putting it all together",
+      "hi": "सब कुछ एक साथ जोड़ना",
+      "mr": "सगळं एकत्र जोडूया"
+    },
+    "topic": {
+      "en": "Your money plan",
+      "hi": "तुम्हारी पैसों की योजना",
+      "mr": "तुझी पैशांची योजना"
+    },
+    "stops": {
+      "en": [
+        "The Old Trunk",
+        "The Map",
+        "Five Steps",
+        "Your First Step"
+      ],
+      "hi": [
+        "पुराना संदूक",
+        "नक़्शा",
+        "पाँच क़दम",
+        "तुम्हारा पहला क़दम"
+      ],
+      "mr": [
+        "जुनी पेटी",
+        "नकाशा",
+        "पाच पावलं",
+        "तुझं पहिलं पाऊल"
+      ]
+    },
+    "scenes": [
+      "You open an old trunk in Aaji's room and find a folded map with a small path drawn across it.",
+      "The map spread on the floor with five stops along a winding path, and Gullu sits on one corner.",
+      "Aaji, Kaka and Meena Didi each point to a stop on the map while you follow the path with a finger.",
+      "You stand at the first stop of the path with a coin in your hand, and Gullu leads the way into the morning sun."
+    ],
+    "story": {
+      "en": [
+        "On a rainy afternoon, you and Gullu were poking around in Aaji's old trunk. Under a pile of blankets, you found a folded paper tied with a string. It was a hand-drawn map. \"My money map,\" said Aaji, smiling. \"I drew it when I was your age, and I have followed it ever since.\" Gullu sniffed it. \"Where does it go?\" \"To a life where money works for you, and does not worry you,\" said Aaji.",
+        "You spread the map on the floor. A winding path ran across it with five stops. Aaji pointed. \"First, know what money is for, and tell needs from wants. Second, protect yourself: keep emergency money, have insurance, and beware of scams. Third, spend smartly: make a budget, compare prices, and avoid traps like easy EMIs and too-good sales. Fourth, grow your money: save, use a fixed deposit, and start an SIP. Fifth, be a good citizen: pay your taxes and your dues.\"",
+        "Kaka leaned in and tapped the third stop. \"I needed to learn about credit scores here.\" Meena Didi tapped the fourth. \"And risk. Remember the egg baskets.\" You counted the stories you had read together and realised each one was a stop on the map. \"So the whole map is like a month of small lessons, one at a time,\" you said. \"Exactly,\" said Aaji. \"Nobody learns it all in a day. But a little every day, and in a month you know the basics.\"",
+        "Aaji handed you a pencil. \"Now draw your own map. Where will you start?\" You thought for a moment, then drew a small circle at the first stop and wrote in your head: my emergency jar. Gullu wagged his tail so hard that the map fluttered. \"One coin at a time,\" you said. You picked up the coin from the floor and held it up. The rain had stopped, and the path was waiting."
+      ],
+      "hi": [
+        "एक बरसाती दोपहर तुम और गुल्लू दादी के पुराने संदूक में टटोल रहे थे। कंबलों के ढेर के नीचे तुम्हें डोरी से बँधा एक तह किया काग़ज़ मिला। यह हाथ से बना नक़्शा था। \"मेरा पैसों का नक़्शा,\" दादी ने मुस्कुराकर कहा। \"यह मैंने तुम्हारी उम्र में बनाया था, और तब से इसी पर चली हूँ।\" गुल्लू ने उसे सूँघा। \"यह कहाँ जाता है?\" \"ऐसी ज़िंदगी की ओर जहाँ पैसा तुम्हारे लिए काम करे, तुम्हें परेशान न करे,\" दादी बोलीं।",
+        "तुमने नक़्शा फ़र्श पर फैलाया। उस पर एक घुमावदार रास्ता था जिसमें पाँच पड़ाव थे। दादी ने उँगली रखी। \"पहला, जानो कि पैसा किसलिए है, और ज़रूरत व चाहत में फ़र्क़ करो। दूसरा, ख़ुद को बचाओ: आपातकाल के पैसे रखो, बीमा लो, और धोखाधड़ी से सावधान रहो। तीसरा, समझदारी से ख़र्च करो: बजट बनाओ, दाम की तुलना करो, और आसान EMI और हद से ज़्यादा अच्छी सेल जैसे जाल से बचो। चौथा, पैसे बढ़ाओ: बचत करो, फ़िक्स्ड डिपॉज़िट लो, और एसआईपी शुरू करो। पाँचवाँ, अच्छे नागरिक बनो: कर और अपने बकाया चुकाओ।\"",
+        "काका झुके और तीसरे पड़ाव पर उँगली रखी। \"यहाँ मुझे क्रेडिट स्कोर के बारे में सीखना था।\" मीना दीदी ने चौथे पर उँगली रखी। \"और जोखिम के बारे में भी। अंडों की टोकरियाँ याद हैं?\" तुमने साथ पढ़ी कहानियाँ गिनीं और समझा कि हर एक नक़्शे का एक पड़ाव है। \"यानी पूरा नक़्शा एक महीने के छोटे-छोटे पाठों जैसा है, एक-एक करके,\" तुमने कहा। \"बिल्कुल,\" दादी बोलीं। \"कोई भी सब कुछ एक दिन में नहीं सीखता। पर रोज़ थोड़ा-थोड़ा, और एक महीने में बुनियादी बातें आ जाती हैं।\"",
+        "दादी ने तुम्हें पेंसिल थमाई। \"अब अपना नक़्शा बनाओ। तुम कहाँ से शुरू करोगे?\" तुमने पल भर सोचा, फिर पहले पड़ाव पर एक छोटा गोला बनाया और मन में लिखा: मेरा आपातकाल वाला जार। गुल्लू ने इतनी ज़ोर से दुम हिलाई कि नक़्शा फड़फड़ाने लगा। \"एक-एक सिक्का,\" तुमने कहा। तुमने फ़र्श से सिक्का उठाया और ऊपर किया। बारिश थम चुकी थी और रास्ता इंतज़ार कर रहा था।"
+      ],
+      "mr": [
+        "एका पावसाळी दुपारी तू आणि गल्लू आजीच्या जुन्या पेटीत चाचपडत होतात. ब्लँकेटांच्या ढिगाखाली तुला दोरीने बांधलेला घडी घातलेला कागद सापडला. तो हाताने काढलेला नकाशा होता. \"माझा पैशांचा नकाशा,\" आजी हसून म्हणाली. \"तुझ्या वयाची असताना मी हा काढला, आणि तेव्हापासून याच वाटेने चालले.\" गल्लूने तो हुंगला. \"हा कुठे जातो?\" \"अशा आयुष्याकडे जिथे पैसा तुझ्यासाठी काम करतो, तुला काळजीत टाकत नाही,\" आजी म्हणाली.",
+        "तू नकाशा जमिनीवर पसरलास. त्यावर एक नागमोडी रस्ता होता आणि पाच टप्पे होते. आजीने बोट ठेवलं. \"पहिला, पैसा कशासाठी आहे ते जाणा, आणि गरज व इच्छा यांतला फरक ओळखा. दुसरा, स्वतःला वाचवा: आणीबाणीचे पैसे ठेवा, विमा घ्या, आणि फसवणुकीपासून सावध राहा. तिसरा, शहाणपणाने खर्च करा: बजेट बनवा, किमतींची तुलना करा, आणि सोप्या EMI आणि खूपच भारी सेल अशा जाळ्यांपासून दूर राहा. चौथा, पैसे वाढवा: बचत करा, फिक्स्ड डिपॉझिट घ्या, आणि एसआयपी सुरू करा. पाचवा, चांगले नागरिक व्हा: कर आणि आपली देणी भरा.\"",
+        "काका पुढे झुकले आणि तिसऱ्या टप्प्यावर बोट ठेवलं. \"इथे मला क्रेडिट स्कोअरबद्दल शिकायचं होतं.\" मीना ताईंनी चौथ्यावर बोट ठेवलं. \"आणि जोखमीबद्दलही. अंड्यांच्या टोपल्या आठवतात ना?\" तू एकत्र वाचलेल्या गोष्टी मोजल्यास आणि लक्षात आलं की प्रत्येक गोष्ट म्हणजे नकाशावरचा एक टप्पा आहे. \"म्हणजे संपूर्ण नकाशा म्हणजे महिनाभराचे छोटे छोटे धडे, एकेक करून,\" तू म्हणालास. \"अगदी बरोबर,\" आजी म्हणाली. \"कोणीही सगळं एका दिवसात शिकत नाही. पण रोज थोडं थोडं, आणि महिन्याभरात मूलभूत गोष्टी येतात.\"",
+        "आजीने तुझ्या हातात पेन्सिल दिली. \"आता तुझा स्वतःचा नकाशा काढ. तू कुठून सुरुवात करशील?\" तू क्षणभर विचार केलास, मग पहिल्या टप्प्यावर एक छोटं वर्तुळ काढलंस आणि मनात लिहिलंस: माझी आणीबाणीची बरणी. गल्लूने इतक्या जोरात शेपटी हलवली की नकाशा फडफडला. \"एकेक नाणं,\" तू म्हणालास. तू जमिनीवरचं नाणं उचललंस आणि वर धरलंस. पाऊस थांबला होता आणि वाट वाट पाहत होती."
+      ]
+    },
+    "recap": {
+      "en": {
+        "remember": [
+          "A money plan has steps: know your needs, protect yourself, spend smartly, grow your money, and do your duties.",
+          "Protect first: emergency money, insurance and care about scams come before growing money.",
+          "Small lessons every day add up. You can learn the basics in a month.",
+          "Start with one small step, like your emergency jar, and keep going."
+        ],
+        "fill": {
+          "bank": [
+            "plan",
+            "emergency",
+            "protect",
+            "grow",
+            "budget",
+            "step"
+          ],
+          "items": [
+            [
+              "A written guide for what to do with your money is a money @@.",
+              "plan"
+            ],
+            [
+              "Before you grow your money, build your @@ jar.",
+              "emergency"
+            ],
+            [
+              "Insurance helps to @@ you from big bills.",
+              "protect"
+            ],
+            [
+              "An SIP and a fixed deposit help your money @@.",
+              "grow"
+            ],
+            [
+              "Start with one small @@ and keep going.",
+              "step"
+            ]
+          ]
+        },
+        "sortTitle": "Protect first, or grow next?",
+        "sortOpts": [
+          {
+            "k": "protect",
+            "t": "Protect first"
+          },
+          {
+            "k": "grow",
+            "t": "Grow next"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "jar",
+            "label": "Building an emergency jar",
+            "a": "protect"
+          },
+          {
+            "icon": "pie",
+            "label": "Starting a monthly SIP",
+            "a": "grow"
+          },
+          {
+            "icon": "umbrella",
+            "label": "Having insurance for a big bill",
+            "a": "protect"
+          },
+          {
+            "icon": "tree",
+            "label": "Letting money grow for many years",
+            "a": "grow"
+          },
+          {
+            "icon": "shield",
+            "label": "Learning to spot scam calls",
+            "a": "protect"
+          }
+        ],
+        "tf": [
+          {
+            "q": "You can learn the basics of money in small lessons over a month.",
+            "a": true
+          },
+          {
+            "q": "Growing your money should come before building emergency savings.",
+            "a": false
+          },
+          {
+            "q": "A money plan only matters for adults.",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "You have a little spare money. Which step comes first on the map?",
+            "opts": [
+              "Put it all in a risky scheme",
+              "Start your emergency jar",
+              "Buy something on EMI"
+            ],
+            "a": 1
+          },
+          {
+            "q": "Why does Aaji call it a map?",
+            "opts": [
+              "Because it shows steps to follow one at a time",
+              "Because it is made of paper only",
+              "Because it shows only one place"
+            ],
+            "a": 0
+          }
+        ],
+        "promise": "I, {name}, promise to follow my money map, one small step at a time, and to keep learning and sharing what I know."
+      },
+      "hi": {
+        "remember": [
+          "पैसों की योजना में क़दम होते हैं: ज़रूरतें जानो, ख़ुद को बचाओ, समझदारी से ख़र्च करो, पैसे बढ़ाओ, और अपने कर्तव्य निभाओ।",
+          "पहले बचाव: आपातकाल के पैसे, बीमा और धोखाधड़ी से सावधानी पैसे बढ़ाने से पहले आते हैं।",
+          "रोज़ के छोटे पाठ जुड़कर बड़े बनते हैं। बुनियादी बातें तुम एक महीने में सीख सकते हो।",
+          "एक छोटे क़दम से शुरू करो, जैसे आपातकाल का जार, और चलते रहो।"
+        ],
+        "fill": {
+          "bank": [
+            "योजना",
+            "आपातकाल",
+            "बचाने",
+            "बढ़ाने",
+            "बजट",
+            "क़दम"
+          ],
+          "items": [
+            [
+              "पैसों का क्या करना है उसकी लिखी हुई राह पैसों की @@ है।",
+              "योजना"
+            ],
+            [
+              "पैसे बढ़ाने से पहले अपना @@ वाला जार बनाओ।",
+              "आपातकाल"
+            ],
+            [
+              "बीमा बड़े बिलों से तुम्हें @@ में मदद करता है।",
+              "बचाने"
+            ],
+            [
+              "एसआईपी और फ़िक्स्ड डिपॉज़िट पैसे @@ में मदद करते हैं।",
+              "बढ़ाने"
+            ],
+            [
+              "एक छोटे @@ से शुरू करो और चलते रहो।",
+              "क़दम"
+            ]
+          ]
+        },
+        "sortTitle": "पहले बचाव या आगे बढ़ोतरी?",
+        "sortOpts": [
+          {
+            "k": "protect",
+            "t": "पहले बचाव"
+          },
+          {
+            "k": "grow",
+            "t": "आगे बढ़ोतरी"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "jar",
+            "label": "आपातकाल का जार बनाना",
+            "a": "protect"
+          },
+          {
+            "icon": "pie",
+            "label": "हर महीने की एसआईपी शुरू करना",
+            "a": "grow"
+          },
+          {
+            "icon": "umbrella",
+            "label": "बड़े बिल के लिए बीमा लेना",
+            "a": "protect"
+          },
+          {
+            "icon": "tree",
+            "label": "पैसों को कई साल बढ़ने देना",
+            "a": "grow"
+          },
+          {
+            "icon": "shield",
+            "label": "धोखे वाले फ़ोन पहचानना सीखना",
+            "a": "protect"
+          }
+        ],
+        "tf": [
+          {
+            "q": "पैसों की बुनियादी बातें एक महीने में छोटे-छोटे पाठों से सीखी जा सकती हैं।",
+            "a": true
+          },
+          {
+            "q": "पैसे बढ़ाना आपातकाल की बचत बनाने से पहले आना चाहिए।",
+            "a": false
+          },
+          {
+            "q": "पैसों की योजना सिर्फ़ बड़ों के लिए ज़रूरी है।",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "तुम्हारे पास थोड़े फ़ालतू पैसे हैं। नक़्शे पर पहला क़दम कौन सा है?",
+            "opts": [
+              "सब जोखिम भरी योजना में लगा दो",
+              "अपना आपातकाल वाला जार शुरू करो",
+              "EMI पर कुछ ख़रीद लो"
+            ],
+            "a": 1
+          },
+          {
+            "q": "दादी इसे नक़्शा क्यों कहती हैं?",
+            "opts": [
+              "क्योंकि यह एक-एक करके चलने के क़दम दिखाता है",
+              "क्योंकि यह सिर्फ़ काग़ज़ का बना है",
+              "क्योंकि यह सिर्फ़ एक जगह दिखाता है"
+            ],
+            "a": 0
+          }
+        ],
+        "promise": "मैं, {name}, वादा करत[[ा|ी]] हूँ कि अपने पैसों के नक़्शे पर एक-एक छोटे क़दम से चलूँग[[ा|ी]], सीखत[[ा|ी]] रहूँग[[ा|ी]] और जो जानत[[ा|ी]] हूँ वह दूसरों को बताऊँग[[ा|ी]]।"
+      },
+      "mr": {
+        "remember": [
+          "पैशांच्या योजनेत पावलं असतात: गरजा ओळख, स्वतःला वाचव, शहाणपणाने खर्च कर, पैसे वाढव, आणि आपली कर्तव्यं पार पाड.",
+          "आधी संरक्षण: आणीबाणीचे पैसे, विमा आणि फसवणुकीबद्दल सावधगिरी पैसे वाढवण्याआधी येतात.",
+          "रोजचे छोटे धडे जमून मोठे होतात. मूलभूत गोष्टी तू महिन्यात शिकू शकतोस.",
+          "एका छोट्या पावलाने सुरुवात कर, जसं आणीबाणीची बरणी, आणि चालत राहा."
+        ],
+        "fill": {
+          "bank": [
+            "योजना",
+            "आणीबाणी",
+            "वाचवायला",
+            "वाढवायला",
+            "बजेट",
+            "पाऊल"
+          ],
+          "items": [
+            [
+              "पैशांचं काय करायचं याची लिहिलेली वाट म्हणजे पैशांची @@.",
+              "योजना"
+            ],
+            [
+              "पैसे वाढवण्याआधी तुझी @@ ची बरणी बनव.",
+              "आणीबाणी"
+            ],
+            [
+              "विमा मोठ्या बिलांपासून तुला @@ मदत करतो.",
+              "वाचवायला"
+            ],
+            [
+              "एसआयपी आणि फिक्स्ड डिपॉझिट पैसे @@ मदत करतात.",
+              "वाढवायला"
+            ],
+            [
+              "एका छोट्या @@ ने सुरुवात कर आणि चालत राहा.",
+              "पाऊल"
+            ]
+          ]
+        },
+        "sortTitle": "आधी संरक्षण की पुढे वाढ?",
+        "sortOpts": [
+          {
+            "k": "protect",
+            "t": "आधी संरक्षण"
+          },
+          {
+            "k": "grow",
+            "t": "पुढे वाढ"
+          }
+        ],
+        "sort": [
+          {
+            "icon": "jar",
+            "label": "आणीबाणीची बरणी बनवणं",
+            "a": "protect"
+          },
+          {
+            "icon": "pie",
+            "label": "दर महिन्याची एसआयपी सुरू करणं",
+            "a": "grow"
+          },
+          {
+            "icon": "umbrella",
+            "label": "मोठ्या बिलासाठी विमा घेणं",
+            "a": "protect"
+          },
+          {
+            "icon": "tree",
+            "label": "पैशांना अनेक वर्षं वाढू देणं",
+            "a": "grow"
+          },
+          {
+            "icon": "shield",
+            "label": "फसवणुकीचे फोन ओळखायला शिकणं",
+            "a": "protect"
+          }
+        ],
+        "tf": [
+          {
+            "q": "पैशांच्या मूलभूत गोष्टी महिन्याभरात छोट्या छोट्या धड्यांतून शिकता येतात.",
+            "a": true
+          },
+          {
+            "q": "पैसे वाढवणं हे आणीबाणीची बचत बनवण्याआधी यायला हवं.",
+            "a": false
+          },
+          {
+            "q": "पैशांची योजना फक्त मोठ्यांसाठी महत्त्वाची असते.",
+            "a": false
+          }
+        ],
+        "think": [
+          {
+            "q": "तुझ्याकडे थोडे जास्तीचे पैसे आहेत. नकाशावर पहिलं पाऊल कोणतं?",
+            "opts": [
+              "सगळे जोखमीच्या योजनेत घालावेत",
+              "आपली आणीबाणीची बरणी सुरू करावी",
+              "EMI वर काहीतरी घ्यावं"
+            ],
+            "a": 1
+          },
+          {
+            "q": "आजी याला नकाशा का म्हणते?",
+            "opts": [
+              "कारण तो एकेक करून चालायची पावलं दाखवतो",
+              "कारण तो फक्त कागदाचा बनलेला आहे",
+              "कारण तो फक्त एकच जागा दाखवतो"
+            ],
+            "a": 0
+          }
+        ],
+        "promise": "मी, {name}, वचन देत[[ो|े]] की माझ्या पैशांच्या नकाशावर एकेक छोटं पाऊल टाकत चालेन, शिकत राहीन, आणि जे येतं ते इतरांना सांगेन."
       }
     }
   }

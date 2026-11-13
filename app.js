@@ -50,7 +50,7 @@
     }
     var h = link("index", esc(u2.navBooks), "index") + link("play", "🎮 " + esc(u2.navPlay), "play");
     if (window.Acct && window.Acct.enabled) h += '<a class="me" id="mechip" href="account.html?lang=' + lang + '"' + (page === "account" ? ' aria-current="page"' : "") + ">" + esc(u2.signIn) + "</a>";
-    return '<nav class="mainnav" aria-label="Main"><div class="wrap">' + h + "</div></nav>";
+    return '<nav class="mainnav" aria-label="' + esc((window.UI2 && window.UI2[lang] && window.UI2[lang].navMain) || "Main menu") + '"><div class="wrap">' + h + "</div></nav>";
   }
   function wireChip(lang) {
     var u2 = window.UI2 && window.UI2[lang];

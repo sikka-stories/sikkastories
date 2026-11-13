@@ -1360,7 +1360,229 @@
     return o;
   }
 
-  var SCENES = { "money-swap": sceneSwap, "better-buy": sceneBetter, "two-currencies": sceneBorders, "needs-vs-wants": sceneNeeds, "piggy-jar": sceneWish, "inside-a-bank": sceneBank, "family-budget": sceneBudget, "what-is-interest": sceneInterest, "why-prices-rise": sceneInflation, "phone-scams": sceneScam, "moneylender-or-bank": sceneBorrow, "insurance": sceneInsure, "emergency-fund": sceneEmergency, "buy-now-trap": sceneEmi, "shop-bill": sceneBill, "safe-place": sceneSafe, "kite-company": sceneKite, "nimbu-pani-stall": sceneStall, "shared-well": sceneWell, "too-good-sale": sceneSale, "growing-staircase": sceneStairs, "journey-of-50": sceneUpi, "first-salary": sceneSalary };
+  /* ---------- BOOKS 21 to 30 (new scenes) ---------- */
+  function egg(x, y, s, r) { return T(`translate(${x} ${y}) rotate(${r || 0}) scale(${s})`, `<ellipse rx="8" ry="10.5" fill="#fff8e7"${S2}/><ellipse cx="-3" cy="-4" rx="2" ry="3.5" fill="#fff" opacity=".85"/>`); }
+  function brokenEgg(x, y, s, r) { return T(`translate(${x} ${y}) rotate(${r || 0}) scale(${s})`, `<path d="M-14 2 Q-10 -6 -2 -2 Q4 -8 10 -1 Q16 3 8 7 Q-2 11 -14 2 Z" fill="#fff"${S2}/><circle cx="-1" cy="1" r="4.5" fill="#ffc21a"${S2}/><path d="M12 -6 L18 -12 L21 -4 Z" fill="#fff8e7"${S2}/>`); }
+  function eggBasket(x, y, s, n, w, r) {
+    w = w || 60;
+    var cols = Math.max(1, Math.floor(w / 17)), e = "";
+    for (var i = 0; i < n; i++) {
+      var row = Math.floor(i / cols), col = i % cols, cnt = Math.min(cols, n - row * cols);
+      e += egg(-(cnt - 1) * 8.5 + col * 17, -14 - row * 13, 1, (i * 17) % 20 - 10);
+    }
+    var b = e + `<path d="M${-w / 2} -12 L${w / 2} -12 L${w / 2 - 8} 24 L${-w / 2 + 8} 24 Z" fill="#c58b4e"${S}/><path d="M${-w / 2 + 3} 1 L${w / 2 - 3} 1 M${-w / 2 + 6} 13 L${w / 2 - 6} 13" stroke="#a06a35" stroke-width="2.5"/><rect x="${-w / 2 - 4}" y="-19" width="${w + 8}" height="9" rx="4.5" fill="#e0a86a"${S}/>`;
+    return T(`translate(${x} ${y}) rotate(${r || 0}) scale(${s})`, b);
+  }
+  function butterfly(x, y, s) { return T(`translate(${x} ${y}) scale(${s})`, `<ellipse cx="-9" cy="-5" rx="9" ry="12" fill="#ff70a6"${S2}/><ellipse cx="9" cy="-5" rx="9" ry="12" fill="#ff9acb"${S2}/><ellipse cx="-6" cy="9" rx="6" ry="8" fill="#f9c74f"${S2}/><ellipse cx="6" cy="9" rx="6" ry="8" fill="#f9c74f"${S2}/><rect x="-1.5" y="-12" width="3" height="28" rx="1.5" fill="${INK}"/>`); }
+  function stone(x, y, s) { return T(`translate(${x} ${y}) scale(${s})`, `<path d="M-18 0 Q-16 -14 -2 -15 Q14 -14 18 0 Z" fill="#9aa5b8"${S}/><path d="M-6 -9 Q0 -12 6 -9" stroke="#fff" stroke-width="2" fill="none" opacity=".6"/>`); }
+  function downR(x, y, s) { return T(`translate(${x} ${y}) scale(${s})`, `<path d="M-10 -10 L-10 2 L-19 2 L0 24 L19 2 L10 2 L10 -10 Z" fill="#e63946"${S2}/>`); }
+  function mangoPile(x, y, s, rows) {
+    var o = "";
+    for (var r = 0; r < rows; r++) {
+      var cnt = rows - r;
+      for (var i = 0; i < cnt; i++) o += mango(-(cnt - 1) * 11 + i * 22, -12 - r * 19, 1.15, ((i + r) * 23) % 40 - 20);
+    }
+    return T(`translate(${x} ${y}) scale(${s})`, o + `<path d="M${-rows * 11 - 10} 0 L${rows * 11 + 10} 0 L${rows * 11 + 4} 12 L${-rows * 11 - 4} 12 Z" fill="#c58b4e"${S}/>`);
+  }
+  function dial(x, y, s, ang) {
+    var segs = [["#e63946", -90, -54], ["#f4a261", -54, -18], ["#ffd23f", -18, 18], ["#9bdc95", 18, 54], ["#2e9a3a", 54, 90]], b = "";
+    segs.forEach(function (g) {
+      var a1 = (g[1] - 90) * Math.PI / 180, a2 = (g[2] - 90) * Math.PI / 180;
+      b += `<path d="M${(Math.cos(a1) * 50).toFixed(1)} ${(Math.sin(a1) * 50).toFixed(1)} A50 50 0 0 1 ${(Math.cos(a2) * 50).toFixed(1)} ${(Math.sin(a2) * 50).toFixed(1)} L${(Math.cos(a2) * 28).toFixed(1)} ${(Math.sin(a2) * 28).toFixed(1)} A28 28 0 0 0 ${(Math.cos(a1) * 28).toFixed(1)} ${(Math.sin(a1) * 28).toFixed(1)} Z" fill="${g[0]}"${S2}/>`;
+    });
+    b += `<rect x="-60" y="2" width="120" height="14" rx="7" fill="#fff"${S}/>`;
+    b += `<g transform="rotate(${ang})"><path d="M-5 2 L0 -46 L5 2 Z" fill="${INK}"/></g><circle r="7" cy="0" fill="${INK}"/>`;
+    return T(`translate(${x} ${y}) scale(${s})`, b);
+  }
+  function mapSheet(x, y, s, r) {
+    var P = [[-62, 36], [-32, 8], [-2, 30], [30, 2], [66, -34]], b = `<path d="M-92 -62 L92 -68 L98 62 L-88 68 Z" fill="#f6e7c8"${S}/>`;
+    b += `<path d="M-80 -40 q12 -14 26 0 q12 -10 22 4 M40 36 q10 -14 24 -2 q12 -8 20 6" stroke="#b79a63" stroke-width="2.5" fill="none" stroke-linecap="round"/>`;
+    b += `<path d="M${P.map(function (p) { return p[0] + " " + p[1]; }).join(" L")}" fill="none" stroke="#b5543a" stroke-width="4" stroke-dasharray="3 9" stroke-linecap="round"/>`;
+    var cols = ["#e63946", "#3a86ff", "#ffd23f", "#2a9d8f", "#9b5de5"];
+    P.forEach(function (p, i) { b += `<circle cx="${p[0]}" cy="${p[1]}" r="${i === 0 ? 9 : 7}" fill="${cols[i]}"${S2}/>`; });
+    return T(`translate(${x} ${y}) rotate(${r || 0}) scale(${s})`, b);
+  }
+  function wateringCan(x, y, s) { return T(`translate(${x} ${y}) scale(${s})`, `<path d="M-20 -22 L20 -22 L16 12 L-16 12 Z" fill="#3a86ff"${S}/><path d="M20 -8 L42 -26 L46 -20 L22 4 Z" fill="#3a86ff"${S}/><path d="M-20 -14 Q-38 -10 -20 4" fill="none" stroke="${INK}" stroke-width="4" stroke-linecap="round"/><ellipse cx="0" cy="-22" rx="20" ry="4" fill="#9ad0ff"${S2}/>`); }
+  function sprout(x, y, s) { return T(`translate(${x} ${y}) scale(${s})`, `<path d="M0 0 L0 -18" stroke="#3f8f3f" stroke-width="3.5" stroke-linecap="round"/><path d="M0 -14 Q-14 -18 -16 -30 Q-2 -30 0 -14 Z" fill="#5fb85f"${S2}/><path d="M0 -18 Q12 -20 15 -32 Q2 -32 0 -18 Z" fill="#7ad37a"${S2}/>`); }
+  function zzz(x, y, s) { return T(`translate(${x} ${y}) scale(${s})`, `<path d="M0 0 L12 0 L0 14 L12 14" fill="none" stroke="${INK}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 -18 L24 -18 L16 -8 L24 -8" fill="none" stroke="${INK}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>`); }
+  function flagPole(x, y, s, c) { return T(`translate(${x} ${y}) scale(${s})`, `<line x1="0" y1="0" x2="0" y2="-34" stroke="${INK}" stroke-width="3" stroke-linecap="round"/><path d="M0 -34 L20 -28 L0 -20 Z" fill="${c}"${S2}/>`); }
+  var outdoor = (h, c) => sky("#bfe9ff", h) + hills(h) + ground(c || "#9ccf7e", h);
+
+  /* BOOK 21: The Mela Choice */
+  function sceneMela(n, g) {
+    var o = "";
+    if (n === 0) {
+      o += outdoor(300) + bunting(24) + ferris(290, 150, 64, 300) + stall(96, 300, "#e63946", "#fff") + jalebi(70, 292, 1.1) + jalebi(104, 292, 1.1) + jalebi(138, 292, 1.1);
+      o += hero(214, 394, 1.1, g, "up", "happy") + gullu(350, 396, 0.8) + spark(250, 200, 0.8);
+    } else if (n === 1) {
+      o += outdoor(300) + bunting(24) + ferris(90, 160, 70, 300) + stall(330, 300, "#ffb703", "#fff") + jalebi(310, 292, 1.1) + jalebi(346, 292, 1.1);
+      o += hero(220, 398, 1.1, g, "down", "wow") + gullu(150, 398, 0.75) + coin(262, 330, 1.2);
+    } else if (n === 2) {
+      o += outdoor(300) + cloud(300, 40, 0.6);
+      o += bubble(100, 86, 76, 64, 190, 220) + ferris(100, 84, 36, 130);
+      o += bubble(300, 86, 76, 64, 210, 220) + jalebi(300, 80, 2.0) + tag(300, 128, 0.7, "₹100", 15);
+      o += tag(100, 150, 0.7, "₹100", 15) + hero(200, 398, 1.1, g, "down", "think") + gullu(320, 398, 0.75);
+    } else if (n === 3) {
+      o += outdoor(300) + stall(322, 300, "#e63946", "#fff") + jalebi(304, 292, 1.1) + jalebi(340, 292, 1.1);
+      o += bubble(110, 100, 86, 70, 180, 220) + ferris(110, 100, 40, 140) + noSign(110, 100, 1.6);
+      o += hero(190, 398, 1.1, g, "give", "happy") + jalebi(254, 296, 1.2) + gullu(120, 398, 0.75);
+    } else {
+      o += outdoor(300) + bunting(24) + ferris(300, 150, 64, 300) + spark(300, 70, 0.9);
+      o += hero(150, 394, 1.1, g, "high", "happy") + coin(200, 200, 2.4) + gullu(250, 396, 0.8) + spark(110, 120, 0.8);
+    }
+    return o;
+  }
+
+  /* BOOK 22: The Mango Market */
+  function sceneMango(n, g) {
+    var o = "";
+    if (n === 0) {
+      o += outdoor(300) + mangoTree(92, 330, 0.72, "mango", 9) + stall(312, 300, "#ffb703", "#fff") + mangoPile(312, 296, 0.5, 4);
+      o += hero(204, 396, 1.1, g, "up", "happy") + gullu(130, 396, 0.7) + sun(360, 60, 34);
+    } else if (n === 1) {
+      o += outdoor(300) + sun(60, 60, 34) + mangoTree(120, 340, 0.95, "mango", 9);
+      o += hero(270, 398, 1.1, g, "up", "wow") + gullu(350, 398, 0.75) + mango(220, 330, 1.2, 10);
+    } else if (n === 2) {
+      o += outdoor(300) + stall(200, 300, "#ffb703", "#fff") + mangoPile(130, 296, 0.9, 5) + mangoPile(280, 296, 0.9, 5);
+      o += tag(60, 130, 1.0, "₹20", 18) + downR(60, 186, 1.2);
+      o += hero(60, 398, 1.0, g, "down", "think") + gullu(350, 398, 0.72) + sweat(330, 340);
+    } else if (n === 3) {
+      o += outdoor(300) + stall(200, 300, "#ffb703", "#fff") + mango(188, 288, 1.2, 0) + mango(214, 288, 1.2, 14);
+      o += tag(340, 130, 1.0, "₹80", 18) + upArrow(340, 186, 1.2);
+      o += hero(70, 398, 1.1, g, "give", "wow") + coin(150, 296, 1.2) + gullu(350, 398, 0.72);
+    } else {
+      o += outdoor(300) + cloud(70, 56, 0.7) + hero(206, 398, 1.0, g, "up", "think") + gullu(344, 398, 0.7);
+      o += `<path d="M168 340 L200 296 L232 340 Z" fill="#8d96a3"${S}/>`;
+      o += T("translate(200 296) rotate(-12)", `<rect x="-150" y="-8" width="300" height="12" rx="4" fill="#c58b4e"${S}/>` + mangoPile(-100, -8, 0.8, 4) + mango(104, -22, 1.4, 6) + mango(128, -22, 1.4, -8));
+      o += tag(66, 128, 0.9, "₹20", 17) + downR(66, 184, 1.0) + tag(334, 128, 0.9, "₹80", 17) + upArrow(334, 184, 1.0);
+    }
+    return o;
+  }
+
+  /* BOOK 23: The Locked Box */
+  function sceneLocked(n, g) {
+    var o = "";
+    if (n === 0) {
+      o += room("#e6f2ff", 336, "#b98150") + calendar(90, 118, 1.3, 6) + clock(330, 108, 1.5);
+      o += trunk(236, 338, 1.05) + hero(84, 398, 1.1, g, "up", "happy") + gullu(350, 398, 0.78) + spark(176, 190, 0.8);
+    } else if (n === 1) {
+      o += room("#fde8c8", 336, "#b98150") + bubble(130, 70, 100, 48, 90, 200) + lock(100, 72, 1.1) + calendar(160, 72, 0.55, 3);
+      o += aaji(80, 398, 0.95, false, "give") + envelope(158, 262, 1.1, "#e63946", -6) + didi(290, 304, 1.1) + counterFront(300) + gullu(352, 300, 0.7);
+    } else if (n === 2) {
+      o += room("#e6f2ff", 336, "#b98150") + chalkboard(200, 110, 340, 150, ["₹10,000", "7 in 100", "= ₹700"], 34);
+      o += tag(96, 250, 0.9, "₹700", 15) + coinStack(96, 336, 1.1, 7) + tag(310, 250, 0.9, "₹300", 15) + coinStack(310, 336, 1.1, 3);
+      o += hero(206, 398, 1.0, g, "give", "happy") + gullu(354, 398, 0.62);
+    } else if (n === 3) {
+      o += room("#e6f2ff", 336, "#b98150") + calendar(60, 100, 1.1, 2) + clock(340, 100, 1.3);
+      o += trunk(214, 338, 1.2) + noSign(214, 170, 1.1) + hero(86, 398, 1.1, g, "give", "wow") + sweat(120, 236) + gullu(344, 398, 0.78);
+    } else {
+      o += room("#fde8c8", 336, "#b98150") + didi(304, 304, 1.1) + counterFront(300);
+      o += aaji(66, 398, 0.95, false, "up") + hero(160, 398, 1.0, g, "high", "happy") + coinStack(224, 292, 1.2, 8) + paper(262, 268, 1.0, -8) + spark(200, 180, 0.8) + gullu(354, 300, 0.7);
+    }
+    return o;
+  }
+
+  /* BOOK 24: The Trust Score */
+  function sceneTrust(n, g) {
+    var o = "";
+    if (n === 0) {
+      o += outdoor(300) + cloud(70, 50, 0.8) + dial(200, 170, 2.0, 52) + `<text x="200" y="236" text-anchor="middle" font-size="26" font-weight="700" ${FONT} fill="${INK}">780</text>`;
+      o += hero(96, 398, 1.1, g, "up", "happy") + kaka(312, 398, 0.95) + spark(330, 120, 0.8);
+    } else if (n === 1) {
+      o += room("#e6f2ff", 336, "#b98150") + didi(290, 304, 1.1) + counterFront(300) + paper(236, 270, 1.1, -8) + gullu(352, 300, 0.7);
+      o += kaka(76, 398, 1.0) + sack(170, 398, 0.8);
+    } else if (n === 2) {
+      o += room("#fde8c8", 336, "#b98150") + dial(200, 190, 2.1, 56) + `<text x="200" y="254" text-anchor="middle" font-size="28" font-weight="700" ${FONT} fill="${INK}">780</text>`;
+      o += hero(70, 398, 1.1, g, "give", "wow") + didi(330, 398, 1.0) + tick(200, 290, 2.0);
+    } else if (n === 3) {
+      o += room("#fff1d6", 336, "#b98150") + `<rect x="0" y="0" width="198" height="336" fill="#9bdc95" opacity=".35"/><rect x="202" y="0" width="198" height="336" fill="#e63946" opacity=".22"/><line x1="200" y1="0" x2="200" y2="336" stroke="${INK}" stroke-width="3" stroke-dasharray="8 8"/>`;
+      o += calendar(80, 90, 1.0, 9) + upG(142, 90, 1.2) + dial(100, 214, 0.9, 54);
+      o += billPaper(264, 70, 1.0) + billPaper(324, 90, 1.0) + downR(300, 160, 1.2) + dial(300, 252, 0.9, -54);
+      o += hero(200, 398, 1.0, g, "down", "think") + gullu(344, 398, 0.6);
+    } else {
+      o += room("#e8f1e0", 336, "#b98150") + shield(70, 120, 1.7) + dial(330, 130, 1.0, 58);
+      o += kaka(298, 398, 0.95) + hero(150, 398, 1.1, g, "up", "happy") + paper(212, 262, 1.6, -6) + gullu(56, 398, 0.78) + spark(250, 180, 0.8);
+    }
+    return o;
+  }
+
+  /* BOOK 25: The Egg Baskets */
+  function sceneEggs(n, g) {
+    var o = "";
+    if (n === 0) {
+      o += outdoor(300) + eggBasket(52, 346, 0.95, 4, 56) + eggBasket(122, 346, 0.95, 4, 56) + eggBasket(192, 346, 0.95, 4, 56);
+      o += hero(276, 396, 1.0, g, "up", "happy") + gullu(362, 396, 0.62) + cloud(300, 50, 0.7);
+    } else if (n === 1) {
+      o += outdoor(300) + cloud(70, 50, 0.7) + sun(350, 56, 30);
+      o += hero(140, 398, 1.1, g, "give", "happy") + eggBasket(214, 304, 1.4, 12, 100) + gullu(340, 398, 0.75);
+    } else if (n === 2) {
+      o += outdoor(300) + cloud(300, 50, 0.7) + butterfly(356, 230, 1.1);
+      o += stone(96, 396, 1.0) + hero(130, 398, 1.1, g, "up", "wow");
+      o += eggBasket(226, 360, 1.0, 0, 70, -85);
+      [[252, 380, 0], [284, 388, 12], [316, 380, -10], [262, 396, 8], [300, 396, 0], [338, 392, 14], [226, 392, -6], [350, 376, 0]].forEach(function (p) { o += brokenEgg(p[0], p[1], 1.0, p[2]); });
+      o += gullu(350, 330, 0.5);
+    } else if (n === 3) {
+      o += outdoor(300) + sun(350, 56, 30);
+      o += hero(90, 398, 1.0, g, "give", "happy") + eggBasket(170, 366, 1.0, 4, 56) + eggBasket(236, 366, 1.0, 4, 56) + eggBasket(318, 372, 1.0, 0, 56, -80);
+      [[290, 394, 0], [320, 394, 8], [346, 390, -8], [304, 380, 12]].forEach(function (p) { o += brokenEgg(p[0], p[1], 0.9, p[2]); });
+    } else {
+      o += room("#fff1d6", 336, "#c98f5a") + counterFront(300) + glassJar(150, 298, 1.0, 3) + shield(150, 214, 1.3) + glassJar(222, 298, 1.0, 6) + bank(222, 252, 0.26) + pot(296, 298, 0.8) + sprout(296, 232, 1.2);
+      o += hero(56, 398, 1.0, g, "up", "happy") + didi(354, 398, 0.95);
+    }
+    return o;
+  }
+
+  /* BOOK 26: The Monthly Seeds */
+  function sceneSip(n, g) {
+    var o = "";
+    if (n === 0) {
+      o += outdoor(300) + pot(210, 336, 1.5) + coin(196, 150, 1.3) + coin(226, 200, 1.3) + coin(180, 238, 1.2);
+      o += sprout(60, 330, 1.2) + sprout(100, 344, 1.0) + sprout(330, 340, 1.2) + hero(76, 398, 1.0, g, "up", "happy") + gullu(346, 396, 0.8);
+    } else if (n === 1) {
+      o += outdoor(300) + pot(218, 336, 1.5) + coin(206, 150, 1.3) + coin(228, 200, 1.3) + coin(192, 238, 1.2);
+      o += kaka(58, 398, 0.95) + hero(134, 398, 1.0, g, "give", "happy") + aaji(346, 398, 0.9, true, "down");
+    } else if (n === 2) {
+      o += outdoor(300) + calendar(330, 96, 1.2, 5) + pot(252, 340, 1.1) + note(158, 262, 0.9, 12);
+      o += hero(70, 398, 1.1, g, "give", "happy");
+      [180, 214, 248, 282, 316].forEach(function (x) { o += seed(x, 388, 0.7); });
+    } else if (n === 3) {
+      o += sky("#d6f0ff", 300) + hills(300) + ground("#9ccf7e", 300) + `<path d="M-10 130 Q40 60 90 120 T190 100 T290 60 T400 120" fill="none" stroke="#e63946" stroke-width="6" stroke-linecap="round"/>`;
+      [60, 130, 200, 270, 340].forEach(function (x, i) { o += sprout(x, 330 + (i % 2) * 8, 1.3); });
+      o += hero(110, 398, 1.1, g, "down", "happy") + wateringCan(170, 334, 0.8) + gullu(300, 396, 0.85) + sweat(332, 332);
+    } else {
+      o += sky("#fde8c8", 290) + hills(290) + ground("#79c86a", 290) + sun(60, 60, 34);
+      o += mangoTree(296, 396, 1.0, "coin", 9) + hero(170, 398, 1.1, g, "down", "happy") + gullu(72, 398, 0.8) + zzz(70, 292, 1.3);
+    }
+    return o;
+  }
+
+  /* BOOK 30: The Money Map */
+  function sceneMoneyMap(n, g) {
+    var o = "";
+    if (n === 0) {
+      o += room("#fff1d6", 336, "#c98f5a") + window2(24, 40, 84, 76, false) + trunk(112, 340, 1.3) + mapSheet(292, 134, 0.8, -6);
+      o += hero(250, 398, 1.1, g, "up", "happy") + gullu(352, 398, 0.78);
+    } else if (n === 1) {
+      o += room("#fff1d6", 336, "#c98f5a") + window2(24, 40, 84, 76, true) + trunk(262, 340, 1.2);
+      o += hero(116, 398, 1.1, g, "up", "wow") + paper(168, 212, 1.1, -10) + gullu(190, 398, 0.7);
+    } else if (n === 2) {
+      o += room("#fff1d6", 336, "#c98f5a") + mapSheet(236, 236, 1.55, 0) + hero(54, 398, 1.0, g, "give", "happy") + gullu(350, 262, 0.66);
+    } else if (n === 3) {
+      o += room("#e8f1e0", 336, "#c98f5a");
+      o += bubble(50, 90, 46, 40, 50, 230) + glassJar(50, 106, 0.8, 4);
+      o += bubble(146, 90, 46, 40, 142, 230) + dial(146, 104, 0.6, 50);
+      o += bubble(344, 90, 46, 40, 342, 230) + shield(344, 90, 1.0);
+      o += aaji(50, 398, 0.85, false, "give") + kaka(142, 398, 0.85) + hero(240, 398, 0.95, g, "up", "happy") + didi(342, 398, 0.9);
+    } else {
+      o += sky("#fde8c8", 290) + hills(290) + ground("#9ccf7e", 290) + sun(320, 96, 42);
+      o += `<path d="M30 390 C90 340 40 300 130 280 S220 250 250 190 S300 140 318 110" fill="none" stroke="#b5543a" stroke-width="6" stroke-dasharray="3 12" stroke-linecap="round"/>`;
+      o += flagPole(120, 282, 1.0, "#e63946") + flagPole(240, 200, 0.9, "#3a86ff");
+      o += hero(150, 394, 1.1, g, "high", "happy") + coin(204, 200, 2.4) + gullu(244, 396, 0.8) + spark(100, 160, 0.8);
+    }
+    return o;
+  }
+
+  var SCENES = { "money-swap": sceneSwap, "better-buy": sceneBetter, "two-currencies": sceneBorders, "needs-vs-wants": sceneNeeds, "piggy-jar": sceneWish, "inside-a-bank": sceneBank, "family-budget": sceneBudget, "what-is-interest": sceneInterest, "why-prices-rise": sceneInflation, "phone-scams": sceneScam, "moneylender-or-bank": sceneBorrow, "insurance": sceneInsure, "emergency-fund": sceneEmergency, "buy-now-trap": sceneEmi, "shop-bill": sceneBill, "safe-place": sceneSafe, "kite-company": sceneKite, "nimbu-pani-stall": sceneStall, "shared-well": sceneWell, "too-good-sale": sceneSale, "growing-staircase": sceneStairs, "journey-of-50": sceneUpi, "first-salary": sceneSalary, "mela-choice": sceneMela, "mango-market": sceneMango, "locked-box": sceneLocked, "trust-score": sceneTrust, "egg-baskets": sceneEggs, "sip-seeds": sceneSip, "money-map": sceneMoneyMap };
   var SKIES = {
     "money-swap": ["#bfe9ff", "#fff1d6", "#e8f1e0", "#fff1d6", "#bfe9ff"],
     "better-buy": ["#fff1d6", "#fff1d6", "#e8f1e0", "#e8f1e0", "#fde8c8"],
@@ -1384,7 +1606,14 @@
     "too-good-sale": ["#bfe9ff", "#fff1d6", "#fff1d6", "#e8f1e0", "#fff1d6"],
     "growing-staircase": ["#bfe9ff", "#e6f2ff", "#fde8c8", "#fde8c8", "#e6f2ff"],
     "journey-of-50": ["#bfe9ff", "#bfe9ff", "#e8f1e0", "#fff1d6", "#bfe9ff"],
-    "first-salary": ["#bfe9ff", "#fff1d6", "#fde8c8", "#e6f2ff", "#fde8c8"]
+    "first-salary": ["#bfe9ff", "#fff1d6", "#fde8c8", "#e6f2ff", "#fde8c8"],
+    "mela-choice": ["#bfe9ff", "#bfe9ff", "#bfe9ff", "#bfe9ff", "#bfe9ff"],
+    "mango-market": ["#bfe9ff", "#bfe9ff", "#bfe9ff", "#bfe9ff", "#bfe9ff"],
+    "locked-box": ["#e6f2ff", "#fde8c8", "#e6f2ff", "#e6f2ff", "#fde8c8"],
+    "trust-score": ["#bfe9ff", "#e6f2ff", "#fde8c8", "#fff1d6", "#e8f1e0"],
+    "egg-baskets": ["#bfe9ff", "#bfe9ff", "#bfe9ff", "#bfe9ff", "#fff1d6"],
+    "sip-seeds": ["#bfe9ff", "#bfe9ff", "#bfe9ff", "#d6f0ff", "#fde8c8"],
+    "money-map": ["#fff1d6", "#fff1d6", "#fff1d6", "#e8f1e0", "#fde8c8"]
   };
 
   /* Art.scene(n, gender, slug): n = 0 (cover) to 4. Returns an SVG string. */

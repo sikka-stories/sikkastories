@@ -13,7 +13,7 @@
     document.getElementById("cprint").hidden = true;
     return;
   }
-  var tier = n >= 20 ? 3 : n >= 15 ? 2 : n >= 10 ? 1 : 0;
+  var tier = n >= 30 ? 3 : n >= 20 ? 2 : n >= 10 ? 1 : 0;
   var hero = App.readHero(lang);
   var d = new Date();
   var date = d.toLocaleDateString(lang === "en" ? "en-IN" : lang + "-IN", { day: "numeric", month: "long", year: "numeric" });

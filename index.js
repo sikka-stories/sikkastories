@@ -7,6 +7,7 @@
   document.title = SITE.name[lang];
   $("h1").textContent = SITE.name[lang];
   $("tag").textContent = t.tagline;
+  $("month").textContent = u.month;
   $("byline").textContent = (SITE.credit && SITE.credit[lang]) || "";
   $("lib").textContent = t.library;
   $("how-t").textContent = t.howT;
@@ -24,6 +25,7 @@
   }).join("");
 
   $("peek-t").textContent = u.peekT;
+  document.querySelectorAll(".peek img").forEach(function (im, k) { im.alt = u["peekA" + (k + 1)]; });
   [u.peek1, u.peek2, u.peek3].forEach(function (c, i) { $("peekc" + (i + 1)).textContent = c; });
   var hero = App.readHero(lang);
 
@@ -47,7 +49,7 @@
     });
   }
 
-  function lvl(b) { return Math.min(5, Math.floor(BOOKS.indexOf(b) / 4) + 1); }
+  function lvl(b) { return Math.min(5, Math.floor(BOOKS.indexOf(b) / 6) + 1); }
   function dots5(n) { var o = ""; for (var i = 1; i <= 5; i++) o += i <= n ? "\u25CF" : "\u25CB"; return o; }
 
   /* Cards show the reader's own name in the title and their own look on the cover */
@@ -61,7 +63,7 @@
     });
     if (!shown.length) { $("grid").innerHTML = '<p class="none">' + App.esc(t.noResults) + "</p>"; return; }
     var grouped = !query && !current;
-    var GROUPS = [[0, u.g1], [6, u.g2], [13, u.g3]];
+    var GROUPS = [[0, u.g1], [6, u.g2], [13, u.g3], [20, u.g4]];
     $("grid").innerHTML = shown.map(function (b) {
       var live = b.status === "live";
       var plain = (b.cardTitle && b.cardTitle[lang]) || b.title[lang].replace("{name}", "").trim();
