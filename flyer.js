@@ -3,7 +3,7 @@
   App.chrome(lang);
   var L = ["en", "hi", "mr"];
   document.title = UI2[lang].flyerLink + " | " + SITE.name[lang];
-  var url = "https://sikka-stories.github.io/sikkastories/";
+  var url = "https://sikkastories.com/";
   document.getElementById("flyer").innerHTML =
     '<div class="fbrand">' + L.map(function (l) { return esc(SITE.name[l]); }).join(" &middot; ") + "</div>" +
     L.map(function (l) { return '<div class="fblock" lang="' + l + '"><h1>' + esc(UI2[l].flyerHead) + "</h1><p>" + esc(UI2[l].flyerSub) + "</p></div>"; }).join("") +

@@ -294,7 +294,7 @@
     var live = BOOKS.filter(function (b) { return b.status === "live"; });
     var idx = live.indexOf(book), next = live.length > 1 ? live[(idx + 1) % live.length] : null;
     var end = mk("div", "endcap finish no-print");
-    var pubUrl = "https://sikka-stories.github.io/sikkastories/s/" + book.slug + ".html";
+    var pubUrl = "https://sikkastories.com/s/" + book.slug + ".html";
     var stampsNow = function () { return App.getStamps().filter(function (x) { return BOOKS.some(function (b) { return b.slug === x; }); }).length; };
     function drawFinish() {
       var got = App.getStamps().indexOf(book.slug) >= 0;
