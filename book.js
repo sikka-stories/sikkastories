@@ -27,6 +27,13 @@
   $("wa").href = "https://wa.me/?text=" + encodeURIComponent(((book.cardTitle && book.cardTitle[lang]) || book.title[lang].replace("{name}", "").trim()) + " " + shareUrl);
   $("print").textContent = t.print;
   $("print").addEventListener("click", function () { window.print(); });
+  (function () {
+    var row = $("pdfrow"), LN = [["en", "English"], ["hi", "हिन्दी"], ["mr", "मराठी"]];
+    row.innerHTML = esc(t.pdfIn) + " " + LN.map(function (x) {
+      return '<a class="btn small" href="book.html?b=' + encodeURIComponent(book.slug) + "&lang=" + x[0] + '&pdf=1" lang="' + x[0] + '">' + x[1] + "</a>";
+    }).join(" ") + '<br><span class="pdfhint">' + esc(t.pdfHint) + "</span>";
+    row.hidden = false;
+  })();
   $("printws").textContent = t.printWs;
   $("printws").addEventListener("click", function () {
     document.body.classList.add("print-ws");
@@ -130,6 +137,11 @@
     $("setup").hidden = true;
     $("print").hidden = false;
     $("printws").hidden = false;
+    if (qs.get("pdf") === "1" && !window.__pdfDone) {
+      window.__pdfDone = true;
+      var go = function () { setTimeout(function () { window.print(); }, 500); };
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(go); else go();
+    }
     App.heroChip($("herochip"), lang, function (h) { hero = h; forgetLinkName(); showBook(); });
     var title = tpl(book.title[lang]);
     document.title = title + " | " + SITE.name[lang];

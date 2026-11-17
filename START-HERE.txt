@@ -1,0 +1,15 @@
+Sikka Stories fix pack: shared links open the book, your name and a grey eye view counter at the top right, and Download PDF links.
+
+Upload in this order. Each time: open github.com/sikka-stories/sikkastories, click Add file, then Upload files, drag, then Commit changes.
+
+1. Open the folder 1-files. Select all 8 files inside and drag them in. Commit.
+   After this, any shared link such as /s/money-swap.html opens the right book, even before step 2.
+2. Open the folder 2-share. Drag the folder called s (the folder itself) in. Commit.
+3. Open the folder 3-og. Drag the folder called og (the folder itself) in. Commit.
+   Steps 2 and 3 are what make WhatsApp show the book's picture and title when a link is shared.
+
+For the grey eye counter: open Supabase, go to SQL Editor, paste the contents of supabase-view-counter.sql (from the documents zip) and click Run. Do this once. Until then the eye stays hidden. The number is real: it counts each visit and starts from 0.
+
+Then check https://sikkastories.com/s/money-swap.html. The repository must show folders called s and og at the top level, next to index.html. If a folder has another name, or its files sit loose in the top level, tell me or send a screenshot of the repository.
+
+Do not delete the CNAME file that GitHub added.

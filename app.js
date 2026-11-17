@@ -62,6 +62,30 @@
     if (window.Acct.hasStored()) window.Acct.init();
   }
 
+  /* All-time view count: a grey eye and the real number from the database. Nothing is shown unless the online features are switched on and the count has loaded. */
+  var EYE = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+  function viewsHtml(lang) {
+    var lab = (window.SITE.viewsLabel && window.SITE.viewsLabel[lang]) || "All-time views";
+    return '<span class="views" id="views" hidden title="' + esc(lab) + '" aria-label="' + esc(lab) + '">' + EYE + "<b></b></span>";
+  }
+  function showViews() {
+    var C = window.SS_CONFIG || {}, el = document.getElementById("views");
+    if (!el || !/^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(C.url || "") || !/^[A-Za-z0-9._-]{20,}$/.test(C.key || "")) return;
+    var first = true;
+    try { first = !sessionStorage.getItem("ss-viewed"); } catch (e) {}
+    fetch(C.url + "/rest/v1/rpc/" + (first ? "ss_view" : "ss_views"), {
+      method: "POST",
+      headers: { apikey: C.key, Authorization: "Bearer " + C.key, "Content-Type": "application/json" },
+      body: "{}"
+    }).then(function (r) { return r.ok ? r.json() : Promise.reject(); }).then(function (n) {
+      if (typeof n !== "number" || n < 0) return;
+      try { sessionStorage.setItem("ss-viewed", "1"); } catch (e) {}
+      if (n < ((window.SITE.minViews | 0) || 0)) return;
+      el.querySelector("b").textContent = n.toLocaleString("en-IN");
+      el.hidden = false;
+    }).catch(function () {});
+  }
+
   function chrome(lang) {
     var t = window.UI[lang];
     document.documentElement.lang = lang;
@@ -70,8 +94,9 @@
     }).join("");
     document.getElementById("top").innerHTML =
       '<div class="wrap"><a class="brand" href="index.html?lang=' + lang + '">' + esc(window.SITE.name[lang]) +
-      '</a><div class="langs"><span>' + esc(t.lang) + "</span>" + btns + "</div></div>" + navHtml(lang);
+      '</a><div class="topright"><div class="tr1">' + viewsHtml(lang) + ((window.SITE.by && window.SITE.by[lang]) ? '<a class="byline" href="about.html?lang=' + lang + '">' + esc(window.SITE.by[lang]) + "</a>" : "") + '</div><div class="langs"><span>' + esc(t.lang) + "</span>" + btns + "</div></div></div>" + navHtml(lang);
     wireChip(lang);
+    showViews();
     document.querySelectorAll(".langs button").forEach(function (b) {
       b.addEventListener("click", function () { setLang(b.getAttribute("data-l")); });
     });

@@ -6,6 +6,12 @@ window.SITE = {
   name: { en: "Sikka Stories", hi: "सिक्का स्टोरीज़", mr: "सिक्का स्टोरीज" },
   /* Optional credit line shown in the footer. Leave empty ("") to hide it. */
   credit: { en: "Created by Shreyas Shinde, Mumbai", hi: "बनाने वाले: श्रेयस शिंदे, मुंबई", mr: "निर्मिती: श्रेयस शिंदे, मुंबई" },
+  /* Short creator line shown in the top right corner of every page (links to the About page). Leave empty ("") to hide it. */
+  by: { en: "By Shreyas Shinde", hi: "बनाने वाले: श्रेयस शिंदे", mr: "निर्मिती: श्रेयस शिंदे" },
+  /* Real all-time view count (grey eye, top right). It only appears when the online features are on and the SQL in the documents has been run.
+     minViews hides the number until it reaches this real count (0 shows it from the first visit). */
+  minViews: 0,
+  viewsLabel: { en: "All-time views", hi: "कुल बार देखा गया", mr: "एकूण वेळा पाहिले" },
   /* Optional feedback link, for example a Google Form address. Leave "" to hide the link. */
   feedback: ""
 };
@@ -65,7 +71,9 @@ window.UI = {
     soon: "Coming soon",
     minShort: "About {n} min",
     timeLine: "About {t} minutes: {s} to read, {q} for the quiz",
-    print: "Save as PDF / Print",
+    print: "Download PDF / Print",
+    pdfIn: "Download this book as a PDF in",
+    pdfHint: "In the window that opens, choose Save as PDF.",
     share: "Share on WhatsApp",
     back: "All books",
     cover: "Cover",
@@ -148,7 +156,9 @@ window.UI = {
     soon: "जल्द आ रही है",
     minShort: "लगभग {n} मिनट",
     timeLine: "लगभग {t} मिनट: {s} पढ़ने में, {q} क्विज़ में",
-    print: "PDF सहेजें / प्रिंट करें",
+    print: "PDF डाउनलोड / प्रिंट करें",
+    pdfIn: "यह किताब PDF में डाउनलोड करें:",
+    pdfHint: "खुलने वाली विंडो में 'PDF के रूप में सहेजें' चुनें।",
     share: "WhatsApp पर भेजें",
     back: "सभी किताबें",
     cover: "कवर",
@@ -231,7 +241,9 @@ window.UI = {
     soon: "लवकरच येत आहे",
     minShort: "सुमारे {n} मिनिटे",
     timeLine: "सुमारे {t} मिनिटे: {s} वाचायला, {q} क्विझसाठी",
-    print: "PDF जतन करा / प्रिंट करा",
+    print: "PDF डाउनलोड / प्रिंट करा",
+    pdfIn: "हे पुस्तक PDF मध्ये डाउनलोड करा:",
+    pdfHint: "उघडणाऱ्या विंडोमध्ये 'PDF म्हणून सेव्ह करा' निवडा.",
     share: "WhatsApp वर पाठवा",
     back: "सर्व पुस्तके",
     cover: "मुखपृष्ठ",
