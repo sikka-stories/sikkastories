@@ -63,9 +63,44 @@
   }
 
   /* All-time view count: a grey eye and the real number from the database. Nothing is shown unless the online features are switched on and the count has loaded. */
+  /* Everything for the top right corner lives in this one file, so it works even if books.js and style.css are older.
+     Values in books.js (SITE.by, SITE.reach, SITE.reachNote, SITE.viewsLabel) win when they exist. */
+  var DEFAULTS = {
+    by: { en: "By Shreyas Shinde", hi: "बनाने वाले: श्रेयस शिंदे", mr: "निर्मिती: श्रेयस शिंदे" },
+    reach: { en: "1 lakh+ people reached", hi: "1 लाख+ लोगों तक पहुँचा", mr: "1 लाख+ लोकांपर्यंत पोहोचले" },
+    reachNote: { en: "Total people reached through our Sikka Stories reels on Instagram", hi: "Instagram पर हमारी सिक्का स्टोरीज़ रील्स के ज़रिए कुल लोगों तक पहुँच", mr: "Instagram वरील आमच्या सिक्का स्टोरीज रील्सद्वारे एकूण लोकांपर्यंत पोहोच" },
+    viewsLabel: { en: "All-time views", hi: "कुल बार देखा गया", mr: "एकूण वेळा पाहिले" }
+  };
+  function sget(k, lang) {
+    var o = (window.SITE && window.SITE[k]) || DEFAULTS[k];
+    return (o && o[lang]) || "";
+  }
+  function topRightCss() {
+    if (document.getElementById("ss-topright-css")) return;
+    var s = document.createElement("style");
+    s.id = "ss-topright-css";
+    s.textContent =
+      ".topright{display:flex;flex-direction:column;align-items:flex-end;gap:6px}" +
+      ".tr1{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end}" +
+      ".topby{font-size:15px;font-weight:600;color:#6b7080;text-decoration:none;border-bottom:2px dotted #6b7080}" +
+      "#byline{border-bottom:0}" +
+      ".topby:hover,.topby:focus-visible{color:#2b2d42;border-bottom-color:#2b2d42}" +
+      ".views,.reach{display:inline-flex;align-items:center;gap:6px;color:#8d99ae;font-size:15px;font-weight:600}" +
+      ".views[hidden]{display:none}.views b{font-weight:700}" +
+      "@media (max-width:560px){.topright{align-items:flex-start}.tr1{justify-content:flex-start}.reach{flex-basis:100%}}" +
+      "@media print{.tr1{display:none!important}}";
+    document.head.appendChild(s);
+  }
   var EYE = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+  var PLAY = '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+  function reachHtml(lang) {
+    var r = sget("reach", lang);
+    if (!r) return "";
+    var n = sget("reachNote", lang) || r;
+    return '<span class="reach" title="' + esc(n) + '">' + PLAY + "<span>" + esc(r) + "</span></span>";
+  }
   function viewsHtml(lang) {
-    var lab = (window.SITE.viewsLabel && window.SITE.viewsLabel[lang]) || "All-time views";
+    var lab = sget("viewsLabel", lang) || "All-time views";
     return '<span class="views" id="views" hidden title="' + esc(lab) + '" aria-label="' + esc(lab) + '">' + EYE + "<b></b></span>";
   }
   function showViews() {
@@ -87,6 +122,7 @@
   }
 
   function chrome(lang) {
+    topRightCss();
     var t = window.UI[lang];
     document.documentElement.lang = lang;
     var btns = LANGS.map(function (x) {
@@ -94,7 +130,7 @@
     }).join("");
     document.getElementById("top").innerHTML =
       '<div class="wrap"><a class="brand" href="index.html?lang=' + lang + '">' + esc(window.SITE.name[lang]) +
-      '</a><div class="topright"><div class="tr1">' + viewsHtml(lang) + ((window.SITE.by && window.SITE.by[lang]) ? '<a class="byline" href="about.html?lang=' + lang + '">' + esc(window.SITE.by[lang]) + "</a>" : "") + '</div><div class="langs"><span>' + esc(t.lang) + "</span>" + btns + "</div></div></div>" + navHtml(lang);
+      '</a><div class="topright"><div class="tr1">' + reachHtml(lang) + viewsHtml(lang) + (sget("by", lang) ? '<a class="topby" href="about.html?lang=' + lang + '">' + esc(sget("by", lang)) + "</a>" : "") + '</div><div class="langs"><span>' + esc(t.lang) + "</span>" + btns + "</div></div></div>" + navHtml(lang);
     wireChip(lang);
     showViews();
     document.querySelectorAll(".langs button").forEach(function (b) {
