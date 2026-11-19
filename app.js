@@ -67,8 +67,8 @@
      Values in books.js (SITE.by, SITE.reach, SITE.reachNote, SITE.viewsLabel) win when they exist. */
   var DEFAULTS = {
     by: { en: "By Shreyas Shinde", hi: "बनाने वाले: श्रेयस शिंदे", mr: "निर्मिती: श्रेयस शिंदे" },
-    reach: { en: "1 lakh+ people reached", hi: "1 लाख+ लोगों तक पहुँचा", mr: "1 लाख+ लोकांपर्यंत पोहोचले" },
-    reachNote: { en: "Total people reached through our Sikka Stories reels on Instagram", hi: "Instagram पर हमारी सिक्का स्टोरीज़ रील्स के ज़रिए कुल लोगों तक पहुँच", mr: "Instagram वरील आमच्या सिक्का स्टोरीज रील्सद्वारे एकूण लोकांपर्यंत पोहोच" },
+    reach: { en: "", hi: "", mr: "" },
+    reachNote: { en: "Total views of our Sikka Stories reels on Instagram", hi: "Instagram पर हमारी सिक्का स्टोरीज़ रील्स के कुल व्यूज़", mr: "Instagram वरील आमच्या सिक्का स्टोरीज रील्सचे एकूण व्ह्यूज" },
     viewsLabel: { en: "All-time views", hi: "कुल बार देखा गया", mr: "एकूण वेळा पाहिले" }
   };
   function sget(k, lang) {
@@ -138,7 +138,7 @@
     });
     var credit = (window.SITE.credit && window.SITE.credit[lang]) || "";
     var links = '<a href="about.html?lang=' + lang + '">' + esc(t.aboutLink) + "</a>";
-    var fb = window.SITE.feedback || "";
+    var fb = window.SITE.feedback; fb = (fb && typeof fb === "object" ? (fb[lang] || fb.en) : fb) || "";
     if (/^https?:\/\//.test(fb)) links += ' · <a href="' + esc(fb) + '" target="_blank" rel="noopener">' + esc(t.feedbackLink) + "</a>";
     document.getElementById("foot").innerHTML = '<div class="wrap">' + esc(t.disclaimer) + "<br>" + links + (credit ? "<br>" + esc(credit) : "") + "</div>";
     if (!document.getElementById("skiplink")) {

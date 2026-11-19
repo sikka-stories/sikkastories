@@ -8,7 +8,7 @@
   document.getElementById("about").innerHTML = "<h1>" + App.esc(a.title) + "</h1>" + a.items.map(function (it) {
     return "<h2>" + App.esc(it[0]) + "</h2><p>" + App.esc(it[1]) + "</p>";
   }).join("");
-  var fb = SITE.feedback || "";
+  var fb = SITE.feedback; fb = (fb && typeof fb === "object" ? (fb[lang] || fb.en) : fb) || "";
   if (/^https?:\/\//.test(fb)) {
     var last = document.querySelector("#about p:last-child");
     last.innerHTML += ' <a href="' + App.esc(fb) + '" target="_blank" rel="noopener">' + App.esc(t.feedbackLink) + "</a>";
