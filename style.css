@@ -527,3 +527,70 @@ h3.grp:first-child { margin-top: 0; }
 
 .reach { display: inline-flex; align-items: center; gap: 5px; color: #8d99ae; font-size: 15px; font-weight: 600; }
 @media (max-width: 560px) { .reach { flex-basis: 100%; } }
+
+/* ---------- Polish: compact phone header, bigger tap targets, clearer focus ---------- */
+@media (max-width: 700px), (pointer: coarse) {
+  .langs button, .mainnav a, .chips button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+  footer a { display: inline-block; padding: 10px 4px; }
+}
+@media (max-width: 560px) {
+  header.top .wrap { gap: 0 12px; padding-top: 8px; padding-bottom: 6px; justify-content: space-between; }
+  header.top .topright { display: contents; }
+  header.top .brand { order: 1; font-size: 24px; }
+  header.top .tr1 { order: 2; justify-content: flex-end; flex: 0 1 auto; gap: 10px; }
+  header.top .topby { display: inline-flex; align-items: center; min-height: 44px; border-bottom: 0; text-decoration: underline dotted; text-underline-offset: 4px; font-size: 14px; }
+  header.top .langs { order: 3; flex-basis: 100%; gap: 6px; }
+  header.top .langs button { padding: 0 12px; }
+  header.top nav.mainnav .wrap { gap: 6px; padding-bottom: 8px; }
+  header.top .mainnav a { padding: 0 12px; font-size: 16px; }
+}
+:focus-visible { outline: 3px solid #2b6cb0; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+@media (max-width: 700px), (pointer: coarse) {
+  .brand { display: inline-flex; align-items: center; min-height: 44px; }
+  .linkbtn, .pdfrow .btn.small { min-height: 44px; }
+  .fine a, .note a, p a.linkbtn { display: inline-block; padding: 8px 2px; }
+}
+
+/* ---------- Phone: shorter home page, compact book rows, swipeable preview, tidier book buttons ---------- */
+#byline:empty { display: none; }
+@media (max-width: 700px) {
+  main.home { display: flex; flex-direction: column; }
+  main.home > * { order: 1; }
+  main.home > .how { order: 8; }
+  main.home > .peek { order: 9; }
+  main.home > .about { order: 10; }
+}
+@media (max-width: 560px) {
+  .grid { grid-template-columns: 1fr; gap: 10px; padding-bottom: 12px; }
+  .card { flex-direction: row; border-radius: 14px; }
+  .card .thumb { width: 108px; height: auto; min-height: 108px; flex: none; border-bottom: 0; border-right: 2px solid var(--ink); }
+  .card .thumb.art svg { width: 100%; height: 100%; display: block; }
+  .card .body { padding: 10px 12px; gap: 4px; justify-content: center; min-width: 0; }
+  .card .name { font-size: 18px; }
+  .card .pill { align-self: flex-start; }
+  .grp { margin: 18px 0 8px; }
+
+  .peekrow { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; padding: 0 0 10px; -webkit-overflow-scrolling: touch; }
+  .peek figure { flex: 0 0 78%; scroll-snap-align: center; }
+  .peek figure:nth-child(n+2) img { aspect-ratio: 1 / 0.8; object-fit: cover; object-position: top; }
+
+  .bookbar { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 0; }
+  .bookbar .btns { display: contents; }
+  .bookbar .btn { text-align: center; line-height: 1.2; padding: 6px 10px; justify-content: center; }
+  #back { order: 1; }
+  #wa { order: 2; }
+  #print { order: 3; }
+  #printws { order: 4; }
+  #herochip { order: 5; grid-column: 1 / -1; }
+  .pdfrow { font-size: 14px; margin: 0 0 8px; }
+}
+@media (max-width: 560px) {
+  .chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 8px; margin: 0 -16px 10px 0; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chips button { flex: none; white-space: nowrap; }
+  .card .thumb { width: 100px; min-height: 100px; }
+  .card .meta { font-size: 13px; }
+  .card .pill { padding-top: 2px; padding-bottom: 2px; }
+}
+@media (max-width: 700px), (pointer: coarse) { .bookbar .btn, .btn.small { min-height: 44px; } }

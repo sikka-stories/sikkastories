@@ -8,7 +8,8 @@
   $("h1").textContent = SITE.name[lang];
   $("tag").textContent = t.tagline;
   $("month").textContent = u.month;
-  $("byline").textContent = (SITE.credit && SITE.credit[lang]) || "";
+  /* The creator's name is already in the top right and in the footer, so it is not repeated here. */
+  $("byline").textContent = "";
   $("lib").textContent = t.library;
   $("how-t").textContent = t.howT;
   $("about-t").textContent = t.aboutT;
