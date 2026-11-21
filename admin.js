@@ -41,15 +41,15 @@
       if (sortKey === "last_seen") return (b.last_seen || "") < (a.last_seen || "") ? -1 : 1;
       return (b[sortKey] || 0) - (a[sortKey] || 0);
     });
-    var cols = [["username", "Nickname"], ["last_seen", "Last seen"], ["opens", "Book opens"], ["reads", "Read to end"], ["perfect", "Perfect quizzes"], ["answer_changes", "Answer changes"], ["plays", "Game plays"], ["tokens_earned", "Tokens"]];
+    var cols = [["username", "Nickname"], ["last_seen", "Last seen"], ["days_active", "Days active"], ["books_opened", "Books opened"], ["books_read", "Books read to end"], ["answers", "Questions answered"], ["quizzes_started", "Quizzes started"], ["perfect", "Perfect quizzes"], ["plays", "Game plays"], ["best_score", "Best game score"], ["tokens_earned", "Tokens"]];
     root.innerHTML = "<h1>Admin dashboard</h1>" +
       '<div class="tiles"><div><b>' + esc((tot && tot.students) || 0) + "</b><span>students</span></div><div><b>" + esc((tot && tot.active_7d) || 0) + "</b><span>active, last 7 days</span></div><div><b>" +
-      esc((tot && tot.opens) || 0) + "</b><span>book opens</span></div><div><b>" + esc((tot && tot.plays) || 0) + "</b><span>game plays</span></div></div>" +
+      esc((tot && tot.opens) || 0) + "</b><span>book opens</span></div><div><b>" + esc((tot && tot.plays) || 0) + "</b><span>game plays</span></div><div><b>" + esc((tot && tot.answers) || 0) + "</b><span>questions answered</span></div></div>" +
       '<p><input type="search" id="afilter" placeholder="Search nickname" value="' + esc(filterText) + '"> <button type="button" class="btn" id="acsv">Download CSV</button> <button type="button" class="btn" id="aflag">Flagged scores</button> <button type="button" class="btn" id="alo">Log out</button></p>' +
       '<div class="tablewrap"><table class="adm"><thead><tr>' + cols.map(function (c) { return '<th><button type="button" class="sortb" data-k="' + c[0] + '"' + (sortKey === c[0] ? ' aria-pressed="true"' : "") + ">" + esc(c[1]) + "</button></th>"; }).join("") + "<th>Status</th></tr></thead><tbody>" +
       (rows.length ? rows.map(function (s) {
-        return '<tr data-u="' + esc(s.username) + '" tabindex="0"><td>' + esc(s.avatar ? Acct.avatar(s.avatar) : "") + " <b>" + esc(s.username) + "</b></td><td>" + esc(fmt(s.last_seen)) + "</td><td>" + esc(s.opens) + "</td><td>" + esc(s.reads) + "</td><td>" + esc(s.perfect) + "</td><td>" + esc(s.answer_changes) + "</td><td>" + esc(s.plays) + "</td><td>" + esc(s.tokens_earned) + "</td><td>" + (s.banned ? "banned" : "ok") + "</td></tr>";
-      }).join("") : '<tr><td colspan="9">No students yet.</td></tr>') + '</tbody></table></div><div id="adetail"></div><div id="aflagged"></div>';
+        return '<tr data-u="' + esc(s.username) + '" tabindex="0"><td>' + esc(s.avatar ? Acct.avatar(s.avatar) : "") + " <b>" + esc(s.username) + "</b></td><td>" + esc(fmt(s.last_seen)) + "</td><td>" + esc((s.days_active == null ? "-" : s.days_active)) + "</td><td>" + esc((s.books_opened == null ? "-" : s.books_opened)) + "</td><td>" + esc((s.books_read == null ? "-" : s.books_read)) + "</td><td>" + esc((s.answers == null ? "-" : s.answers)) + "</td><td>" + esc((s.quizzes_started == null ? "-" : s.quizzes_started)) + "</td><td>" + esc(s.perfect) + "</td><td>" + esc(s.plays) + "</td><td>" + esc((s.best_score == null ? "-" : s.best_score)) + "</td><td>" + esc(s.tokens_earned) + "</td><td>" + (s.banned ? "banned" : "ok") + "</td></tr>";
+      }).join("") : '<tr><td colspan="12">No students yet.</td></tr>') + '</tbody></table></div><div id="adetail"></div><div id="aflagged"></div>';
     document.getElementById("afilter").addEventListener("input", function () { filterText = this.value.trim().toLowerCase(); var pos = this.selectionStart; draw(tot); var f = document.getElementById("afilter"); f.focus(); f.setSelectionRange(pos, pos); });
     root.querySelectorAll(".sortb").forEach(function (b) { b.addEventListener("click", function () { sortKey = b.getAttribute("data-k"); draw(tot); }); });
     root.querySelectorAll("tbody tr[data-u]").forEach(function (tr) {
@@ -60,8 +60,8 @@
     document.getElementById("aflag").addEventListener("click", flagged);
     document.getElementById("acsv").addEventListener("click", function () {
       function cell(v) { var s = String(v == null ? "" : v); if (/^[=+\-@]/.test(s)) s = "'" + s; return '"' + s.replace(/"/g, '""') + '"'; }
-      var head = ["nickname", "created", "last_seen", "consent_by", "book_opens", "read_to_end", "perfect_quizzes", "answer_changes", "game_plays", "tokens", "crowns", "banned"];
-      var lines = [head.join(",")].concat(students.map(function (s) { return [s.username, s.created_at, s.last_seen, s.consent_by, s.opens, s.reads, s.perfect, s.answer_changes, s.plays, s.tokens_earned, s.crowns, s.banned].map(cell).join(","); }));
+      var head = ["nickname", "created", "last_seen", "consent_by", "days_active", "books_opened", "books_read_to_end", "questions_answered", "quizzes_started", "perfect_quizzes", "answer_changes", "game_plays", "best_game_score", "tokens", "crowns", "banned"];
+      var lines = [head.join(",")].concat(students.map(function (s) { return [s.username, s.created_at, s.last_seen, s.consent_by, s.days_active, s.books_opened, s.books_read, s.answers, s.quizzes_started, s.perfect, s.answer_changes, s.plays, s.best_score, s.tokens_earned, s.crowns, s.banned].map(cell).join(","); }));
       var a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([lines.join("\n")], { type: "text/csv" })); a.download = "sikka-students.csv"; a.click();
     });
     if (open) detail(open, true);
